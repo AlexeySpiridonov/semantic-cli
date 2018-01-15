@@ -1,2 +1,6 @@
-# semantic-ui
-Custom сборка semantic-ui для админки
+### Custom'ная сборка semantic-ui для админки
+
+## Usage
+run ./build.sh
+
+Сборка в директорию assets
