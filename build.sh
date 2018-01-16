@@ -3,10 +3,12 @@
 # clean
 rm -rf assets/ tmp/
 
-mkdir assets;
+mkdir assets; mkdir assets/css;
 gulp build-css build-assets;
 cp -r tmp/themes/default/assets/* assets/;
-cat tmp/components/*.css > assets/semantic.css;
+cat tmp/components/*.css > assets/css/semantic.css;
 
 # after build
+cp -r ./assets ../admin/src/
+
 rm -rf tmp/
