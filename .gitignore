@@ -1,6 +1,6 @@
 *-lock.json
-assets
-tmp
+/assets
+/tmp
 
 # Logs
 logs
