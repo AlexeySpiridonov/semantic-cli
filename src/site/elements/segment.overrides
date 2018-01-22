@@ -1,3 +1,6 @@
 /*******************************
          Site Overrides
 *******************************/
+.ui.attached.tab.segment {
+  margin: -1px;
+}
