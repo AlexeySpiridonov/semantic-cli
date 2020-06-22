@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-const less = require('less');
+const args = process.argv.slice(1);
 const path = require('path');
 let errno;
-let mkdirp;
 
 try {
   errno = require('errno');
@@ -11,17 +10,17 @@ try {
   errno = null;
 }
 
-const args = process.argv.slice(1);
-
 // This code will still be required because otherwise rejected promises would not be reported to the user
 process.on('unhandledRejection', function (err) {
   console.error(err);
   process.exitCode = 1;
 });
 
+const SemanticUiBuilder = require('../lib/builder');
+
 // self executing function so we can return
 (function () {
-
+  const builder = new SemanticUiBuilder();
   const filename = 'semantic.less';
   const paths = [path.dirname(path.join(__dirname, `../src/${filename}`))];
 
@@ -45,53 +44,10 @@ process.on('unhandledRejection', function (err) {
     return;
   }
 
-  // создает рекурсивно директории по указанному пути
-  const ensureDirectory = function (filepath) {
-    const dir = path.dirname(filepath);
-    const existsSync = less.fs.existsSync || path.existsSync;
-    let cmd;
-    if (!existsSync(dir)) {
-      if (mkdirp === undefined) {
-        try {
-          mkdirp = require('mkdirp');
-        } catch (e) {
-          mkdirp = null;
-        }
-      }
-      cmd = mkdirp && mkdirp.sync || less.fs.mkdirSync;
-      cmd(dir);
-    }
-  };
 
-  // создает файл по указанному пути
-  const writeOutput = function (filepath, renderResult, onSuccess) {
-    // создаем путь до файла
-    ensureDirectory(filepath);
-    // пишем css в файл
-    less.fs.writeFile(
-      filepath,
-      renderResult.css,
-      {encoding: 'utf8'},
-      (err) => {
-        if (err) {
-          let description = 'Error: ';
-          if (errno && errno.errno[err.errno]) {
-            description += errno.errno[err.errno].description;
-          } else {
-            description += err.code + ' ' + err.message;
-          }
-          console.error('golbex-semantic: failed to create file ' + filepath);
-          console.error(description);
-          process.exitCode = 1;
-        } else {
-          less.logger.info('golbex-semantic: wrote ' + filepath);
-          onSuccess();
-        }
-      });
-  };
 
   // прекомпиляция темы semantic'а
-  const buildSemanticLess = function (err, data) {
+  const render = function (err, data) {
     if (err) {
       console.error('golbex-semantic: ' + err.message);
       process.exitCode = 1;
@@ -122,5 +78,5 @@ process.on('unhandledRejection', function (err) {
       );
   };
 
-  less.fs.readFile(input, 'utf8', buildSemanticLess);
+  less.fs.readFile(input, 'utf8', render);
 })();

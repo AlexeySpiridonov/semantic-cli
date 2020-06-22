@@ -29,6 +29,10 @@
   "dependencies": {
     "errno": "^0.1.1",
     "less": "2.7.3",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^1.0.4",
+    "semantic-ui-less": "^2.4.1"
+  },
+  "optionalDependencies": {
+    "graceful-fs": "^4.2.4"
   }
 }
