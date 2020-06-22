@@ -22,11 +22,11 @@
 *******************************/
 
 .ui.modal {
-  display: none;
-  position: fixed;
+  display: block;
+  position: absolute;
   z-index: @zIndex;
 
-  top: 50%;
+  top: 10%;
   left: 50%;
   text-align: left;
 
@@ -59,7 +59,7 @@
      Close
 ---------------*/
 
-.ui.modal > .close {
+.ui.modal > .times.circle {
   cursor: pointer;
   position: absolute;
   top: @closeTop;
@@ -75,7 +75,7 @@
   padding: @closePadding;
 }
 
-.ui.modal > .close:hover {
+.ui.modal > .times.circle.outline:hover {
   opacity: 1;
 }
 
@@ -371,11 +371,13 @@
 }
 
 .scrolling.dimmable > .dimmer {
-  position: fixed;
+  position: absolute;
 }
 
 .modals.dimmer .ui.scrolling.modal {
-  position: static !important;
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
   margin: @scrollingMargin auto !important;
 }
 

@@ -1,6 +1,0 @@
-/*******************************
-        User Overrides
-*******************************/
-.ui.attached.tabular.menu {
-  margin-left: -1px;
-}

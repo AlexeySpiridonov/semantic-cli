@@ -1,23 +1,34 @@
 {
-  "name": "semantic-admin",
-  "version": "1.0.0",
-  "description": "Custom сборка semantic-ui для админки",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "golbex-semantic",
+  "version": "0.0.1",
+  "description": "Custom сборка semantic-ui для интерфейса с темным дизайном golbex'a",
+  "main": "index",
+  "bin": {
+    "golbex-semantic": "./bin/golbex-semantic"
   },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/golbex/semantic-ui.git"
+    "url": "git+https://github.com/gusleein/golbex-semantic.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "golbex",
+    "semantic",
+    "ui",
+    "frontend"
+  ],
+  "author": {
+    "name": "gusleein",
+    "email": "free_apples@ymail.com"
+  },
+  "license": "",
   "bugs": {
-    "url": "https://github.com/golbex/semantic-ui/issues"
+    "url": "https://github.com/gusleein/golbex-semantic/issues"
   },
-  "homepage": "https://github.com/golbex/semantic-ui#readme",
+  "homepage": "https://github.com/gusleein/golbex-semantic#readme",
   "dependencies": {
-    "semantic-ui": "^2.2.13"
+    "errno": "^0.1.1",
+    "less": "2.7.3",
+    "mkdirp": "^0.5.1"
   }
 }

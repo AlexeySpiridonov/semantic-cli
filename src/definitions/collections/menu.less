@@ -32,7 +32,7 @@
   font-family: @fontFamily;
   background: @background;
   font-weight: @fontWeight;
-  border: @border;
+  border-bottom: @border;
   box-shadow: @boxShadow;
   border-radius: @borderRadius;
   min-height: @minHeight;
@@ -359,6 +359,15 @@
 /*******************************
           Coupling
 *******************************/
+
+/*--------------
+     List
+---------------*/
+
+/* Menu divider shouldnt apply */
+.ui.menu .list .item:before {
+  background: none !important;
+}
 
 /*--------------
      Sidebar

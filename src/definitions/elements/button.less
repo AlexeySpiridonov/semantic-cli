@@ -797,7 +797,7 @@
 .ui.basic.active.button {
   background: @basicActiveBackground !important;
   box-shadow: @basicActiveBoxShadow !important;
-  color: @basicActiveTextColor;
+  color: @basicActiveTextColor !important;
 }
 
 .ui.basic.buttons .active.button:hover,
@@ -3500,9 +3500,9 @@
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: @secondaryColorFocus;
   color: @secondaryTextColor;
   text-shadow: @secondaryTextShadow;
+  border-color: @blueyGrey;
 }
 
 .ui.secondary.buttons .button:active,
