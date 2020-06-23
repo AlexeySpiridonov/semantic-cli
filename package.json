@@ -1,10 +1,10 @@
 {
   "name": "@amadau/semantic-cli",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "description": "Custom сборка semantic-ui для интерфейса с темным дизайном golbex'a",
   "main": "index.js",
   "bin": {
-    "semantic-cli": "./bin/semantic-cli"
+    "semantic-cli": "./bin/semantic-cli.js"
   },
   "scripts": {},
   "repository": "git://github.com/amadau/semantic-cli.git",

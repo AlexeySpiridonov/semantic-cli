@@ -2,13 +2,10 @@
 
 ## Установка
 
-npm install
+yarn add yarn add --dev git+https://git@github.com/amadau/semantic-cli.git
 
-Для сборки требуется gulp
 
-npm install gulp -g
 
 ## Usage
-run ./build.sh
 
-Сборка в директорию assets
+semantic-cli <outputFile>.css
