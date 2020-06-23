@@ -1,0 +1,15 @@
+/*******************************
+        Import Directives
+*******************************/
+
+// Set theme by current component
+@theme: '_default';
+
+/* Path to theme packages */
+@themesFolder: 'themes';
+
+/* Component's site.variables */
+@import "@{themesFolder}/@{theme}/components/site.variables";
+
+// Current component variables
+@import "@{themesFolder}/@{theme}/components/@{component}.variables";
