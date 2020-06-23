@@ -1,15 +1,15 @@
 {
-  "name": "golbex-semantic",
-  "version": "0.0.1",
+  "name": "semantic-cli",
+  "version": "1.1.2",
   "description": "Custom сборка semantic-ui для интерфейса с темным дизайном golbex'a",
   "main": "index",
   "bin": {
-    "golbex-semantic": "./bin/golbex-semantic"
+    "semantic-cli": "./bin/semantic-cli"
   },
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gusleein/golbex-semantic.git"
+    "url": "git+https://github.com/gusleein/semantic-cli.git"
   },
   "keywords": [
     "golbex",
@@ -23,16 +23,15 @@
   },
   "license": "",
   "bugs": {
-    "url": "https://github.com/gusleein/golbex-semantic/issues"
+    "url": "https://github.com/gusleein/semantic-cli/issues"
   },
-  "homepage": "https://github.com/gusleein/golbex-semantic#readme",
+  "homepage": "https://github.com/gusleein/semantic-cli#readme",
   "dependencies": {
     "errno": "^0.1.1",
-    "less": "2.7.3",
-    "mkdirp": "^1.0.4",
-    "semantic-ui-less": "^2.4.1"
+    "less": "2.7.3"
   },
   "optionalDependencies": {
-    "graceful-fs": "^4.2.4"
+    "graceful-fs": "^4.2.4",
+    "mkdirp": "^1.0.4"
   }
 }
