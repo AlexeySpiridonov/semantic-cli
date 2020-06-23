@@ -1,1 +1,4 @@
-module.exports = require('./lib/semantic-node');
+'use strict';
+Object.defineProperty(exports, '__esModule', {value: true});
+
+exports.default = require('./lib/semantic-node');
