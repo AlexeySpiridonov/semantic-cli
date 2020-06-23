@@ -1,18 +1,14 @@
-/*******************************
-          Transitions
-*******************************/
+// Transitions
 
-/*
-  Some transitions adapted from Animate CSS
-  https://github.com/daneden/animate.css
+//
+//  Some transitions adapted from Animate CSS
+//  https://github.com/daneden/animate.css
+//
+//  Additional transitions adapted from Glide
+//  by Nick Pettit - https://github.com/nickpettit/glide
+// //  /
 
-  Additional transitions adapted from Glide
-  by Nick Pettit - https://github.com/nickpettit/glide
-*/
-
-/*--------------
-     Browse
----------------*/
+// Browse
 
 .transition.browse {
   animation-duration: 500ms;
@@ -31,7 +27,7 @@
   animation-name: browseOutRight;
 }
 
-/* In */
+// In
 @keyframes browseIn {
   0% {
     transform: scale(0.8) translateZ(0px);
@@ -53,7 +49,7 @@
   }
 }
 
-/* Out */
+// Out
 @keyframes browseOutLeft {
   0% {
     z-index: 999;
@@ -92,9 +88,7 @@
   }
 }
 
-/*--------------
-     Drop
----------------*/
+// Drop
 
 .drop.transition {
   transform-origin: top center;
@@ -110,7 +104,7 @@
   animation-name: dropOut;
 }
 
-/* Drop */
+// Drop
 @keyframes dropIn {
   0% {
     opacity: 0;
@@ -133,9 +127,7 @@
   }
 }
 
-/*--------------
-      Fade
----------------*/
+// Fade
 
 .transition.fade.in {
   animation-name: fadeIn;
@@ -177,7 +169,7 @@
   animation-name: fadeOutRight;
 }
 
-/* In */
+// In
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -231,7 +223,7 @@
   }
 }
 
-/* Out */
+// Out
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -285,9 +277,7 @@
   }
 }
 
-/*--------------
-     Flips
----------------*/
+// Flips
 
 .flip.transition.in,
 .flip.transition.out {
@@ -310,7 +300,7 @@
   animation-name: verticalFlipOut;
 }
 
-/* In */
+// In
 @keyframes horizontalFlipIn {
   0% {
     transform: perspective(2000px) rotateY(-90deg);
@@ -333,7 +323,7 @@
   }
 }
 
-/* Out */
+// Out
 @keyframes horizontalFlipOut {
   0% {
     transform: perspective(2000px) rotateY(0deg);
@@ -356,9 +346,7 @@
   }
 }
 
-/*--------------
-      Scale
----------------*/
+// Scale
 
 .scale.transition.in {
   animation-name: scaleIn;
@@ -379,7 +367,7 @@
   }
 }
 
-/* Out */
+// Out
 @keyframes scaleOut {
   0% {
     opacity: 1;
@@ -391,11 +379,9 @@
   }
 }
 
-/*--------------
-      Fly
----------------*/
+// Fly
 
-/* Inward */
+// Inward
 .transition.fly {
   animation-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -421,7 +407,7 @@
   animation-name: flyInRight;
 }
 
-/* Outward */
+// Outward
 .transition.fly.out {
   animation-name: flyOut;
 }
@@ -442,7 +428,7 @@
   animation-name: flyOutRight;
 }
 
-/* In */
+// In
 @keyframes flyIn {
   0% {
     opacity: 0;
@@ -547,7 +533,7 @@
   }
 }
 
-/* Out */
+// Out
 @keyframes flyOut {
   20% {
     transform: scale3d(.9, .9, .9);
@@ -612,9 +598,7 @@
   }
 }
 
-/*--------------
-     Slide
----------------*/
+// Slide
 
 .transition.slide.in,
 .transition[class*="slide down"].in {
@@ -658,7 +642,7 @@
   transform-origin: center left;
 }
 
-/* In */
+// In
 @keyframes slideInY {
   0% {
     opacity: 0;
@@ -681,7 +665,7 @@
   }
 }
 
-/* Out */
+// Out
 @keyframes slideOutY {
   0% {
     opacity: 1;
@@ -704,9 +688,7 @@
   }
 }
 
-/*--------------
-     Swing
----------------*/
+// Swing
 
 .transition.swing {
   animation-duration: 800ms;
@@ -753,7 +735,7 @@
   transform-origin: center left;
 }
 
-/* In */
+// In
 @keyframes swingInX {
   0% {
     transform: perspective(1000px) rotateX(90deg);
@@ -794,7 +776,7 @@
   }
 }
 
-/* Out */
+// Out
 @keyframes swingOutX {
   0% {
     transform: perspective(1000px) rotateX(0deg);
@@ -835,13 +817,9 @@
   }
 }
 
-/*******************************
-       Static Animations
-*******************************/
+// Static Animations
 
-/*--------------
-    Emphasis
----------------*/
+// Emphasis
 
 .flash.transition {
   animation-duration: 750ms;
@@ -873,7 +851,7 @@
   animation-name: jiggle;
 }
 
-/* Flash */
+// Flash
 @keyframes flash {
   0%, 50%, 100% {
     opacity: 1;
@@ -883,7 +861,7 @@
   }
 }
 
-/* Shake */
+// Shake
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
@@ -896,7 +874,7 @@
   }
 }
 
-/* Bounce */
+// Bounce
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -909,7 +887,7 @@
   }
 }
 
-/* Tada */
+// Tada
 @keyframes tada {
   0% {
     transform: scale(1);
@@ -928,7 +906,7 @@
   }
 }
 
-/* Pulse */
+// Pulse
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -945,7 +923,7 @@
 
 }
 
-/* Rubberband */
+// Rubberband
 @keyframes jiggle {
   0% {
     transform: scale3d(1, 1, 1);

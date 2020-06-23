@@ -1,6 +1,4 @@
-/*******************************
-         Theme Overrides
-*******************************/
+// Theme Overrides
 
 .ui[class*="no padding"].segment {
   padding: 0;

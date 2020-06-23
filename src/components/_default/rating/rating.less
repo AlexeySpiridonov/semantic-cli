@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Rating
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Rating
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+////  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-           Rating
-*******************************/
+// Rating
 
 .ui.rating {
   display: inline-flex;
@@ -42,7 +38,7 @@
   font-style: normal;
 }
 
-/* Icon */
+// Icon
 .ui.rating .icon {
   font-family: 'Rating';
   line-height: 1;
@@ -60,26 +56,21 @@
 }
 
 
-/*******************************
-             Types
-*******************************/
+// Types
 
-/*-------------------
-      Standard
---------------------*/
-
-/* Empty Standard */
+// Standard
+// Empty Standard
 .ui.rating .icon:before {
   content: '\f005';
 }
 
-/* Inactive Icon */
+// Inactive Icon
 .ui.rating .icon {
   background: @inactiveBackground;
   color: @inactiveColor;
 }
 
-/* Active Icon */
+// Active Icon
 .ui.rating .active.icon {
   background: @activeBackground;
   color: @activeColor;
@@ -89,18 +80,15 @@
   content: '\f005';
 }
 
-/* Selected Icon */
+// Selected Icon
 .ui.rating .icon.selected,
 .ui.rating .icon.selected.active {
   background: @selectedBackground;
   color: @selectedColor;
 }
 
-/*-------------------
-        Star
---------------------*/
-
-/* Inactive */
+// Star
+// Inactive
 .ui.star.rating .icon {
   width: @starIconWidth;
   height: @starIconHeight;
@@ -109,14 +97,14 @@
   text-shadow: @starInactiveTextShadow;
 }
 
-/* Active Star */
+// Active Star
 .ui.star.rating .active.icon {
   background: @starActiveBackground !important;
   color: @starActiveColor !important;
   text-shadow: @starActiveTextShadow !important;
 }
 
-/* Selected Star */
+// Selected Star
 .ui.star.rating .icon.selected,
 .ui.star.rating .icon.selected.active {
   background: @starSelectedBackground !important;
@@ -124,17 +112,17 @@
   text-shadow: @starSelectedTextShadow !important;
 }
 
-/* Unfilled Star */
+// Unfilled Star
 .ui.star.rating .icon:before {
   content: '\f005';
 }
 
-/* Active Star */
+// Active Star
 .ui.star.rating .active.icon:before {
   content: '\f005';
 }
 
-/* Partial */
+// Partial
 .ui.star.rating .partial.icon:before {
   content: '\f006';
 }
@@ -143,10 +131,7 @@
   content: '\f005';
 }
 
-/*-------------------
-        Heart
---------------------*/
-
+// Heart
 .ui.heart.rating .icon {
   width: @heartIconWidth;
   height: @heartIconHeight;
@@ -155,14 +140,14 @@
   text-shadow: @heartInactiveTextShadow !important;
 }
 
-/* Active Heart */
+// Active Heart
 .ui.heart.rating .active.icon {
   background: @heartActiveBackground !important;
   color: @heartActiveColor !important;
   text-shadow: @heartActiveTextShadow !important;
 }
 
-/* Selected Heart */
+// Selected Heart
 .ui.heart.rating .icon.selected,
 .ui.heart.rating .icon.selected.active {
   background: @heartSelectedBackground !important;
@@ -170,38 +155,30 @@
   text-shadow: @heartSelectedTextShadow !important;
 }
 
-/* Empty Heart
+// Empty Heart
 .ui.heart.rating .icon:before {
   content: '\f08a';
 }
-*/
+
 .ui.heart.rating .icon:before {
   content: '\f004';
 }
 
-/* Active */
+// Active
 .ui.heart.rating .active.icon:before {
   content: '\f004';
 }
 
-/*******************************
-             States
-*******************************/
+// States
 
-/*-------------------
-       Disabled
---------------------*/
-
-/* disabled rating */
+// Disabled
+// disabled rating
 .ui.disabled.rating .icon {
   cursor: default;
 }
 
-/*-------------------
-   User Interactive
---------------------*/
-
-/* Selected Rating */
+// User Interactive
+// Selected Rating
 .ui.rating.selected .active.icon {
   opacity: @interactiveActiveIconOpacity;
 }
@@ -211,9 +188,7 @@
   opacity: @interactiveSelectedIconOpacity;
 }
 
-/*******************************
-          Variations
-*******************************/
+// Variations
 
 .ui.mini.rating {
   font-size: @mini;

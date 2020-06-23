@@ -1,31 +1,25 @@
-/*******************************
-             Feed
-*******************************/
+// Feed
 
-/*-------------------
-        Feed
---------------------*/
+// Feed
 
 @margin: 1em 0em;
 
-/*-------------------
-      Elements
---------------------*/
+// Elements
 
-/* Event */
+// Event
 @eventWidth: 100%;
 @eventPadding: @3px 0em;
 @eventMargin: 0em;
 @eventBackground: none;
 @eventDivider: none;
 
-/* Event Label */
+// Event Label
 @labelWidth: 2.5em;
 @labelHeight: auto;
 @labelAlignSelf: stretch;
 @labelTextAlign: left;
 
-/* Icon Label */
+// Icon Label
 @iconLabelOpacity: 1;
 @iconLabelWidth: 100%;
 @iconLabelSize: 1.5em;
@@ -35,21 +29,21 @@
 @iconLabelBorder: none;
 @iconLabelColor: rgba(0, 0, 0, 0.6);
 
-/* Image Label */
+// Image Label
 @imageLabelWidth: 100%;
 @imageLabelHeight: auto;
 @imageLabelBorderRadius: @circularRadius;
 
-/* Content w/ Label */
+// Content w/ Label
 @labeledContentMargin: 0.5em 0em @relative5px @relativeLarge;
 @lastLabeledContentPadding: 0em;
 
-/* Content */
+// Content
 @contentAlignSelf: stretch;
 @contentTextAlign: left;
 @contentWordWrap: break-word;
 
-/* Date */
+// Date
 @dateMargin: -0.5rem 0em 0em;
 @datePadding: 0em;
 @dateColor: @lightTextColor;
@@ -57,20 +51,20 @@
 @dateFontWeight: normal;
 @dateFontStyle: normal;
 
-/* Summary */
+// Summary
 @summaryMargin: 0em;
 @summaryFontSize: @relativeMedium;
 @summaryFontWeight: bold;
 @summaryColor: @textColor;
 
-/* Summary Image */
+// Summary Image
 @summaryImageWidth: auto;
 @summaryImageHeight: 10em;
 @summaryImageMargin: -0.25em 0.25em 0em 0em;
 @summaryImageVerticalAlign: middle;
 @summaryImageBorderRadius: 0.25em;
 
-/* Summary Date */
+// Summary Date
 @summaryDateDisplay: inline-block;
 @summaryDateFloat: none;
 @summaryDateMargin: 0em 0em 0em 0.5em;
@@ -80,7 +74,7 @@
 @summaryDateFontStyle: @dateFontStyle;
 @summaryDateColor: @dateColor;
 
-/* User */
+// User
 @userFontWeight: bold;
 @userDistance: 0em;
 @userImageWidth: @summaryImageWidth;
@@ -88,24 +82,24 @@
 @userImageMargin: @summaryImageMargin;
 @userImageVerticalAlign: @summaryImageVerticalAlign;
 
-/* Extra Summary Data */
+// Extra Summary Data
 @extraMargin: 0.5em 0em 0em;
 @extraBackground: none;
 @extraPadding: 0em;
 @extraColor: @textColor;
 
-/* Extra Images */
+// Extra Images
 @extraImageMargin: 0em 0.25em 0em 0em;
 @extraImageWidth: 6em;
 
-/* Extra Text */
+// Extra Text
 @extraTextPadding: 0em;
 @extraTextPointer: none;
 @extraTextFontSize: @relativeMedium;
 @extraTextLineHeight: @lineHeight;
 @extraTextMaxWidth: 500px;
 
-/* Metadata Group */
+// Metadata Group
 @metadataDisplay: inline-block;
 @metadataFontSize: @relativeTiny;
 @metadataMargin: 0.5em 0em 0em;
@@ -118,13 +112,13 @@
 
 @metadataElementSpacing: 0.75em;
 
-/* Like */
+// Like
 @likeColor: '';
 @likeHoverColor: #FF2733;
 @likeActiveColor: #EF404A;
 @likeTransition: 0.2s color ease;
 
-/* Metadata Divider */
+// Metadata Divider
 @metadataDivider: '';
 @metadataDividerColor: rgba(0, 0, 0, 0.2);
 @metadataDividerOffset: -1em;
@@ -136,6 +130,4 @@
 
 @metadataActionHoverColor: @selectedTextColor;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations

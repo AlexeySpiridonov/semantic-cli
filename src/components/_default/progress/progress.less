@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Progress Bar
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Progress Bar
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+////  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Progress
-*******************************/
+// Progress
 
 .ui.progress {
   position: relative;
@@ -43,11 +39,9 @@
   margin: @lastMargin;
 }
 
-/*******************************
-            Content
-*******************************/
+// Content
 
-/* Activity Bar */
+// Activity Bar
 .ui.progress .bar {
   display: block;
   line-height: 1;
@@ -59,7 +53,7 @@
   transition: @barTransition;
 }
 
-/* Percent Complete */
+// Percent Complete
 .ui.progress .bar > .progress {
   white-space: nowrap;
   position: @progressPosition;
@@ -76,7 +70,7 @@
   text-align: @progressTextAlign;
 }
 
-/* Label */
+// Label
 .ui.progress > .label {
   position: absolute;
   width: @labelWidth;
@@ -93,11 +87,9 @@
   transition: @labelTransition;
 }
 
-/*******************************
-            Types
-*******************************/
+// Types
 
-/* Indicating */
+// Indicating
 .ui.indicating.progress[data-percent^="1"] .bar,
 .ui.indicating.progress[data-percent^="2"] .bar {
   background-color: @indicatingFirstColor;
@@ -126,7 +118,7 @@
   background-color: @indicatingSixthColor;
 }
 
-/* Indicating Label */
+// Indicating Label
 .ui.indicating.progress[data-percent^="1"] .label,
 .ui.indicating.progress[data-percent^="2"] .label {
   color: @indicatingFirstLabelColor;
@@ -155,7 +147,7 @@
   color: @indicatingSixthLabelColor;
 }
 
-/* Single Digits */
+// Single Digits//  /
 .ui.indicating.progress[data-percent="1"] .bar,
 .ui.indicating.progress[data-percent="2"] .bar,
 .ui.indicating.progress[data-percent="3"] .bar,
@@ -180,19 +172,14 @@
   color: @indicatingFirstLabelColor;
 }
 
-/* Indicating Success */
+// Indicating Success//  /
 .ui.indicating.progress.success .label {
   color: @successHeaderColor;
 }
 
-/*******************************
-             States
-*******************************/
+// States
 
-/*--------------
-     Success
----------------*/
-
+// Success
 .ui.progress.success .bar {
   background-color: @successColor !important;
 }
@@ -206,10 +193,7 @@
   color: @successHeaderColor;
 }
 
-/*--------------
-     Warning
----------------*/
-
+// Warning
 .ui.progress.warning .bar {
   background-color: @warningColor !important;
 }
@@ -223,10 +207,7 @@
   color: @warningHeaderColor;
 }
 
-/*--------------
-     Error
----------------*/
-
+// Error
 .ui.progress.error .bar {
   background-color: @errorColor !important;
 }
@@ -240,10 +221,7 @@
   color: @errorHeaderColor;
 }
 
-/*--------------
-     Active
----------------*/
-
+// Active
 .ui.active.progress .bar {
   position: relative;
   min-width: @activeMinWidth;
@@ -278,10 +256,7 @@
   }
 }
 
-/*--------------
-    Disabled
----------------*/
-
+// Disabled
 .ui.disabled.progress {
   opacity: 0.35;
 }
@@ -291,14 +266,9 @@
   animation: none !important;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-    Inverted
----------------*/
-
+// Inverted
 .ui.inverted.progress {
   background: @invertedBackground;
   border: @invertedBorder;
@@ -328,11 +298,8 @@
   color: @errorColor;
 }
 
-/*--------------
-    Attached
----------------*/
-
-/* bottom attached */
+// Attached
+// bottom attached//  /
 .ui.progress.attached {
   background: @attachedBackground;
   position: relative;
@@ -353,7 +320,7 @@
   border-radius: 0em;
 }
 
-/* top attached */
+// top attached//  /
 .ui.progress.top.attached,
 .ui.progress.top.attached .bar {
   top: 0px;
@@ -364,7 +331,7 @@
   border-radius: 0em;
 }
 
-/* Coupling */
+// Coupling//  /
 .ui.segment > .ui.attached.progress,
 .ui.card > .ui.attached.progress {
   position: absolute;
@@ -380,11 +347,8 @@
   bottom: auto;
 }
 
-/*--------------
-     Colors
----------------*/
-
-/* Red */
+// Colors
+// Red//  /
 .ui.red.progress .bar {
   background-color: @red;
 }
@@ -393,7 +357,7 @@
   background-color: @lightRed;
 }
 
-/* Orange */
+// Orange//  /
 .ui.orange.progress .bar {
   background-color: @orange;
 }
@@ -402,7 +366,7 @@
   background-color: @lightOrange;
 }
 
-/* Yellow */
+// Yellow//  /
 .ui.yellow.progress .bar {
   background-color: @yellow;
 }
@@ -411,7 +375,7 @@
   background-color: @lightYellow;
 }
 
-/* Olive */
+// Olive//  /
 .ui.olive.progress .bar {
   background-color: @olive;
 }
@@ -420,7 +384,7 @@
   background-color: @lightOlive;
 }
 
-/* Green */
+// Green//  /
 .ui.green.progress .bar {
   background-color: @green;
 }
@@ -429,7 +393,7 @@
   background-color: @lightGreen;
 }
 
-/* Teal */
+// Teal//  /
 .ui.teal.progress .bar {
   background-color: @teal;
 }
@@ -438,7 +402,7 @@
   background-color: @lightTeal;
 }
 
-/* Blue */
+// Blue//  /
 .ui.blue.progress .bar {
   background-color: @blue;
 }
@@ -447,7 +411,7 @@
   background-color: @lightBlue;
 }
 
-/* Violet */
+// Violet//  /
 .ui.violet.progress .bar {
   background-color: @violet;
 }
@@ -456,7 +420,7 @@
   background-color: @lightViolet;
 }
 
-/* Purple */
+// Purple//  /
 .ui.purple.progress .bar {
   background-color: @purple;
 }
@@ -465,7 +429,7 @@
   background-color: @lightPurple;
 }
 
-/* Pink */
+// Pink//  /
 .ui.pink.progress .bar {
   background-color: @pink;
 }
@@ -474,7 +438,7 @@
   background-color: @lightPink;
 }
 
-/* Brown */
+// Brown//  /
 .ui.brown.progress .bar {
   background-color: @brown;
 }
@@ -483,7 +447,7 @@
   background-color: @lightBrown;
 }
 
-/* Grey */
+// Grey//  /
 .ui.grey.progress .bar {
   background-color: @grey;
 }
@@ -492,7 +456,7 @@
   background-color: @lightGrey;
 }
 
-/* Black */
+// Black//  /
 .ui.black.progress .bar {
   background-color: @black;
 }
@@ -501,10 +465,7 @@
   background-color: @lightBlack;
 }
 
-/*--------------
-     Sizes
----------------*/
-
+// Sizes
 .ui.tiny.progress {
   font-size: @tiny;
 }

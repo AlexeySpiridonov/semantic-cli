@@ -1,6 +1,4 @@
-/*******************************
-             Modal
-*******************************/
+// Modal
 
 @background: @darkTwo;
 @border: none;
@@ -10,7 +8,7 @@
 @boxShadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2),
 1px 3px 15px 2px rgba(0, 0, 0, 0.2);
 
-/* Close Icon */
+// Close Icon
 @closeOpacity: 0.8;
 @closeSize: 1.25em;
 @closeColor: @blueyGrey;
@@ -22,7 +20,7 @@
 @closeTop: @headerVerticalPadding - @6px;
 @closeRight: @headerHorizontalPadding - @11px;
 
-/* Header */
+// Header
 @headerMargin: 0em;
 @headerVerticalPadding: @48px;
 @headerHorizontalPadding: @60px + @15px;
@@ -35,13 +33,13 @@
 @headerFontFamily: @headerFont;
 @headerBorder: none;
 
-/* Content */
+// Content
 @contentFontSize: 1em;
 @contentPadding: @15px @headerHorizontalPadding 0;
 @contentLineHeight: 1.4;
 @contentBackground: @darkTwo;
 
-/* Image / Description */
+// Image / Description
 @imageWidth: '';
 @imageIconSize: 8rem;
 @imageVerticalAlign: top;
@@ -51,7 +49,7 @@
 @descriptionWidth: auto;
 @descriptionVerticalAlign: top;
 
-/* Modal Actions */
+// Modal Actions
 @actionBorder: none;
 @actionBackground: @darkTwo;
 @actionPadding: 0 @headerHorizontalPadding @50px;
@@ -59,12 +57,12 @@
 
 @buttonDistance: 0em;
 
-/* Inner Close Position (Tablet/Mobile) */
+// Inner Close Position (Tablet/Mobile)
 @innerCloseTop: (@headerVerticalPadding - @closeHitBoxOffset + (@lineHeight - 1em));
 @innerCloseRight: 1rem;
 @innerCloseColor: @textColor;
 
-/* Mobile Positions */
+// Mobile Positions
 @mobileHeaderPadding: 0.75rem 1rem;
 @mobileContentPadding: 1rem;
 @mobileImagePadding: 0rem 0rem 1rem;
@@ -75,7 +73,7 @@
 @mobileCloseTop: 0.5rem;
 @mobileCloseRight: 0.5rem;
 
-/* Responsive Widths */
+// Responsive Widths
 @mobileWidth: 422px;
 @tabletWidth: 422px;
 @computerWidth: 422px;
@@ -92,20 +90,16 @@
 @fullScreenOffset: (100% - @fullScreenWidth) / 2;
 @fullScreenMargin: 1em auto;
 
-/* Coupling */
+// Coupling
 @invertedBoxShadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.2);
 
-/*-------------------
-       States
---------------------*/
+// States
 
 @loadingZIndex: -1;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Basic */
+// Basic
 @basicModalHeaderColor: @white;
 @basicModalColor: @white;
 @basicModalCloseTop: 1rem;
@@ -115,24 +109,22 @@
 @basicInvertedModalColor: @textColor;
 @basicInvertedModalHeaderColor: @darkTextColor;
 
-/* Scrolling Margin */
+// Scrolling Margin
 @scrollingMargin: 3.5rem;
 @mobileScrollingMargin: 1rem;
 
-/* Scrolling Content */
+// Scrolling Content
 @scrollingContentMaxHeight: calc(80vh - 10em);
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Size Widths */
+// Size Widths
 @miniRatio: 0.4;
 @tinyRatio: 0.6;
 @smallRatio: 0.8;
 @largeRatio: 1.2;
 
-/* Derived Responsive Sizes */
+// Derived Responsive Sizes
 @miniHeaderSize: 1.3em;
 @miniMobileWidth: @mobileWidth;
 @miniTabletWidth: (@tabletWidth * @miniRatio);

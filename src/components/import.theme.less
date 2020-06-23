@@ -1,15 +1,57 @@
-/*******************************
-        Import Directives
-*******************************/
+@site: '_default';
+@reset: '_default';
+@button: '_default';
+@container: '_default';
+@divider: '_default';
+@flag: '_default';
+@header: '_default';
+@icon: '_default';
+@image: '_default';
+@input: '_default';
+@label: '_default';
+@list: '_default';
+@loader: '_default';
+@placeholder: '_default';
+@rail: '_default';
+@reveal: '_default';
+@segment: '_default';
+@step: '_default';
+@breadcrumb: '_default';
+@form: '_default';
+@grid: '_default';
+@menu: '_default';
+@message: '_default';
+@table: '_default';
+@accordion: '_default';
+@checkbox: '_default';
+@dimmer: '_default';
+@dropdown: '_default';
+@embed: '_default';
+@modal: '_default';
+@nag: '_default';
+@popup: '_default';
+@progress: '_default';
+@rating: '_default';
+@search: '_default';
+@shape: '_default';
+@sidebar: '_default';
+@sticky: '_default';
+@tab: '_default';
+@transition: '_default';
+@ad: '_default';
+@card: '_default';
+@comment: '_default';
+@feed: '_default';
+@item: '_default';
+@statistic: '_default';
+
+// Import Directives
 
 // Set theme by current component
-@theme: '_default';
+@theme: @@component;
 
-/* Path to theme packages */
+// Path to theme packages
 @themesFolder: 'themes';
-
-/* Component's site.variables */
-@import "@{themesFolder}/@{theme}/components/site.variables";
 
 // Current component variables
 @import "@{themesFolder}/@{theme}/components/@{component}.variables";

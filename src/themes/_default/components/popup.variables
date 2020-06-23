@@ -1,10 +1,6 @@
-/*******************************
-             Popup
-*******************************/
+// Popup
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
 @zIndex: 1900;
 @background: @white;
@@ -21,27 +17,25 @@
 @fontStyle: normal;
 @borderRadius: @defaultBorderRadius;
 
-/*-------------------
-       Parts
---------------------*/
+// Parts
 
-/* Placement */
+// Placement
 @arrowSize: @relative10px;
 @arrowWidth: 1em;
 @arrowDistanceFromEdge: 1em;
 @boxArrowOffset: 0em;
 @popupDistanceAway: @arrowSize;
 
-/* Header */
+// Header
 @headerFontFamily: @headerFont;
 @headerFontSize: @relativeLarge;
 @headerDistance: @relative7px;
 @headerLineHeight: 1.2;
 
-/* Content Border */
+// Content Border
 @border: @borderWidth solid @borderColor;
 
-/* Arrow */
+// Arrow
 @arrowBackground: @white;
 @arrowZIndex: 2;
 @arrowJitter: 0.05em;
@@ -50,7 +44,7 @@
 @arrowStroke: @borderWidth;
 @arrowColor: darken(@borderColor, 10);
 
-/* Arrow color by position */
+// Arrow color by position
 @arrowTopBackground: @arrowBackground;
 @arrowCenterBackground: @arrowBackground;
 @arrowBottomBackground: @arrowBackground;
@@ -60,11 +54,9 @@
 @rightArrowBoxShadow: -@arrowStroke @arrowStroke 0px 0px @arrowColor;
 @bottomArrowBoxShadow: -@arrowStroke -@arrowStroke 0px 0px @arrowColor;
 
-/*-------------------
-       Types
---------------------*/
+// Types
 
-/* Tooltip */
+// Tooltip
 @tooltipBackground: @background;
 @tooltipBorderRadius: @borderRadius;
 @tooltipPadding: @verticalPadding @horizontalPadding;
@@ -81,7 +73,7 @@
 @tooltipDuration: @defaultDuration;
 @tooltipEasing: @defaultEasing;
 
-/* Inverted */
+// Inverted
 @tooltipInvertedBackground: @invertedBackground;
 @tooltipInvertedColor: @invertedColor;
 @tooltipInvertedBorder: @invertedBorder;
@@ -89,7 +81,7 @@
 @tooltipInvertedHeaderBackground: @invertedHeaderBackground;
 @tooltipInvertedHeaderColor: @invertedHeaderColor;
 
-/* Arrow */
+// Arrow
 @tooltipArrowVerticalOffset: -@2px;
 @tooltipArrowHorizontalOffset: -@1px;
 @tooltipArrowBoxShadow: @arrowBoxShadow;
@@ -98,29 +90,23 @@
 @tooltipArrowCenterBackground: @arrowCenterBackground;
 @tooltipArrowBottomBackground: @arrowBottomBackground;
 
-/*-------------------
-       Coupling
---------------------*/
+// Coupling
 
-/* Grid Inside Popup */
-@nestedGridMargin: -0.7rem -0.875rem; /* (padding * @medium) */
+// Grid Inside Popup
+@nestedGridMargin: -0.7rem -0.875rem; // (padding * @medium)
 @nestedGridWidth: ~"calc(100% + 1.75rem)";
 
-/*-------------------
-       States
---------------------*/
+// States
 
 @loadingZIndex: -1;
 
-/*-------------------
-       Variations
---------------------*/
+// Variations
 
-/* Wide */
+// Wide
 @wideWidth: 350px;
 @veryWideWidth: 550px;
 
-/* Inverted */
+// Inverted
 @invertedBackground: @black;
 @invertedColor: @white;
 @invertedBorder: none;
@@ -130,7 +116,7 @@
 @invertedHeaderColor: @white;
 @invertedArrowColor: @invertedBackground;
 
-/* Arrow color by position */
+// Arrow color by position
 @invertedArrowTopBackground: @invertedBackground;
 @invertedArrowCenterBackground: @invertedBackground;
 @invertedArrowBottomBackground: @invertedBackground;

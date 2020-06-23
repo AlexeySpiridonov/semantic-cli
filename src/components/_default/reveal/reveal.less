@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Reveal
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Reveal
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+////  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'element';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Reveal
-*******************************/
+// Reveal
 
 .ui.reveal {
   display: inherit;
@@ -42,20 +38,15 @@
   z-index: @bottomZIndex !important;
 }
 
-/* Make sure hovered element is on top of other reveal */
+// Make sure hovered element is on top of other reveal
 .ui.active.reveal .visible.content,
 .ui.reveal:hover .visible.content {
   z-index: @activeZIndex !important;
 }
 
-/*******************************
-              Types
-*******************************/
+// Types
 
-/*--------------
-      Slide
----------------*/
-
+// Slide
 .ui.slide.reveal {
   position: relative !important;
   overflow: hidden !important;
@@ -138,10 +129,7 @@
   transform: translateY(0%) !important;
 }
 
-/*--------------
-      Fade
----------------*/
-
+// Fade
 .ui.fade.reveal > .visible.content {
   opacity: 1;
 }
@@ -151,10 +139,7 @@
   opacity: 0;
 }
 
-/*--------------
-      Move
----------------*/
-
+// Move
 .ui.move.reveal {
   position: relative !important;
   overflow: hidden !important;
@@ -199,10 +184,7 @@
   transform: translateY(100%) !important;
 }
 
-/*--------------
-     Rotate
----------------*/
-
+// Rotate
 .ui.rotate.reveal > .visible.content {
   transition-duration: @transitionDuration;
   transform: rotate(0deg);
@@ -229,9 +211,7 @@
   transform: rotate(-@rotateDegrees);
 }
 
-/*******************************
-              States
-*******************************/
+// States
 
 .ui.disabled.reveal:hover > .visible.visible.content {
   position: static !important;
@@ -248,38 +228,25 @@
   display: none !important;
 }
 
-/*******************************
-           Coupling
-*******************************/
+// Coupling
 
 .ui.reveal > .ui.ribbon.label {
   z-index: @overlayZIndex;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-     Visible
----------------*/
-
+// Visible
 .ui.visible.reveal {
   overflow: visible;
 }
 
-/*--------------
-     Instant
----------------*/
-
+// Instant
 .ui.instant.reveal > .content {
   transition-delay: 0s !important;
 }
 
-/*--------------
-     Sizing
----------------*/
-
+// Sizing
 .ui.reveal > .content {
   font-size: @medium !important;
 }

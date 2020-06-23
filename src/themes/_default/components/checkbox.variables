@@ -1,15 +1,13 @@
-/*******************************
-            Checkbox
-*******************************/
+// Checkbox
 
 @checkboxSize: 22px;
 @checkboxColor: @blueyGrey;
 @checkboxLineHeight: @checkboxSize;
 
-/* Label */
-@labelDistance: 3rem; /* 26px @ 14/em */
+// Label
+@labelDistance: 3rem; // 26px @ 14/em
 
-/* Checkbox */
+// Checkbox
 @checkboxBackground: transparent;
 @checkboxBorder: 1px solid @slate;
 @checkboxBorderRadius: @3px;
@@ -18,66 +16,62 @@ opacity @defaultDuration @defaultEasing,
 transform @defaultDuration @defaultEasing,
 box-shadow @defaultDuration @defaultEasing;
 
-/* Checkmark */
+// Checkmark
 @checkboxCheckFontSize: 14px;
 @checkboxCheckTop: 0px;
 @checkboxCheckLeft: 0px;
 @checkboxCheckSize: @checkboxSize;
 
-/* Label */
+// Label
 @labelFontSize: @relativeMedium;
 @labelColor: @blueyGrey;
 @labelTransition: color @defaultDuration @defaultEasing;
 
-/*-------------------
-        States
---------------------*/
+// States
 
-/* Hover */
+// Hover
 @checkboxHoverBackground: @checkboxBackground;
 @checkboxHoverBorderColor: @slate;
 @labelHoverColor: @blueyGrey;
 
-/* Pressed */
+// Pressed
 @checkboxPressedBackground: transparent;
 @checkboxPressedBorderColor: @slate;
 @checkboxPressedColor: @orange;
 @labelPressedColor: @blueyGrey;
 
-/* Focus */
+// Focus
 @checkboxFocusBackground: transparent;
 @checkboxFocusBorderColor: @slate;
 @checkboxFocusCheckColor: @darkTwo;
 @labelFocusColor: @blueyGrey;
 
-/* Active */
+// Active
 @labelActiveColor: @blueyGrey;
 @checkboxActiveBackground: @orange;
 @checkboxActiveBorderColor: @orange;
 @checkboxActiveCheckColor: @darkTwo;
 @checkboxActiveCheckOpacity: 1;
 
-/* Active Focus */
+// Active Focus
 @checkboxActiveFocusBackground: @orange;
 @checkboxActiveFocusBorderColor: @slate;
 @checkboxActiveFocusCheckColor: @darkTwo;
 
-/* Indeterminate */
+// Indeterminate
 @checkboxIndeterminateBackground: @checkboxActiveBackground;
 @checkboxIndeterminateBorderColor: @checkboxActiveBorderColor;
 @checkboxIndeterminateCheckOpacity: 1;
 @checkboxIndeterminateCheckColor: @checkboxActiveCheckColor;
 
-/* Disabled */
+// Disabled
 @disabledCheckboxOpacity: 0.5;
 @disabledCheckboxLabelColor: rgba(0, 0, 0, 1);
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Radio */
-/* Uses px to avoid rounding issues with circles */
+// Radio
+// Uses px to avoid rounding issues with circles
 
 @radioSize: 15px;
 @radioTop: 1px;
@@ -86,7 +80,7 @@ box-shadow @defaultDuration @defaultEasing;
 
 @bulletTop: 1px;
 @bulletLeft: 0px;
-@bulletScale: (7 / 15); /* 7px as unitless value from radio size */
+@bulletScale: (7 / 15); // 7px as unitless value from radio size
 @bulletColor: @textColor;
 @bulletRadius: @circularRadius;
 
@@ -99,12 +93,12 @@ box-shadow @defaultDuration @defaultEasing;
 @radioActiveFocusBackground: @checkboxActiveFocusBackground;
 @radioActiveFocusBulletColor: @checkboxActiveFocusCheckColor;
 
-/* Slider & Toggle Handle */
+// Slider & Toggle Handle
 @handleBackground: @white @subtleGradient;
 @handleBoxShadow: @subtleShadow,
 0px 0px 0px 1px @borderColor inset;
 
-/* Slider */
+// Slider
 @sliderHandleSize: 1.5rem;
 @sliderLineWidth: 3.5rem;
 @sliderTransitionDuration: 0.3s;
@@ -128,7 +122,7 @@ box-shadow @defaultDuration @defaultEasing;
 
 @sliderLabelLineHeight: 1rem;
 
-/* Slider States */
+// Slider States
 @sliderHoverLaneBackground: @veryStrongTransparentBlack;
 @sliderHoverLabelColor: @hoveredTextColor;
 
@@ -138,7 +132,7 @@ box-shadow @defaultDuration @defaultEasing;
 @sliderOnFocusLineColor: @lightBlackFocus;
 @sliderOnFocusLabelColor: @sliderOnLabelColor;
 
-/* Toggle */
+// Toggle
 @toggleLaneWidth: 3.5rem;
 @toggleHandleSize: 1.5rem;
 @toggleTransitionDuration: 0.2s;
@@ -176,6 +170,4 @@ left @sliderTransitionDuration @defaultEasing;
 @toggleOnFocusLaneColor: @primaryColorFocus;
 @toggleOnFocusLabelColor: @toggleOnLabelColor;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations

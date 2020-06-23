@@ -1,10 +1,6 @@
-/*******************************
-            Image
-*******************************/
+// Image
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
 @placeholderColor: transparent;
 @roundedBorderRadius: 0.3125em;
@@ -13,26 +9,22 @@
 @imageVerticalMargin: 0.5rem;
 @imageBorder: 1px solid rgba(0, 0, 0, 0.1);
 
-/*-------------------
-       Types
---------------------*/
+// Types
 
-/* Avatar */
+// Avatar
 @avatarSize: @32px;
 @avatarMargin: 0.25em;
 
-/*-------------------
-       Variations
---------------------*/
+// Variations
 
-/* Spaced */
+// Spaced
 @spacedDistance: 0.5em;
 
-/* Floated */
+// Floated
 @floatedHorizontalMargin: 1em;
 @floatedVerticalMargin: 1em;
 
-/* Size */
+// Size
 @miniWidth: 35px;
 @tinyWidth: 80px;
 @smallWidth: 150px;

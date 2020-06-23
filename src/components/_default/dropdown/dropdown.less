@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Dropdown
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Dropdown
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Dropdown
-*******************************/
+// Dropdown
 
 .ui.dropdown {
   cursor: pointer;
@@ -34,14 +30,9 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/*******************************
-            Content
-*******************************/
+// Content
 
-/*--------------
-      Menu
----------------*/
-
+// Menu
 .ui.dropdown .menu {
   cursor: auto;
   position: absolute;
@@ -71,19 +62,13 @@
   white-space: nowrap;
 }
 
-/*--------------
-  Hidden Input
----------------*/
-
+// Hidden Input
 .ui.dropdown > input:not(.search):first-child,
 .ui.dropdown > select {
   display: none !important;
 }
 
-/*--------------
- Dropdown Icon
----------------*/
-
+// Dropdown Icon
 .ui.dropdown > .dropdown.icon {
   position: relative;
   width: auto;
@@ -101,7 +86,7 @@
   margin-right: @itemDropdownIconDistance;
 }
 
-/* Dropdown Carets */
+// Dropdown Carets
 @font-face {
   font-family: 'Dropdown';
   src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfuIIAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zjo82LgAAAFwAAABVGhlYWQAQ88bAAACxAAAADZoaGVhAwcB6QAAAvwAAAAkaG10eAS4ABIAAAMgAAAAIGxvY2EBNgDeAAADQAAAABJtYXhwAAoAFgAAA1QAAAAgbmFtZVcZpu4AAAN0AAABRXBvc3QAAwAAAAAEvAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDX//3//wAB/+MPLQADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAIABJQElABMAABM0NzY3BTYXFhUUDwEGJwYvASY1AAUGBwEACAUGBoAFCAcGgAUBEgcGBQEBAQcECQYHfwYBAQZ/BwYAAQAAAG4BJQESABMAADc0PwE2MzIfARYVFAcGIyEiJyY1AAWABgcIBYAGBgUI/wAHBgWABwaABQWABgcHBgUFBgcAAAABABIASQC3AW4AEwAANzQ/ATYXNhcWHQEUBwYnBi8BJjUSBoAFCAcFBgYFBwgFgAbbBwZ/BwEBBwQJ/wgEBwEBB38GBgAAAAABAAAASQClAW4AEwAANxE0NzYzMh8BFhUUDwEGIyInJjUABQYHCAWABgaABQgHBgVbAQAIBQYGgAUIBwWABgYFBwAAAAEAAAABAADZuaKOXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAAAAACgAUAB4AQgBkAIgAqgAAAAEAAAAIABQAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('truetype'),
@@ -129,7 +114,7 @@
   content: '\f0d7';
 }
 
-/* Sub Menu */
+// Sub Menu
 .ui.dropdown .menu .item .dropdown.icon:before {
   content: '\f0da' /*rtl:'\f0d9'*/;
 }
@@ -139,12 +124,12 @@
   content: "\f0d9" /*rtl:"\f0da"*/;
 }
 
-/* Vertical Menu Dropdown */
+// Vertical Menu Dropdown
 .ui.vertical.menu .dropdown.item > .dropdown.icon:before {
   content: "\f0da" /*rtl:"\f0d9"*/;
 }
 
-/* Icons for Reference
+// Icons for Reference
 .dropdown.down.icon {
   content: "\f0d7";
 }
@@ -157,21 +142,15 @@
 .dropdown.icon.icon {
   content: "\f0da";
 }
-*/
 
-/*--------------
-      Text
----------------*/
 
+// Text
 .ui.dropdown > .text {
   display: inline-block;
   transition: @textTransition;
 }
 
-/*--------------
-    Menu Item
----------------*/
-
+// Menu Item
 .ui.dropdown .menu > .item {
   position: relative;
   cursor: pointer;
@@ -197,10 +176,7 @@
   border-top-width: 0px;
 }
 
-/*--------------
-  Floated Content
----------------*/
-
+// Floated Content
 .ui.dropdown > .text > [class*="right floated"],
 .ui.dropdown .menu .item > [class*="right floated"] {
   float: right !important;
@@ -222,10 +198,7 @@
   margin-top: @itemLineHeightOffset;
 }
 
-/*--------------
-  Menu Divider
----------------*/
-
+// Menu Divider
 .ui.dropdown .menu > .header {
   margin: @menuHeaderMargin;
   padding: @menuHeaderPadding;
@@ -263,10 +236,7 @@
   padding-bottom: @menuInputVerticalPadding;
 }
 
-/*-----------------
-  Item Description
--------------------*/
-
+// Item Description
 .ui.dropdown > .text > .description,
 .ui.dropdown .menu > .item > .description {
   float: @itemDescriptionFloat;
@@ -274,10 +244,7 @@
   color: @itemDescriptionColor;
 }
 
-/*-----------------
-       Message
--------------------*/
-
+// Message
 .ui.dropdown .menu > .message {
   padding: @messagePadding;
   font-weight: @messageFontWeight;
@@ -287,10 +254,7 @@
   color: @messageColor;
 }
 
-/*--------------
-    Sub Menu
----------------*/
-
+// Sub Menu
 .ui.dropdown .menu .menu {
   top: @subMenuTop !important;
   left: @subMenuLeft;
@@ -300,16 +264,13 @@
   z-index: @subMenuZIndex !important;
 }
 
-/* Hide Arrow */
+// Hide Arrow
 .ui.dropdown .menu .menu:after {
   display: none;
 }
 
-/*--------------
-   Sub Elements
----------------*/
-
-/* Icons / Flags / Labels / Image */
+// Sub Elements
+// Icons / Flags / Labels / Image
 .ui.dropdown > .text > .icon,
 .ui.dropdown > .text > .label,
 .ui.dropdown > .text > .flag,
@@ -341,10 +302,7 @@
   margin-right: @itemElementDistance;
 }
 
-/*--------------
-     Image
----------------*/
-
+// Image
 .ui.dropdown > .text > img,
 .ui.dropdown > .text > .image,
 .ui.dropdown .menu > .item > .image,
@@ -357,26 +315,21 @@
   max-height: @menuImageMaxHeight;
 }
 
-/*******************************
-            Coupling
-*******************************/
+// Coupling
 
-/*--------------
-      Menu
----------------*/
-
-/* Remove Menu Item Divider */
+// Menu
+// Remove Menu Item Divider
 .ui.dropdown .ui.menu > .item:before,
 .ui.menu .ui.dropdown .menu > .item:before {
   display: none;
 }
 
-/* Prevent Menu Item Border */
+// Prevent Menu Item Border
 .ui.menu .ui.dropdown .menu .active.item {
   border-left: none;
 }
 
-/* Automatically float dropdown menu right on last menu item */
+// Automatically float dropdown menu right on last menu item
 .ui.menu .right.menu .dropdown:last-child .menu,
 .ui.menu .right.dropdown.item .menu,
 .ui.buttons > .ui.dropdown:last-child .menu {
@@ -384,20 +337,14 @@
   right: 0em;
 }
 
-/*--------------
-      Label
----------------*/
-
-/* Dropdown Menu */
+// Label
+// Dropdown Menu
 .ui.label.dropdown .menu {
   min-width: 100%;
 }
 
-/*--------------
-     Button
----------------*/
-
-/* No Margin On Icon Button */
+// Button
+// No Margin On Icon Button
 .ui.dropdown.icon.button > .dropdown.icon {
   margin: 0em;
 }
@@ -406,15 +353,10 @@
   min-width: 100%;
 }
 
-/*******************************
-              Types
-*******************************/
+// Types
 
-/*--------------
-    Selection
----------------*/
-
-/* Displays like a select box */
+// Selection
+// Displays like a select box
 .ui.selection.dropdown {
   cursor: pointer;
   word-wrap: break-word;
@@ -465,12 +407,12 @@ select.ui.dropdown {
   transition: @selectionIconTransition;
 }
 
-/* Compact */
+// Compact
 .ui.compact.selection.dropdown {
   min-width: 0px;
 }
 
-/*  Selection Menu */
+//  Selection Menu
 .ui.selection.dropdown .menu {
   overflow-x: hidden;
   overflow-y: auto;
@@ -493,10 +435,7 @@ select.ui.dropdown {
   display: none;
 }
 
-/*--------------
-    Message
----------------*/
-
+// Message
 .ui.selection.dropdown .menu > .message {
   padding: @selectionMessagePadding;
 }
@@ -525,7 +464,7 @@ select.ui.dropdown {
   }
 }
 
-/* Menu Item */
+// Menu Item
 .ui.selection.dropdown .menu > .item {
   border-top: @selectionItemDivider;
   padding: @selectionItemPadding !important;
@@ -533,18 +472,18 @@ select.ui.dropdown {
   word-wrap: normal;
 }
 
-/* User Item */
+// User Item
 .ui.selection.dropdown .menu > .hidden.addition.item {
   display: none;
 }
 
-/* Hover */
+// Hover
 .ui.selection.dropdown:hover {
   border-color: @selectionHoverBorderColor;
   box-shadow: @selectionHoverBoxShadow;
 }
 
-/* Active */
+// Active
 .ui.selection.active.dropdown {
   border-color: @selectionVisibleBorderColor;
   box-shadow: @selectionVisibleBoxShadow;
@@ -555,7 +494,7 @@ select.ui.dropdown {
   box-shadow: @selectionVisibleMenuBoxShadow;
 }
 
-/* Focus */
+// Focus
 .ui.selection.dropdown:focus {
   border-color: @selectionFocusBorderColor;
   box-shadow: @selectionFocusBoxShadow;
@@ -566,13 +505,13 @@ select.ui.dropdown {
   box-shadow: @selectionFocusMenuBoxShadow;
 }
 
-/* Visible */
+// Visible
 .ui.selection.visible.dropdown > .text:not(.default) {
   font-weight: @selectionVisibleTextFontWeight;
   color: @selectionVisibleTextColor;
 }
 
-/* Visible Hover */
+// Visible Hover
 .ui.selection.active.dropdown:hover {
   border-color: @selectionActiveHoverBorderColor;
   box-shadow: @selectionActiveHoverBoxShadow;
@@ -583,20 +522,20 @@ select.ui.dropdown {
   box-shadow: @selectionActiveHoverMenuBoxShadow;
 }
 
-/* Dropdown Icon */
+// Dropdown Icon
 .ui.active.selection.dropdown > .dropdown.icon,
 .ui.visible.selection.dropdown > .dropdown.icon {
   opacity: @selectionVisibleIconOpacity;
   z-index: 3;
 }
 
-/* Connecting Border */
+// Connecting Border
 .ui.active.selection.dropdown {
   border-bottom-left-radius: @selectionVisibleConnectingBorder !important;
   border-bottom-right-radius: @selectionVisibleConnectingBorder !important;
 }
 
-/* Empty Connecting Border */
+// Empty Connecting Border
 .ui.active.empty.selection.dropdown {
   border-radius: @selectionBorderRadius !important;
   box-shadow: @selectionBoxShadow !important;
@@ -607,16 +546,13 @@ select.ui.dropdown {
   box-shadow: none !important;
 }
 
-/*--------------
-   Searchable
----------------*/
-
-/* Search Selection */
+// Searchable
+// Search Selection
 .ui.search.dropdown {
   min-width: @searchMinWidth;
 }
 
-/* Search Dropdown */
+// Search Dropdown
 .ui.search.dropdown > input.search {
   background: none transparent !important;
   border: none !important;
@@ -630,7 +566,7 @@ select.ui.dropdown {
   padding: inherit;
 }
 
-/* Text Layering */
+// Text Layering
 .ui.search.dropdown > input.search {
   position: absolute;
   z-index: 2;
@@ -643,13 +579,13 @@ select.ui.dropdown {
   z-index: 3;
 }
 
-/* Search Selection */
+// Search Selection
 .ui.search.selection.dropdown > input.search {
   line-height: @searchSelectionLineHeight;
   padding: @searchSelectionInputPadding;
 }
 
-/* Used to size multi select input to character width */
+// Used to size multi select input to character width
 .ui.search.selection.dropdown > span.sizer {
   line-height: @searchSelectionLineHeight;
   padding: @searchSelectionInputPadding;
@@ -657,7 +593,7 @@ select.ui.dropdown {
   white-space: pre;
 }
 
-/* Active/Visible Search */
+// Active/Visible Search
 .ui.search.dropdown.active > input.search,
 .ui.search.dropdown.visible > input.search {
   cursor: auto;
@@ -668,7 +604,7 @@ select.ui.dropdown {
   pointer-events: none;
 }
 
-/* Filtered Text */
+// Filtered Text
 .ui.active.search.dropdown input.search:focus + .text .icon,
 .ui.active.search.dropdown input.search:focus + .text .flag {
   opacity: @selectionTextUnderlayIconOpacity;
@@ -678,7 +614,7 @@ select.ui.dropdown {
   color: @selectionTextUnderlayColor !important;
 }
 
-/* Search Menu */
+// Search Menu
 .ui.search.dropdown .menu {
   overflow-x: hidden;
   overflow-y: auto;
@@ -710,11 +646,8 @@ select.ui.dropdown {
   }
 }
 
-/*--------------
-    Multiple
----------------*/
-
-/* Multiple Selection */
+// Multiple
+// Multiple Selection
 .ui.multiple.dropdown {
   padding: @multipleSelectionPadding;
 }
@@ -723,13 +656,13 @@ select.ui.dropdown {
   cursor: auto;
 }
 
-/* Multiple Search Selection */
+// Multiple Search Selection
 .ui.multiple.search.dropdown,
 .ui.multiple.search.dropdown > input.search {
   cursor: text;
 }
 
-/* Selection Label */
+// Selection Label
 .ui.multiple.dropdown > .label {
   user-select: none;
   display: inline-block;
@@ -741,13 +674,13 @@ select.ui.dropdown {
   box-shadow: @labelBoxShadow;
 }
 
-/* Dropdown Icon */
+// Dropdown Icon
 .ui.multiple.dropdown .dropdown.icon {
   margin: @multipleSelectionDropdownIconMargin;
   padding: @multipleSelectionDropdownIconPadding;
 }
 
-/* Text */
+// Text
 .ui.multiple.dropdown > .text {
   position: static;
   padding: 0;
@@ -764,11 +697,8 @@ select.ui.dropdown {
   display: none;
 }
 
-/*-----------------
-  Multiple Search
------------------*/
-
-/* Prompt Text */
+// Multiple Search
+// Prompt Text
 .ui.multiple.search.dropdown > .text {
   display: inline-block;
   position: absolute;
@@ -783,7 +713,7 @@ select.ui.dropdown {
   display: none;
 }
 
-/* Search */
+// Search
 .ui.multiple.search.dropdown > input.search {
   position: static;
   padding: 0;
@@ -793,10 +723,7 @@ select.ui.dropdown {
   line-height: @multipleSelectionChildLineHeight;
 }
 
-/*--------------
-     Inline
----------------*/
-
+// Inline
 .ui.inline.dropdown {
   cursor: pointer;
   display: inline-block;
@@ -818,15 +745,10 @@ select.ui.dropdown {
   border-radius: @inlineMenuBorderRadius;
 }
 
-/*******************************
-            States
-*******************************/
+// States
 
-/*--------------------
-        Active
-----------------------*/
-
-/* Menu Item Active */
+// Active
+// Menu Item Active
 .ui.dropdown .menu .active.item {
   background: @activeItemBackground;
   font-weight: @activeItemFontWeight;
@@ -835,21 +757,15 @@ select.ui.dropdown {
   z-index: @activeItemZIndex;
 }
 
-/*--------------------
-        Hover
-----------------------*/
-
-/* Menu Item Hover */
+// Hover
+// Menu Item Hover
 .ui.dropdown .menu > .item:hover {
   background: @hoveredItemBackground;
   color: @hoveredItemColor;
   z-index: @hoveredZIndex;
 }
 
-/*--------------------
-       Loading
----------------------*/
-
+// Loading
 .ui.loading.dropdown > i.icon {
   height: @relative14px !important;
 }
@@ -893,7 +809,7 @@ select.ui.dropdown {
   border-width: @loaderLineWidth;
 }
 
-/* Coupling */
+// Coupling
 .ui.loading.dropdown.button > i.icon:before,
 .ui.loading.dropdown.button > i.icon:after {
   display: none;
@@ -908,10 +824,7 @@ select.ui.dropdown {
   }
 }
 
-/*--------------------
-     Default Text
-----------------------*/
-
+// Default Text
 .ui.dropdown:not(.button) > .default.text,
 .ui.default.dropdown:not(.button) > .text {
   color: @defaultTextColor;
@@ -922,15 +835,12 @@ select.ui.dropdown {
   color: @defaultTextFocusColor;
 }
 
-/*--------------------
-        Loading
-----------------------*/
-
+// Loading
 .ui.loading.dropdown > .text {
   transition: none;
 }
 
-/* Used To Check Position */
+// Used To Check Position
 .ui.dropdown .loading.menu {
   display: block;
   visibility: hidden;
@@ -947,22 +857,16 @@ select.ui.dropdown {
   right: auto !important;
 }
 
-/*--------------------
-    Keyboard Select
-----------------------*/
-
-/* Selected Item */
+// Keyboard Select
+// Selected Item
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
   background: @selectedBackground;
   color: @selectedColor;
 }
 
-/*--------------------
-    Search Filtered
-----------------------*/
-
-/* Filtered Item */
+// Search Filtered
+// Filtered Item
 .ui.dropdown > .filtered.text {
   visibility: hidden;
 }
@@ -971,10 +875,7 @@ select.ui.dropdown {
   display: none !important;
 }
 
-/*--------------------
-        Error
-----------------------*/
-
+// Error
 .ui.dropdown.error,
 .ui.dropdown.error > .text,
 .ui.dropdown.error > .default.text {
@@ -1003,21 +904,18 @@ select.ui.dropdown {
   border-color: @errorBorderColor;
 }
 
-/* Item Hover */
+// Item Hover
 .ui.dropdown.error > .menu > .item:hover {
   background-color: @errorItemHoverBackground;
 }
 
-/* Item Active */
+// Item Active
 .ui.dropdown.error > .menu .active.item {
   background-color: @errorItemActiveBackground;
 }
 
-/*--------------------
-        Disabled
-----------------------*/
-
-/* Disabled */
+// Disabled
+// Disabled
 .ui.disabled.dropdown,
 .ui.dropdown .menu > .disabled.item {
   cursor: default;
@@ -1025,20 +923,15 @@ select.ui.dropdown {
   opacity: @disabledOpacity;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-    Direction
----------------*/
-
-/* Flyout Direction */
+// Direction
+// Flyout Direction
 .ui.dropdown .menu {
   left: 0px;
 }
 
-/* Default Side (Right) */
+// Default Side (Right)
 .ui.dropdown .right.menu > .menu,
 .ui.dropdown .menu .right.menu {
   left: 100% !important;
@@ -1046,7 +939,7 @@ select.ui.dropdown {
   border-radius: @subMenuBorderRadius !important;
 }
 
-/* Leftward Opening Menu */
+// Leftward Opening Menu
 .ui.dropdown > .left.menu {
   left: auto !important;
   right: 0px !important;
@@ -1080,11 +973,8 @@ select.ui.dropdown {
   margin-right: 0em;
 }
 
-/*--------------
-     Upward
----------------*/
-
-/* Upward Main Menu */
+// Upward
+// Upward Main Menu
 .ui.upward.dropdown > .menu {
   top: auto;
   bottom: 100%;
@@ -1092,13 +982,13 @@ select.ui.dropdown {
   border-radius: @upwardMenuBorderRadius;
 }
 
-/* Upward Sub Menu */
+// Upward Sub Menu
 .ui.dropdown .upward.menu {
   top: auto !important;
   bottom: 0 !important;
 }
 
-/* Active Upward */
+// Active Upward
 .ui.simple.upward.active.dropdown,
 .ui.simple.upward.dropdown:hover {
   border-radius: @borderRadius @borderRadius 0em 0em !important;
@@ -1108,7 +998,7 @@ select.ui.dropdown {
   border-radius: @borderRadius @borderRadius 0em 0em;
 }
 
-/* Selection */
+// Selection
 .ui.upward.selection.dropdown .menu {
   border-top-width: @menuBorderWidth !important;
   border-bottom-width: 0px !important;
@@ -1119,18 +1009,18 @@ select.ui.dropdown {
   box-shadow: @upwardSelectionHoverBoxShadow;
 }
 
-/* Active Upward */
+// Active Upward
 .ui.active.upward.selection.dropdown {
   border-radius: @upwardSelectionVisibleBorderRadius !important;
 }
 
-/* Visible Upward */
+// Visible Upward
 .ui.upward.selection.dropdown.visible {
   box-shadow: @upwardSelectionVisibleBoxShadow;
   border-radius: @upwardSelectionVisibleBorderRadius !important;
 }
 
-/* Visible Hover Upward */
+// Visible Hover Upward
 .ui.upward.active.selection.dropdown:hover {
   box-shadow: @upwardSelectionActiveHoverBoxShadow;
 }
@@ -1139,11 +1029,8 @@ select.ui.dropdown {
   box-shadow: @upwardSelectionActiveHoverMenuBoxShadow;
 }
 
-/*--------------
-     Simple
----------------*/
-
-/*  Selection Menu */
+// Simple
+//  Selection Menu
 .ui.scrolling.dropdown .menu,
 .ui.dropdown .scrolling.menu {
   overflow-x: hidden;
@@ -1186,7 +1073,7 @@ select.ui.dropdown {
   display: block;
 }
 
-/* Scrollbar in IE */
+// Scrollbar in IE
 @media all and (-ms-high-contrast: none) {
   .ui.scrolling.dropdown .menu,
   .ui.dropdown .scrolling.menu {
@@ -1222,11 +1109,8 @@ select.ui.dropdown {
   }
 }
 
-/*--------------
-     Simple
----------------*/
-
-/* Displays without javascript */
+// Simple
+// Displays without javascript
 
 .ui.simple.dropdown .menu:before,
 .ui.simple.dropdown .menu:after {
@@ -1276,15 +1160,12 @@ select.ui.dropdown {
   overflow: hidden;
 }
 
-/* Visible */
+// Visible
 .ui.simple.visible.dropdown > .menu {
   display: block;
 }
 
-/*--------------
-      Fluid
----------------*/
-
+// Fluid
 .ui.fluid.dropdown {
   display: block;
   width: 100%;
@@ -1295,10 +1176,7 @@ select.ui.dropdown {
   float: right;
 }
 
-/*--------------
-    Floating
----------------*/
-
+// Floating
 .ui.floating.dropdown .menu {
   left: 0;
   right: auto;
@@ -1311,10 +1189,7 @@ select.ui.dropdown {
   border-radius: @floatingMenuBorderRadius !important;
 }
 
-/*--------------
-     Pointing
----------------*/
-
+// Pointing
 .ui.pointing.dropdown > .menu {
   top: 100%;
   margin-top: @pointingMenuDistance;
@@ -1342,7 +1217,7 @@ select.ui.dropdown {
   margin: 0em 0em 0em @pointingArrowOffset;
 }
 
-/* Top Left Pointing */
+// Top Left Pointing
 .ui.top.left.pointing.dropdown > .menu {
   top: 100%;
   bottom: auto;
@@ -1367,7 +1242,7 @@ select.ui.dropdown {
   transform: rotate(45deg);
 }
 
-/* Top Right Pointing */
+// Top Right Pointing
 .ui.top.right.pointing.dropdown > .menu {
   top: 100%;
   bottom: auto;
@@ -1385,7 +1260,7 @@ select.ui.dropdown {
   transform: rotate(45deg);
 }
 
-/* Left Pointing */
+// Left Pointing
 .ui.left.pointing.dropdown > .menu {
   top: 0%;
   left: 100%;
@@ -1414,7 +1289,7 @@ select.ui.dropdown {
   transform: rotate(135deg);
 }
 
-/* Right Pointing */
+// Right Pointing
 .ui.right.pointing.dropdown > .menu {
   top: 0%;
   left: auto;
@@ -1430,7 +1305,7 @@ select.ui.dropdown {
   transform: rotate(135deg);
 }
 
-/* Bottom Pointing */
+// Bottom Pointing
 .ui.bottom.pointing.dropdown > .menu {
   top: auto;
   bottom: 100%;
@@ -1447,13 +1322,13 @@ select.ui.dropdown {
   transform: rotate(-135deg);
 }
 
-/* Reverse Sub-Menu Direction */
+// Reverse Sub-Menu Direction
 .ui.bottom.pointing.dropdown > .menu .menu {
   top: auto !important;
   bottom: 0px !important;
 }
 
-/* Bottom Left */
+// Bottom Left
 .ui.bottom.left.pointing.dropdown > .menu {
   left: 0%;
   right: auto;
@@ -1464,7 +1339,7 @@ select.ui.dropdown {
   right: auto;
 }
 
-/* Bottom Right */
+// Bottom Right
 .ui.bottom.right.pointing.dropdown > .menu {
   right: 0%;
   left: auto;
@@ -1475,7 +1350,7 @@ select.ui.dropdown {
   right: @pointingArrowDistanceFromEdge;
 }
 
-/* Upward pointing */
+// Upward pointing
 .ui.pointing.upward.dropdown .menu,
 .ui.top.pointing.upward.dropdown .menu {
   top: auto !important;
@@ -1492,7 +1367,7 @@ select.ui.dropdown {
   margin: @pointingArrowOffset 0em 0em;
 }
 
-/* Right Pointing Upward */
+// Right Pointing Upward
 .ui.right.pointing.upward.dropdown:not(.top):not(.bottom) .menu {
   top: auto !important;
   bottom: 0 !important;
@@ -1506,7 +1381,7 @@ select.ui.dropdown {
   box-shadow: @pointingArrowBoxShadow;
 }
 
-/* Left Pointing Upward */
+// Left Pointing Upward
 .ui.left.pointing.upward.dropdown:not(.top):not(.bottom) .menu {
   top: auto !important;
   bottom: 0 !important;

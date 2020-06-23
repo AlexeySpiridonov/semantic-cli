@@ -1,10 +1,6 @@
-/*******************************
-            Divider
-*******************************/
+// Divider
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
 @margin: 1rem 0rem;
 
@@ -14,25 +10,21 @@
 @shadowWidth: 1px;
 @shadowColor: @borderColor;
 
-/* Text */
+// Text
 @letterSpacing: 0.05em;
 @fontWeight: bold;
 @color: @darkTextColor;
 @textTransform: uppercase;
 
-/*-------------------
-       Coupling
---------------------*/
+// Coupling
 
-/* Icon */
+// Icon
 @dividerIconSize: 1rem;
 @dividerIconMargin: 0rem;
 
-/*******************************
-         Variations
-*******************************/
+// Variations
 
-/* Horizontal / Vertical */
+// Horizontal / Vertical
 @horizontalMargin: '';
 @horizontalDividerMargin: 1em;
 @horizontalRulerOffset: ~"calc(-50% - "(@horizontalDividerMargin)~")";
@@ -40,13 +32,13 @@
 @verticalDividerMargin: 1rem;
 @verticalDividerHeight: ~"calc(100% - "(@verticalDividerMargin)~")";
 
-/* Inverted */
+// Inverted
 @invertedTextColor: @white;
 @invertedHighlightColor: rgba(255, 255, 255, 0.15);
 @invertedShadowColor: @borderColor;
 
-/* Section */
+// Section
 @sectionMargin: 2rem;
 
-/* Sizes */
+// Sizes
 @medium: 1rem;

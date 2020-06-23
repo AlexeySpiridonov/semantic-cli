@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Site
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//  # Semantic UI - Site
+//  http://github.com/semantic-org/semantic-ui/
+//
+//
+//  Released under the MIT license
+//  http://opensource.org/licenses/MIT
+//
+//  */
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'global';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-             Page
-*******************************/
+// Page
 
 .loadFonts();
 
@@ -47,9 +43,7 @@ body {
   font-smoothing: @fontSmoothing;
 }
 
-/*******************************
-             Headers
-*******************************/
+// Headers
 
 h1,
 h2,
@@ -100,9 +94,7 @@ h5:last-child {
   margin-bottom: 0em;
 }
 
-/*******************************
-             Text
-*******************************/
+// Text
 
 p {
   margin: @paragraphMargin;
@@ -117,10 +109,7 @@ p:last-child {
   margin-bottom: 0em;
 }
 
-/*-------------------
-        Links
---------------------*/
-
+// Links
 a {
   color: @linkColor;
   text-decoration: @linkUnderline;
@@ -131,13 +120,11 @@ a:hover {
   text-decoration: @linkHoverUnderline;
 }
 
-/*******************************
-         Scrollbars
-*******************************/
+// Scrollbars
 
 .addScrollbars() when (@useCustomScrollbars) {
 
-  /* Force Simple Scrollbars */
+  // Force Simple Scrollbars
   body ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: @customScrollbarWidth;
@@ -160,7 +147,7 @@ a:hover {
     background: @thumbHoverBackground;
   }
 
-  /* Inverted UI */
+  // Inverted UI
   body .ui.inverted::-webkit-scrollbar-track {
     background: @trackInvertedBackground;
   }
@@ -175,11 +162,9 @@ a:hover {
   }
 }
 
-/*******************************
-          Highlighting
-*******************************/
+// Highlighting
 
-/* Site */
+// Site
 ::-webkit-selection {
   background-color: @highlightBackground;
   color: @highlightColor;
@@ -195,7 +180,7 @@ a:hover {
   color: @highlightColor;
 }
 
-/* Form */
+// Form
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: @inputHighlightBackground;

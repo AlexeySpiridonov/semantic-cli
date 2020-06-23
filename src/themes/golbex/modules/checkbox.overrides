@@ -1,6 +1,4 @@
-/*******************************
-         Theme Overrides
-*******************************/
+// Theme Overrides
 
 @font-face {
   font-family: 'Checkbox';
@@ -8,27 +6,27 @@
 ;
 }
 
-/* Checkmark */
+// Checkmark
 .ui.checkbox label:after,
 .ui.checkbox .box:after {
   font-family: 'Checkbox';
 }
 
-/* Checked */
+// Checked
 .ui.checkbox input:checked ~ .box:after,
 .ui.checkbox input:checked ~ label:after {
   content: '\e800';
 }
 
-/* Indeterminate */
+// Indeterminate
 .ui.checkbox input:indeterminate ~ .box:after,
 .ui.checkbox input:indeterminate ~ label:after {
   font-size: 12px;
   content: '\e801';
 }
 
-/*  UTF Reference
+//  UTF Reference
 .check:before { content: '\e800'; }
 .dash:before  { content: '\e801'; }
 .plus:before { content: '\e802'; }
-*/
+

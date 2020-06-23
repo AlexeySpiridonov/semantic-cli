@@ -1,6 +1,4 @@
-/*******************************
-         Theme Overrides
-*******************************/
+// Theme Overrides
 
 .ui.grid .column[class*="no padding"] {
   padding-top: 0;

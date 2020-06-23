@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Form
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Form
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'collection';
 @modifier: '_default';
@@ -19,31 +17,20 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Elements
-*******************************/
+// Elements
 
-/*--------------------
-        Form
----------------------*/
-
+// Form
 .ui.form {
   position: relative;
   max-width: 100%;
 }
 
-/*--------------------
-        Content
----------------------*/
-
+// Content
 .ui.form > p {
   margin: @paragraphMargin;
 }
 
-/*--------------------
-        Field
----------------------*/
-
+// Field
 .ui.form .field {
   clear: both;
   margin: @fieldMargin;
@@ -59,10 +46,7 @@
   margin: 0em;
 }
 
-/*--------------------
-        Labels
----------------------*/
-
+// Labels
 .ui.form .field > label {
   display: block;
   margin: @labelMargin;
@@ -72,10 +56,7 @@
   text-transform: @labelTextTransform;
 }
 
-/*--------------------
-    Standard Inputs
----------------------*/
-
+// Standard Inputs
 .ui.form textarea,
 .ui.form input:not([type]),
 .ui.form input[type="date"],
@@ -93,7 +74,7 @@
   vertical-align: top;
 }
 
-/* Set max height on unusual input */
+// Set max height on unusual input
 .ui.form ::-webkit-datetime-edit,
 .ui.form ::-webkit-inner-spin-button {
   height: @inputLineHeight;
@@ -129,7 +110,7 @@
   transition: @inputTransition;
 }
 
-/* Text Area */
+// Text Area
 .ui.form textarea {
   margin: 0em;
   -webkit-appearance: none;
@@ -160,18 +141,12 @@
   vertical-align: @checkboxVerticalAlign;
 }
 
-/*--------------------------
-  Input w/ attached Button
----------------------------*/
-
+// Input w/ attached Button
 .ui.form input.attached {
   width: auto;
 }
 
-/*--------------------
-     Basic Select
----------------------*/
-
+// Basic Select
 .ui.form select {
   display: block;
   height: auto;
@@ -185,11 +160,8 @@
   transition: @selectTransition;
 }
 
-/*--------------------
-       Dropdown
----------------------*/
-
-/* Block */
+// Dropdown
+// Block
 .ui.form .field > .selection.dropdown {
   width: 100%;
 }
@@ -198,7 +170,7 @@
   float: right;
 }
 
-/* Inline */
+// Inline
 .ui.form .inline.fields .field > .selection.dropdown,
 .ui.form .inline.field > .selection.dropdown {
   width: auto;
@@ -209,31 +181,28 @@
   float: none;
 }
 
-/*--------------------
-       UI Input
----------------------*/
-
-/* Block */
+// UI Input
+// Block
 .ui.form .field .ui.input,
 .ui.form .fields .field .ui.input,
 .ui.form .wide.field .ui.input {
   width: 100%;
 }
 
-/* Inline  */
+// Inline
 .ui.form .inline.fields .field:not(.wide) .ui.input,
 .ui.form .inline.field:not(.wide) .ui.input {
   width: auto;
   vertical-align: middle;
 }
 
-/* Auto Input */
+// Auto Input
 .ui.form .fields .field .ui.input input,
 .ui.form .field .ui.input input {
   width: auto;
 }
 
-/* Full Width Input */
+// Full Width Input
 .ui.form .ten.fields .ui.input input,
 .ui.form .nine.fields .ui.input input,
 .ui.form .eight.fields .ui.input input,
@@ -248,25 +217,19 @@
   width: 0px;
 }
 
-/*--------------------
-   Types of Messages
----------------------*/
-
+// Types of Messages
 .ui.form .success.message,
 .ui.form .warning.message,
 .ui.form .error.message {
   display: none;
 }
 
-/* Assumptions */
+// Assumptions
 .ui.form .message:first-child {
   margin-top: 0px;
 }
 
-/*--------------------
-   Validation Prompt
----------------------*/
-
+// Validation Prompt
 .ui.form .field .prompt.label {
   white-space: normal;
   background: @promptBackground !important;
@@ -289,36 +252,28 @@
   left: 0em;
 }
 
-/*******************************
-            States
-*******************************/
+// States
 
-/*--------------------
-      Autofilled
----------------------*/
-
+// Autofilled
 .ui.form .field.field input:-webkit-autofill {
   box-shadow: 0px 0px 0px 100px @inputAutoFillBackground inset !important;
   border-color: @inputAutoFillBorder !important;
 }
 
-/* Focus */
+// Focus
 .ui.form .field.field input:-webkit-autofill:focus {
   box-shadow: 0px 0px 0px 100px @inputAutoFillFocusBackground inset !important;
   border-color: @inputAutoFillFocusBorder !important;
 }
 
-/* Error */
+// Error
 .ui.form .error.error input:-webkit-autofill {
   box-shadow: 0px 0px 0px 100px @inputAutoFillErrorBackground inset !important;
   border-color: @inputAutoFillErrorBorder !important;
 }
 
-/*--------------------
-      Placeholder
----------------------*/
-
-/* browsers require these rules separate */
+// Placeholder
+// browsers require these rules separate
 .ui.form ::-webkit-input-placeholder {
   color: @inputPlaceholderColor;
 }
@@ -343,7 +298,7 @@
   color: @inputPlaceholderFocusColor;
 }
 
-/* Error Placeholder */
+// Error Placeholder
 .ui.form .error ::-webkit-input-placeholder {
   color: @inputErrorPlaceholderColor;
 }
@@ -368,10 +323,7 @@
   color: @inputErrorPlaceholderFocusColor;
 }
 
-/*--------------------
-        Focus
----------------------*/
-
+// Focus
 .ui.form input:not([type]):focus,
 .ui.form input[type="date"]:focus,
 .ui.form input[type="datetime-local"]:focus,
@@ -400,11 +352,8 @@
   -webkit-appearance: none;
 }
 
-/*--------------------
-        Success
----------------------*/
-
-/* On Form */
+// Success
+// On Form
 .ui.form.success .success.message:not(:empty) {
   display: block;
 }
@@ -417,11 +366,8 @@
   display: flex;
 }
 
-/*--------------------
-        Warning
----------------------*/
-
-/* On Form */
+// Warning
+// On Form
 .ui.form.warning .warning.message:not(:empty) {
   display: block;
 }
@@ -434,11 +380,8 @@
   display: flex;
 }
 
-/*--------------------
-        Error
----------------------*/
-
-/* On Form */
+// Error
+// On Form
 .ui.form.error .error.message:not(:empty) {
   display: block;
 }
@@ -451,7 +394,7 @@
   display: flex;
 }
 
-/* On Field(s) */
+// On Field(s)
 .ui.form .fields.error .field label,
 .ui.form .field.error label,
 .ui.form .fields.error .field .input,
@@ -522,15 +465,12 @@
   box-shadow: @inputErrorFocusBoxShadow;
 }
 
-/* Preserve Native Select Stylings */
+// Preserve Native Select Stylings
 .ui.form .field.error select {
   -webkit-appearance: menulist-button;
 }
 
-/*------------------
-    Dropdown Error
---------------------*/
-
+// Dropdown Error
 .ui.form .fields.error .field .ui.dropdown,
 .ui.form .fields.error .field .ui.dropdown .item,
 .ui.form .field.error .ui.dropdown,
@@ -561,28 +501,25 @@
   color: @dropdownErrorLabelColor;
 }
 
-/* Hover */
+// Hover
 .ui.form .fields.error .field .ui.dropdown .menu .item:hover,
 .ui.form .field.error .ui.dropdown .menu .item:hover {
   background-color: @dropdownErrorHoverBackground;
 }
 
-/* Selected */
+// Selected
 .ui.form .fields.error .field .ui.dropdown .menu .selected.item,
 .ui.form .field.error .ui.dropdown .menu .selected.item {
   background-color: @dropdownErrorSelectedBackground;
 }
 
-/* Active */
+// Active
 .ui.form .fields.error .field .ui.dropdown .menu .active.item,
 .ui.form .field.error .ui.dropdown .menu .active.item {
   background-color: @dropdownErrorActiveBackground !important;
 }
 
-/*--------------------
-    Checkbox Error
----------------------*/
-
+// Checkbox Error
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) label,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box,
@@ -605,10 +542,7 @@
   color: @formErrorColor;
 }
 
-/*--------------------
-       Disabled
----------------------*/
-
+// Disabled
 .ui.form .disabled.fields .field,
 .ui.form .disabled.field,
 .ui.form .field :disabled {
@@ -625,10 +559,7 @@
   opacity: 1;
 }
 
-/*--------------
-    Loading
----------------*/
-
+// Loading
 .ui.loading.form {
   position: relative;
   cursor: default;
@@ -679,14 +610,9 @@
   }
 }
 
-/*******************************
-         Element Types
-*******************************/
+// Element Types
 
-/*--------------------
-     Required Field
----------------------*/
-
+// Required Field
 .ui.form .required.fields:not(.grouped) > .field > label:after,
 .ui.form .required.fields.grouped > label:after,
 .ui.form .required.field > label:after,
@@ -711,14 +637,9 @@
   left: 100%;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------------
-    Inverted Colors
----------------------*/
-
+// Inverted Colors
 .ui.inverted.form label,
 .ui.form .inverted.segment label,
 .ui.form .inverted.segment .ui.checkbox label,
@@ -733,7 +654,7 @@
   color: @invertedLabelColor;
 }
 
-/* Inverted Field */
+// Inverted Field
 .ui.inverted.form input:not([type]),
 .ui.inverted.form input[type="date"],
 .ui.inverted.form input[type="datetime-local"],
@@ -752,11 +673,8 @@
   box-shadow: @invertedInputBoxShadow;
 }
 
-/*--------------------
-     Field Groups
----------------------*/
-
-/* Grouped Vertically */
+// Field Groups
+// Grouped Vertically
 .ui.form .grouped.fields {
   display: block;
   margin: @groupedMargin;
@@ -781,11 +699,8 @@
   padding: 0em;
 }
 
-/*--------------------
-        Fields
----------------------*/
-
-/* Split fields */
+// Fields
+// Split fields
 .ui.form .fields {
   display: flex;
   flex-direction: row;
@@ -803,7 +718,7 @@
   box-shadow: none;
 }
 
-/* Other Combinations */
+// Other Combinations
 .ui.form .two.fields > .fields,
 .ui.form .two.fields > .field {
   width: @twoColumn;
@@ -849,7 +764,7 @@
   width: @tenColumn;
 }
 
-/* Swap to full width on mobile */
+// Swap to full width on mobile
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.form .fields {
     flex-wrap: wrap;
@@ -880,7 +795,7 @@
   }
 }
 
-/* Sizing Combinations */
+// Sizing Combinations
 .ui.form .fields .wide.field {
   width: @oneWide;
   padding-left: (@gutterWidth / 2);
@@ -951,7 +866,7 @@
   width: @sixteenWide !important;
 }
 
-/* Swap to full width on mobile */
+// Swap to full width on mobile
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .fields,
   .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field,
@@ -984,20 +899,14 @@
   }
 }
 
-/*--------------------
-     Equal Width
----------------------*/
-
+// Equal Width
 .ui[class*="equal width"].form .fields > .field,
 .ui.form [class*="equal width"].fields > .field {
   width: 100%;
   flex: 1 1 auto;
 }
 
-/*--------------------
-    Inline Fields
----------------------*/
-
+// Inline Fields
 .ui.form .inline.fields {
   margin: @fieldMargin;
   align-items: center;
@@ -1008,7 +917,7 @@
   padding: @inlineFieldsMargin;
 }
 
-/* Inline Label */
+// Inline Label
 .ui.form .inline.fields > label,
 .ui.form .inline.fields .field > label,
 .ui.form .inline.fields .field > p,
@@ -1025,12 +934,12 @@
   text-transform: @inlineLabelTextTransform;
 }
 
-/* Grouped Inline Label */
+// Grouped Inline Label
 .ui.form .inline.fields > label {
   margin: @groupedInlineLabelMargin;
 }
 
-/* Inline Input */
+// Inline Input
 .ui.form .inline.fields .field > input,
 .ui.form .inline.fields .field > select,
 .ui.form .inline.field > input,
@@ -1045,7 +954,7 @@
   font-size: @inlineInputSize;
 }
 
-/* Label */
+// Label
 .ui.form .inline.fields .field > :first-child,
 .ui.form .inline.field > :first-child {
   margin: 0em @inlineLabelDistance 0em 0em;
@@ -1056,7 +965,7 @@
   margin: 0em;
 }
 
-/* Wide */
+// Wide
 .ui.form .inline.fields .wide.field {
   display: flex;
   align-items: center;
@@ -1067,10 +976,7 @@
   width: 100%;
 }
 
-/*--------------------
-        Sizes
----------------------*/
-
+// Sizes
 .ui.mini.form {
   font-size: @mini;
 }

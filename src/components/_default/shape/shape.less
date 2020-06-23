@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Shape
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-
-/*******************************
-            Theme
-*******************************/
+//  !
+// * # Semantic UI - Shape/*
+// * http://github.com/semantic-org/semantic-ui/
+// *
+// *
+// * Released under the MIT license
+// * http://opensource.org/licenses/MIT
+// *
+// **!
+//*/
+//// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-              Shape
-*******************************/
+// Shape
 
 .ui.shape {
   position: relative;
@@ -51,9 +47,7 @@
   backface-visibility: visible !important;
 }
 
-/*******************************
-             Types
-*******************************/
+// Types
 
 .ui.cube.shape .side {
   min-width: @cubeSize;
@@ -81,9 +75,7 @@
   font-size: @cubeFontSize;
 }
 
-/*******************************
-          Variations
-*******************************/
+// Variations
 
 .ui.text.shape.animating .sides {
   position: static;
@@ -97,24 +89,16 @@
   white-space: normal;
 }
 
-/*******************************
-             States
-*******************************/
+// States
 
-/*--------------
-    Loading
----------------*/
-
+// Loading
 .ui.loading.shape {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/*--------------
-    Animating
----------------*/
-
+// Animating
 .ui.shape .animating.side {
   position: absolute;
   top: 0px;
@@ -127,10 +111,7 @@
   opacity: @hiddenSideOpacity;
 }
 
-/*--------------
-      CSS
----------------*/
-
+// CSS
 .ui.shape.animating .sides {
   position: absolute;
 }
@@ -143,10 +124,7 @@
   transition: @sideTransition;
 }
 
-/*--------------
-     Active
----------------*/
-
+// Active
 .ui.shape .active.side {
   display: block;
 }

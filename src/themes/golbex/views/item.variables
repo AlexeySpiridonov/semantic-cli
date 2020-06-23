@@ -1,15 +1,11 @@
-/*******************************
-             Item
-*******************************/
+// Item
 
-/*-------------------
-         View
---------------------*/
+// View
 
-/* Group */
+// Group
 @groupMargin: 1.5em 0em;
 
-/* Item */
+// Item
 @display: flex;
 @background: transparent;
 @borderRadius: 0rem;
@@ -21,7 +17,7 @@
 @zIndex: '';
 @transition: box-shadow @defaultDuration @defaultEasing;
 
-/* Responsive */
+// Responsive
 @itemSpacing: 1em;
 @imageWidth: 175px;
 @contentImageDistance: 1.5em;
@@ -35,11 +31,9 @@
 @mobileImageMaxHeight: 250px;
 @mobileContentImageDistance: 1.5em;
 
-/*-------------------
-       Content
---------------------*/
+// Content
 
-/* Image */
+// Image
 @imageDisplay: block;
 @imageFloat: none;
 @imageMaxHeight: '';
@@ -51,7 +45,7 @@
 @imageBoxShadow: none;
 @imageBorder: none;
 
-/* Content */
+// Content
 @contentDisplay: block;
 @contentVerticalAlign: top;
 
@@ -65,31 +59,31 @@
 @contentBorderRadius: 0em;
 @contentBoxShadow: none;
 
-/* Header */
+// Header
 @headerMargin: -@lineHeightOffset 0em 0em;
 @headerFontWeight: bold;
 @headerFontSize: @relativeBig;
 @headerColor: @darkTextColor;
 
-/* Metadata */
+// Metadata
 @metaMargin: 0.5em 0em 0.5em;
 @metaFontSize: 1em;
 @metaLineHeight: 1em;
 @metaSpacing: 0.3em;
 @metaColor: rgba(0, 0, 0, 0.6);
 
-/* Icons */
+// Icons
 @actionOpacity: 0.75;
 @actionHoverOpacity: 1;
 @actionTransition: color @defaultDuration @defaultEasing;
 
-/* Actions */
+// Actions
 @favoriteColor: #FFB70A;
 @favoriteActiveColor: #FFE623;
 @likeColor: #FF2733;
 @likeActiveColor: #FF2733;
 
-/* Links */
+// Links
 @headerLinkColor: @headerColor;
 @headerLinkHoverColor: @linkHoverColor;
 @metaLinkColor: @lightTextColor;
@@ -98,25 +92,25 @@
 @contentLinkHoverColor: '';
 @contentLinkTransition: color @defaultDuration @defaultEasing;
 
-/* Description */
+// Description
 @descriptionDistance: 0.6em;
 @descriptionMaxWidth: auto;
 @descriptionFontSize: 1em;
 @descriptionLineHeight: @lineHeight;
 @descriptionColor: @textColor;
 
-/* Content Image */
+// Content Image
 @contentImageWidth: '';
 @contentImageVerticalAlign: middle;
 
-/* Avatar Image */
+// Avatar Image
 @avatarSize: @contentImageWidth;
 @avatarBorderRadius: @circularRadius;
 
-/* Paragraph */
+// Paragraph
 @paragraphDistance: 0.5em;
 
-/* Additional Content */
+// Additional Content
 @extraDivider: none;
 @extraHorizontalSpacing: 0.5rem;
 @extraRowSpacing: 0.5rem;
@@ -133,15 +127,13 @@
 @extraColor: @lightTextColor;
 @extraTransition: color @defaultDuration @defaultEasing;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Relaxed */
+// Relaxed
 @relaxedItemSpacing: 1.5em;
 @veryRelaxedItemSpacing: 2em;
 
-/* Divided */
+// Divided
 @dividedBorder: 1px solid @borderColor;
 @dividedMargin: 0em;
 @dividedPadding: 1em 0em;
@@ -149,6 +141,6 @@
 @dividedFirstLastMargin: 0em;
 @dividedFirstLastPadding: 0em;
 
-/* Unstackable */
+// Unstackable
 @unstackableMobileImageWidth: 125px;
 

@@ -1,16 +1,12 @@
-/*******************************
-             Card
-*******************************/
+// Card
 
-/*-------------------
-         View
---------------------*/
+// View
 
-/* Shadow */
+// Shadow
 @shadowDistance: 1px;
 @shadowBoxShadow: 0px @shadowDistance 3px 0px @solidBorderColor;
 
-/* Card */
+// Card
 @fontFamily: @pageFont;
 @display: flex;
 @background: @white;
@@ -28,7 +24,7 @@
 @transition: box-shadow @defaultDuration @defaultEasing,
 transform @defaultDuration @defaultEasing;
 
-/* Card Group */
+// Card Group
 @horizontalSpacing: 1em;
 @rowSpacing: 1.75em;
 
@@ -39,21 +35,19 @@ transform @defaultDuration @defaultEasing;
 @groupCardDisplay: flex;
 @groupCardMargin: (@rowSpacing / 2) (@horizontalSpacing / 2);
 
-/* Consecutive Cards */
+// Consecutive Cards
 @consecutiveGroupDistance: (@rowSpacing / 2);
 
-/*-------------------
-       Content
---------------------*/
+// Content
 
-/* Image */
+// Image
 @imageBackground: @transparentBlack;
 @imagePadding: 0em;
 @imageBorder: none;
 @imageBoxShadow: none;
 @imageBorder: none;
 
-/* Content */
+// Content
 @contentDivider: @borderWidth solid @internalBorderColor;
 @contentMargin: 0em;
 @contentBackground: none;
@@ -63,19 +57,19 @@ transform @defaultDuration @defaultEasing;
 @contentBoxShadow: none;
 @contentBorder: none;
 
-/* Header */
+// Header
 @headerMargin: '';
 @headerFontWeight: bold;
 @headerFontSize: @relativeBig;
 @headerLineHeightOffset: -(@lineHeight - 1em) / 2;
 @headerColor: @darkTextColor;
 
-/* Metadata */
+// Metadata
 @metaFontSize: @relativeMedium;
 @metaSpacing: 0.3em;
 @metaColor: @lightTextColor;
 
-/* Icons */
+// Icons
 @actionOpacity: 0.75;
 @actionHoverOpacity: 1;
 @actionTransition: color @defaultDuration @defaultEasing;
@@ -86,7 +80,7 @@ transform @defaultDuration @defaultEasing;
 @likeColor: #FF2733;
 @likeActiveColor: #FF2733;
 
-/* Links */
+// Links
 @contentLinkColor: '';
 @contentLinkHoverColor: '';
 @contentLinkTransition: color @defaultDuration @defaultEasing;
@@ -97,26 +91,26 @@ transform @defaultDuration @defaultEasing;
 @metaLinkColor: @lightTextColor;
 @metaLinkHoverColor: @textColor;
 
-/* Description */
+// Description
 @descriptionDistance: 0.5em;
 @descriptionColor: rgba(0, 0, 0, 0.68);
 
-/* Content Image */
+// Content Image
 @contentImageWidth: '';
 @contentImageVerticalAlign: middle;
 
-/* Avatar Image */
+// Avatar Image
 @avatarSize: 2em;
 @avatarBorderRadius: @circularRadius;
 
-/* Paragraph */
+// Paragraph
 @paragraphDistance: 0.5em;
 
-/* Dimmer */
+// Dimmer
 @dimmerZIndex: 10;
 @dimmerColor: '';
 
-/* Additional Content */
+// Additional Content
 @extraDivider: 1px solid rgba(0, 0, 0, 0.05);
 @extraBackground: none;
 @extraPosition: static;
@@ -129,19 +123,17 @@ transform @defaultDuration @defaultEasing;
 @extraColor: @lightTextColor;
 @extraTransition: color @defaultDuration @defaultEasing;
 
-/* Extra Links */
+// Extra Links
 @extraLinkColor: @unselectedTextColor;
 @extraLinkHoverColor: @linkHoverColor;
 
-/* Buttons */
+// Buttons
 @buttonMargin: 0px -@borderWidth;
 @buttonWidth: ~"calc(100% + "(@borderWidth * 2)~")";
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Link */
+// Link
 @linkHoverBackground: @white;
 @linkHoverBorder: @border;
 @linkHoverZIndex: 5;
@@ -152,13 +144,13 @@ transform @defaultDuration @defaultEasing;
 @linkHoverBoxShadow: @shadowHoverBoxShadow,
 @borderShadow;
 
-/* Raised */
+// Raised
 @raisedShadow: @borderShadow,
 @floatingShadow;
 @raisedShadowHover: @borderShadow,
 @floatingShadowHover;
 
-/* Card Count */
+// Card Count
 @wideCardSpacing: 1em;
 @cardSpacing: 0.75em;
 @smallCardSpacing: 0.5em;
@@ -195,13 +187,13 @@ transform @defaultDuration @defaultEasing;
 @tenCard: ~"calc(" @tenColumn ~" - "(@tenCardSpacing * 2)~")";
 @tenCardOffset: -@tenCardSpacing;
 
-/* Stackable */
+// Stackable
 @stackableRowSpacing: 1em;
 @stackableCardSpacing: 1em;
 @stackableMargin: ~"calc(" @oneColumn ~" - "(@stackableCardSpacing * 2)~")";
 
-/* Sizes */
+// Sizes
 @medium: 1em;
 
-/* Colored */
+// Colored
 @coloredShadowDistance: 2px;

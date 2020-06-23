@@ -1,12 +1,8 @@
-/*******************************
-            Button
-*******************************/
+// Button
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
-/* Button */
+// Button
 @verticalMargin: 0em;
 @horizontalMargin: 0.25em;
 @backgroundColor: #E0E1E2;
@@ -14,11 +10,11 @@
 @background: @backgroundColor @backgroundImage;
 @lineHeight: 1em;
 
-/* Button defaults to using same height as input globally */
+// Button defaults to using same height as input globally
 @verticalPadding: @inputVerticalPadding;
 @horizontalPadding: 1.5em;
 
-/* Text */
+// Text
 @textTransform: none;
 @tapColor: transparent;
 @fontFamily: @pageFont;
@@ -29,19 +25,19 @@
 @borderRadius: @4px;
 @verticalAlign: baseline;
 
-/* Internal Shadow */
+// Internal Shadow
 @shadowDistance: 0em;
 @shadowOffset: (@shadowDistance / 2);
 @shadowBoxShadow: 0px -@shadowDistance 0px 0px @borderColor inset;
 
-/* Box Shadow */
+// Box Shadow
 @borderBoxShadowColor: transparent;
 @borderBoxShadowWidth: 1px;
 @borderBoxShadow: 0px 0px 0px @borderBoxShadowWidth @borderBoxShadowColor inset;
 @boxShadow: @borderBoxShadow,
 @shadowBoxShadow;
 
-/* Icon */
+// Icon
 @iconHeight: @relativeTiny;
 @iconOpacity: 0.8;
 @iconDistance: @relative6px;
@@ -52,7 +48,7 @@
 @iconMargin: 0em @iconDistance 0em -(@iconDistance / 2);
 @rightIconMargin: 0em -(@iconDistance / 2) 0em @iconDistance;
 
-/* Loader */
+// Loader
 @invertedLoaderFillColor: rgba(0, 0, 0, 0.15);
 
 @transition: opacity @defaultDuration @defaultEasing,
@@ -60,14 +56,12 @@ background-color @defaultDuration @defaultEasing,
 color @defaultDuration @defaultEasing,
 box-shadow @defaultDuration @defaultEasing,
 background @defaultDuration @defaultEasing;
-/*
+//
 @willChange: box-shadow, transform, opacity, color, background;
-*/
+// //  /
 @willChange: '';
 
-/*-------------------
-        Group
---------------------*/
+// Group
 
 @groupBoxShadow: none;
 @groupButtonBoxShadow: @boxShadow;
@@ -75,29 +69,27 @@ background @defaultDuration @defaultEasing;
 @groupButtonOffset: 0px 0px 0px 0px;
 @verticalGroupOffset: 0px 0px 0px 0px;
 
-/*-------------------
-        States
---------------------*/
+// States
 
-/* Hovered */
+// Hovered
 @hoverBackgroundColor: #CACBCD;
 @hoverBackgroundImage: @backgroundImage;
 @hoverBoxShadow: @boxShadow;
 @hoverColor: @hoveredTextColor;
 @iconHoverOpacity: 0.85;
 
-/* Focused */
+// Focused
 @focusBackgroundColor: @hoverBackgroundColor;
 @focusBackgroundImage: '';
 @focusBoxShadow: '';
 @focusColor: @hoveredTextColor;
 @iconFocusOpacity: 0.85;
 
-/* Disabled */
+// Disabled
 @disabledBackgroundImage: none;
 @disabledBoxShadow: none;
 
-/* Pressed Down */
+// Pressed Down
 @downBackgroundColor: #BABBBC;
 @downBackgroundImage: '';
 @downPressedShadow: none;
@@ -105,29 +97,27 @@ background @defaultDuration @defaultEasing;
 @downPressedShadow;
 @downColor: @pressedTextColor;
 
-/* Active */
+// Active
 @activeBackgroundColor: @hoverBackgroundColor;
 @activeBackgroundImage: none;
 @activeColor: @selectedTextColor;
 @activeBoxShadow: @borderBoxShadow;
 
-/* Active + Hovered */
+// Active + Hovered
 @activeHoverBackgroundColor: @activeBackgroundColor;
 @activeHoverBackgroundImage: none;
 @activeHoverColor: @activeColor;
 @activeHoverBoxShadow: @activeBoxShadow;
 
-/* Loading */
+// Loading
 @loadingOpacity: 1;
 @loadingPointerEvents: auto;
 @loadingTransition: all 0s linear,
 opacity @defaultDuration @defaultEasing;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Or */
+// Or
 @orText: 'or';
 
 @orGap: 0.3em;
@@ -151,20 +141,20 @@ opacity @defaultDuration @defaultEasing;
 @orSpacerHeight: @verticalPadding;
 @orSpacerColor: transparent;
 
-/* Icon */
+// Icon
 @iconButtonOpacity: 0.9;
 
-/* Labeled */
+// Labeled
 @labeledLabelFontSize: @medium;
 @labeledLabelAlign: center;
 @labeledLabelPadding: '';
 @labeledLabelFontSize: @relativeMedium;
 @labeledLabelBorderColor: @borderColor;
 @labeledLabelBorderOffset: -@borderBoxShadowWidth;
-@labeledTagLabelSize: 1.85em; /* hypotenuse of triangle */
+@labeledTagLabelSize: 1.85em; // hypotenuse of triangle
 @labeledIconMargin: 0em;
 
-/* Labeled Icon */
+// Labeled Icon
 @labeledIconWidth: 1em + (@verticalPadding * 2);
 @labeledIconBackgroundColor: rgba(0, 0, 0, 0.05);
 @labeledIconPadding: (@horizontalPadding + @labeledIconWidth);
@@ -174,14 +164,14 @@ opacity @defaultDuration @defaultEasing;
 @labeledIconLeftShadow: -1px 0px 0px 0px @labeledIconBorder inset;
 @labeledIconRightShadow: 1px 0px 0px 0px @labeledIconBorder inset;
 
-/* Inverted */
+// Inverted
 @invertedBorderSize: 2px;
 @invertedTextColor: @white;
 @invertedTextHoverColor: @hoverColor;
 @invertedGroupButtonOffset: 0px 0px 0px -(@invertedBorderSize);
 @invertedVerticalGroupButtonOffset: 0px 0px -(@invertedBorderSize) 0px;
 
-/* Basic */
+// Basic
 @basicBorderRadius: @borderRadius;
 @basicBorderSize: 1px;
 @basicTextColor: @textColor;
@@ -194,27 +184,27 @@ opacity @defaultDuration @defaultEasing;
 @basicLoadingColor: @offWhite;
 @basicTextTransform: none;
 
-/* Basic Hover */
+// Basic Hover
 @basicHoverBackground: #FFFFFF;
 @basicHoverTextColor: @hoveredTextColor;
 @basicHoverBoxShadow: 0px 0px 0px @basicBorderSize @selectedBorderColor inset,
 0px 0px 0px 0px @borderColor inset;
-/* Basic Focus */
+// Basic Focus
 @basicFocusBackground: @basicHoverBackground;
 @basicFocusTextColor: @basicHoverTextColor;
 @basicFocusBoxShadow: @basicHoverBoxShadow;
 
-/* Basic Down */
+// Basic Down
 @basicDownBackground: #F8F8F8;
 @basicDownTextColor: @pressedTextColor;
 @basicDownBoxShadow: 0px 0px 0px @basicBorderSize rgba(0, 0, 0, 0.15) inset,
 0px 1px 4px 0px @borderColor inset;
-/* Basic Active */
+// Basic Active
 @basicActiveBackground: @transparentBlack;
 @basicActiveBoxShadow: '';
 @basicActiveTextColor: @selectedTextColor;
 
-/* Basic Inverted */
+// Basic Inverted
 @basicInvertedBackground: transparent;
 @basicInvertedFocusBackground: transparent;
 @basicInvertedDownBackground: @transparentWhite;
@@ -231,19 +221,17 @@ opacity @defaultDuration @defaultEasing;
 @basicInvertedDownColor: @darkWhiteActive;
 @basicInvertedActiveColor: @invertedTextColor;
 
-/* Basic Group */
+// Basic Group
 @basicGroupBorder: @basicBorderSize solid @borderColor;
 @basicGroupBoxShadow: none;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Colors */
+// Colors
 @coloredBackgroundImage: none;
 @coloredBoxShadow: @shadowBoxShadow;
 
-/* Colored */
+// Colored
 @brownTextColor: @invertedTextColor;
 @brownTextShadow: @invertedTextShadow;
 @redTextColor: @invertedTextColor;
@@ -271,7 +259,7 @@ opacity @defaultDuration @defaultEasing;
 @greyTextColor: @invertedTextColor;
 @greyTextShadow: @invertedTextShadow;
 
-/* Inverted */
+// Inverted
 @lightBrownTextColor: @invertedTextColor;
 @lightBrownTextShadow: @invertedTextShadow;
 @lightRedTextColor: @invertedTextColor;
@@ -299,7 +287,7 @@ opacity @defaultDuration @defaultEasing;
 @lightGreyTextColor: @textColor;
 @lightGreyTextShadow: @textShadow;
 
-/* Ordinality */
+// Ordinality
 @primaryBackgroundImage: @coloredBackgroundImage;
 @primaryTextColor: @invertedTextColor;
 @primaryTextShadow: @invertedTextShadow;
@@ -320,20 +308,20 @@ opacity @defaultDuration @defaultEasing;
 @negativeTextShadow: @invertedTextShadow;
 @negativeBoxShadow: @coloredBoxShadow;
 
-/* Compact */
+// Compact
 @compactVerticalPadding: (@verticalPadding * 0.75);
 @compactHorizontalPadding: (@horizontalPadding * 0.75);
 
-/* Attached */
+// Attached
 @attachedOffset: -1px;
 @attachedBoxShadow: 0px 0px 0px 1px @borderColor;
 @attachedHorizontalPadding: 0.75em;
 @attachedZIndex: 2;
 
-/* Floated */
+// Floated
 @floatedMargin: 0.25em;
 
-/* Animated */
+// Animated
 @animatedVerticalAlign: middle;
 @animatedZIndex: 1;
 @animationDuration: 0.3s;

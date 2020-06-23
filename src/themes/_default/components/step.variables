@@ -1,10 +1,6 @@
-/*******************************
-             Step
-*******************************/
+// Step
 
-/*-------------------
-       Group
---------------------*/
+// Group
 
 @stepMargin: 1em 0em;
 @stepsBorderRadius: @defaultBorderRadius;
@@ -12,9 +8,7 @@
 @stepsBoxShadow: none;
 @stepsBorder: 1px solid @borderColor;
 
-/*-------------------
-      Element
---------------------*/
+// Element
 
 @verticalMargin: 0em;
 @horizontalMargin: 0em;
@@ -38,24 +32,24 @@ box-shadow @defaultDuration @defaultEasing;
 @border: none;
 @divider: @borderWidth solid @borderColor;
 
-/* Icon */
+// Icon
 @iconDistance: 1rem;
 @iconSize: 2.5em;
 @iconAlign: middle;
 
-/* Title */
+// Title
 @titleFontFamily: @headerFont;
 @titleFontWeight: bold;
 @titleFontSize: @relativeLarge;
 @titleColor: @darkTextColor;
 
-/* Description */
+// Description
 @descriptionDistance: 0.25em;
 @descriptionFontSize: @relativeSmall;
 @descriptionFontWeight: normal;
 @descriptionColor: @textColor;
 
-/* Arrow */
+// Arrow
 @arrowBackgroundColor: @backgroundColor;
 @arrowTopOffset: 50%;
 @arrowRightOffset: 0%;
@@ -67,14 +61,12 @@ box-shadow @defaultDuration @defaultEasing;
 @activeArrowDisplay: block;
 @activeLastArrowDisplay: none;
 
-/* Mobile */
+// Mobile
 @mobileIconDistance: @iconDistance;
 
-/*-------------------
-       Types
---------------------*/
+// Types
 
-/* Vertical */
+// Vertical
 @verticalDivider: @divider;
 @verticalArrowTopOffset: 50%;
 @verticalArrowRightOffset: 0%;
@@ -86,9 +78,7 @@ box-shadow @defaultDuration @defaultEasing;
 @verticalActiveArrowDisplay: block;
 @verticalActiveLastArrowDisplay: block;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
 @attachedHorizontalOffset: -@borderWidth;
 @attachedVerticalOffset: 0;
@@ -97,30 +87,28 @@ box-shadow @defaultDuration @defaultEasing;
 @orderedFontFamily: inherit;
 @orderedFontWeight: bold;
 
-/*-------------------
-       States
---------------------*/
+// States
 
-/* Completed */
+// Completed
 @completedColor: @positiveColor;
 
-/* Hover */
+// Hover
 @hoverBackground: @offWhite;
 @hoverColor: @hoveredTextColor;
 
-/* Down */
+// Down
 @downBackground: @darkWhite;
 @downColor: @pressedTextColor;
 
-/* Active */
+// Active
 @activeBackground: @darkWhite;
 @activeColor: @linkColor;
 @activeIconColor: @darkTextColor;
 
-/* Active + Hover */
+// Active + Hover
 @activeHoverBackground: @lightGrey;
 @activeHoverColor: @textColor;
 
-/* Disabled */
+// Disabled
 @disabledBackground: @background;
 @disabledColor: @disabledTextColor;

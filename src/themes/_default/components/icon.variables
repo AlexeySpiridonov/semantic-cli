@@ -1,10 +1,6 @@
-/*******************************
-             Icon
-*******************************/
+// Icon
 
-/*-------------------
-   Icon Variables
---------------------*/
+// Icon Variables
 
 @fontName: 'icons';
 @fallbackSRC: url("@{fontPath}/@{fontName}.eot");
@@ -19,7 +15,7 @@ url("@{fontPath}/@{fontName}.svg#icons") format('svg');
 @height: 1em;
 @distanceFromText: 0.25rem;
 
-/* Variations */
+// Variations
 
 @linkOpacity: 0.8;
 @linkDuration: 0.3s;

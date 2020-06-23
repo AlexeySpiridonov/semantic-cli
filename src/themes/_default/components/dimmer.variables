@@ -1,6 +1,4 @@
-/*******************************
-            Dimmer
-*******************************/
+// Dimmer
 
 @dimmablePosition: relative;
 @dimmerPosition: absolute;
@@ -24,33 +22,29 @@
 @blurredBackgroundColor: rgba(0, 0, 0, 0.6);
 @blurredInvertedBackgroundColor: rgba(255, 255, 255, 0.6);
 
-/* Hidden (Default) */
+// Hidden (Default)
 @hiddenOpacity: 0;
 
-/* Content */
+// Content
 @contentDisplay: table;
 @contentChildDisplay: table-cell;
 
-/* Visible */
+// Visible
 @visibleOpacity: 1;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Page Dimmer*/
+// Page Dimmer//  /
 @transformStyle: '';
 @pageDimmerPosition: fixed;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Inverted */
+// Inverted
 @invertedBackgroundColor: rgba(44, 55, 71, 1);
 @invertedTextColor: @textColor;
 
-/* Simple */
+// Simple
 @simpleZIndex: 1;
 @simpleStartBackgroundColor: rgba(0, 0, 0, 0);
 @simpleEndBackgroundColor: @backgroundColor;

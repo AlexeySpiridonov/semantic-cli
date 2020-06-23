@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Item
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//  # Semantic UI - Item
+//  http://github.com/semantic-org/semantic-ui/
+//
+//
+//  Released under the MIT license
+//  http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'view';
 @modifier: '_default';
@@ -19,14 +17,9 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Standard
-*******************************/
+// Standard
 
-/*--------------
-      Item
----------------*/
-
+// Item
 .ui.items > .item {
   display: @display;
   margin: @itemSpacing 0em;
@@ -46,10 +39,7 @@
   cursor: pointer;
 }
 
-/*--------------
-      Items
----------------*/
-
+// Items
 .ui.items {
   margin: @groupMargin;
 }
@@ -62,10 +52,7 @@
   margin-bottom: 0em !important;
 }
 
-/*--------------
-      Item
----------------*/
-
+// Item
 .ui.items > .item:after {
   display: block;
   content: ' ';
@@ -83,10 +70,7 @@
   margin-bottom: 0em;
 }
 
-/*--------------
-     Images
----------------*/
-
+// Images
 .ui.items > .item > .image {
   position: relative;
   flex: 0 0 auto;
@@ -110,10 +94,7 @@
   border-radius: @borderRadius;
 }
 
-/*--------------
-     Content
----------------*/
-
+// Content
 .ui.items > .item > .content {
   display: block;
   flex: 1 1 auto;
@@ -152,15 +133,12 @@
   color: @headerColor;
 }
 
-/* Default Header Size */
+// Default Header Size
 .ui.items > .item > .content > .header:not(.ui) {
   font-size: @headerFontSize;
 }
 
-/*--------------
-     Floated
----------------*/
-
+// Floated
 .ui.items > .item [class*="left floated"] {
   float: left;
 }
@@ -169,10 +147,7 @@
   float: right;
 }
 
-/*--------------
-  Content Image
----------------*/
-
+// Content Image
 .ui.items > .item .content img {
   align-self: @contentImageVerticalAlign;
   width: @contentImageWidth;
@@ -185,10 +160,7 @@
   border-radius: @avatarBorderRadius;
 }
 
-/*--------------
-   Description
----------------*/
-
+// Description
 .ui.items > .item > .content > .description {
   margin-top: @descriptionDistance;
   max-width: @descriptionMaxWidth;
@@ -197,10 +169,7 @@
   color: @descriptionColor;
 }
 
-/*--------------
-    Paragraph
----------------*/
-
+// Paragraph
 .ui.items > .item > .content p {
   margin: 0em 0em @paragraphDistance;
 }
@@ -209,10 +178,7 @@
   margin-bottom: 0em;
 }
 
-/*--------------
-      Meta
----------------*/
-
+// Meta
 .ui.items > .item .meta {
   margin: @metaMargin;
   font-size: @metaFontSize;
@@ -233,11 +199,8 @@
   margin-left: @metaSpacing;
 }
 
-/*--------------
-      Links
----------------*/
-
-/* Generic */
+// Links
+// Generic
 .ui.items > .item > .content a:not(.ui) {
   color: @contentLinkColor;
   transition: @contentLinkTransition;
@@ -247,7 +210,7 @@
   color: @contentLinkHoverColor;
 }
 
-/* Header */
+// Header
 .ui.items > .item > .content > a.header {
   color: @headerLinkColor;
 }
@@ -256,7 +219,7 @@
   color: @headerLinkHoverColor;
 }
 
-/* Meta */
+// Meta
 .ui.items > .item .meta > a:not(.ui) {
   color: @metaLinkColor;
 }
@@ -265,13 +228,10 @@
   color: @metaLinkHoverColor;
 }
 
-/*--------------
-     Labels
----------------*/
+// Labels
+// Star
 
-/*-----Star----- */
-
-/* Icon */
+// Icon
 .ui.items > .item > .content .favorite.icon {
   cursor: pointer;
   opacity: @actionOpacity;
@@ -287,9 +247,9 @@
   color: @favoriteActiveColor;
 }
 
-/*-----Like----- */
+// Like
 
-/* Icon */
+// Icon
 .ui.items > .item > .content .like.icon {
   cursor: pointer;
   opacity: @actionOpacity;
@@ -305,10 +265,7 @@
   color: @likeActiveColor;
 }
 
-/*----------------
-  Extra Content
------------------*/
-
+// Extra Content
 .ui.items > .item .extra {
   display: @extraDisplay;
   position: @extraPosition;
@@ -341,16 +298,14 @@
   visibility: hidden;
 }
 
-/*******************************
-          Responsive
-*******************************/
+// Responsive
 
-/* Default Image Width */
+// Default Image Width
 .ui.items > .item > .image:not(.ui) {
   width: @imageWidth;
 }
 
-/* Tablet Only */
+// Tablet Only
 @media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
   .ui.items > .item {
     margin: @tabletItemSpacing 0em;
@@ -367,7 +322,7 @@
 
 }
 
-/* Mobile Only */
+// Mobile Only
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.items:not(.unstackable) > .item {
     flex-direction: column;
@@ -393,14 +348,9 @@
   }
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*-------------------
-       Aligned
---------------------*/
-
+// Aligned
 .ui.items > .item > .image + [class*="top aligned"].content {
   align-self: flex-start;
 }
@@ -413,10 +363,7 @@
   align-self: flex-end;
 }
 
-/*--------------
-     Relaxed
----------------*/
-
+// Relaxed
 .ui.relaxed.items > .item {
   margin: @relaxedItemSpacing 0em;
 }
@@ -425,10 +372,7 @@
   margin: @veryRelaxedItemSpacing 0em;
 }
 
-/*-------------------
-      Divided
---------------------*/
-
+// Divided
 .ui.divided.items > .item {
   border-top: @dividedBorder;
   margin: @dividedMargin;
@@ -446,7 +390,7 @@
   padding-bottom: @dividedFirstLastPadding !important;
 }
 
-/* Relaxed Divided */
+// Relaxed Divided
 .ui.relaxed.divided.items > .item {
   margin: 0em;
   padding: @relaxedItemSpacing 0em;
@@ -457,10 +401,7 @@
   padding: @veryRelaxedItemSpacing 0em;
 }
 
-/*-------------------
-        Link
---------------------*/
-
+// Link
 .ui.items a.item:hover,
 .ui.link.items > .item:hover {
   cursor: pointer;
@@ -471,18 +412,12 @@
   color: @headerLinkHoverColor;
 }
 
-/*--------------
-      Size
----------------*/
-
+// Size
 .ui.items > .item {
   font-size: @relativeMedium;
 }
 
-/*---------------
-   Unstackable
-----------------*/
-
+// Unstackable
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.unstackable.items > .item > .image,
   .ui.unstackable.items > .item > .image > img {

@@ -1,8 +1,6 @@
-/*******************************
-             Grid
-*******************************/
+// Grid
 
-/* Inherited From Site */
+// Inherited From Site
 
 // @mobileBreakpoint
 // @tabletBreakpoint
@@ -10,9 +8,7 @@
 // @largeMonitorBreakpoint
 // @widescreenMonitorBreakpoint
 
-/*******************************
-            Grid
-*******************************/
+// Grid
 
 @minWidth: 320px;
 
@@ -24,20 +20,14 @@
 
 @consecutiveGridDistance: (@rowSpacing / 2);
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-     Relaxed
----------------*/
+// Relaxed
 
 @relaxedGutterWidth: 3rem;
 @veryRelaxedGutterWidth: 5rem;
 
-/*--------------
-     Divided
----------------*/
+// Divided
 
 @dividedBorder: -1px 0px 0px 0px @borderColor;
 @verticallyDividedBorder: 0px -1px 0px 0px @borderColor;
@@ -45,9 +35,7 @@
 @dividedInvertedBorder: -1px 0px 0px 0px @whiteBorderColor;
 @verticallyDividedInvertedBorder: 0px -1px 0px 0px @whiteBorderColor;
 
-/*--------------
-    Celled
----------------*/
+// Celled
 
 @celledMargin: 1em 0em;
 @celledWidth: 1px;
@@ -61,25 +49,19 @@
 @celledRowDivider: 0px (-@celledWidth) 0px 0px @celledBorderColor;
 @celledColumnDivider: (-@celledWidth) 0px 0px 0px @celledBorderColor;
 
-/*--------------
-    Stackable
----------------*/
+// Stackable
 
 @stackableRowSpacing: @rowSpacing;
 @stackableGutter: @gutterWidth;
 @stackableMobileBorder: 1px solid @borderColor;
 @stackableInvertedMobileBorder: 1px solid @whiteBorderColor;
 
-/*******************************
-             Legacy
-*******************************/
+// Legacy
 
-/*--------------
-     Page
----------------*/
+// Page
 
-/* Legacy (DO NOT USE)
- */
+// Legacy (DO NOT USE)
+
 @mobileWidth: auto;
 @mobileMargin: 0em;
 @mobileGutter: 0em;

@@ -1,10 +1,6 @@
-/*******************************
-            Segment
-*******************************/
+// Segment
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
 @background: @white;
 @borderWidth: 1px;
@@ -20,9 +16,7 @@
 @margin: @verticalMargin @horizontalMargin;
 @borderRadius: @defaultBorderRadius;
 
-/*-------------------
-       Group
---------------------*/
+// Group
 
 @groupedMargin: @margin;
 @groupedBorder: @border;
@@ -37,53 +31,47 @@
 @groupedSegmentWidth: auto;
 @groupedSegmentBoxShadow: none;
 
-/*-------------------
-       Coupling
---------------------*/
+// Coupling
 
-/* Page Grid Segment */
+// Page Grid Segment
 @pageGridMargin: (2 * @verticalPadding);
 
-/*******************************
-            States
-*******************************/
+// States
 
-/* Loading Dimmer */
+// Loading Dimmer
 @loaderDimmerColor: rgba(255, 255, 255, 0.8);
 @loaderDimmerZIndex: 100;
 
-/* Loading Spinner */
+// Loading Spinner
 @loaderSize: 3em;
 @loaderLineZIndex: 101;
 
-/*******************************
-            Variations
-*******************************/
+// Variations
 
-/* Piled */
+// Piled
 @piledZIndex: auto;
 @piledMargin: 3em;
 @piledBoxShadow: '';
 @piledDegrees: 1.2deg;
 @piledBorder: @border;
 
-/* Circular */
+// Circular
 @circularPadding: 2em;
 
-/* Stacked */
+// Stacked
 @stackedHeight: 6px;
 @stackedPageBackground: @subtleTransparentBlack;
 @stackedPadding: @verticalPadding + (0.4em);
 @tallStackedPadding: @verticalPadding + (0.8em);
 
-/* Raised */
+// Raised
 @raisedBoxShadow: @floatingShadow;
 
-/* Padded */
+// Padded
 @paddedSegmentPadding: 1.5em;
 @veryPaddedSegmentPadding: 3em;
 
-/* Attached */
+// Attached
 @attachedTopOffset: 0px;
 @attachedBottomOffset: 0px;
 @attachedHorizontalOffset: -@borderWidth;
@@ -93,22 +81,22 @@
 @attachedBottomBoxShadow: @boxShadow,
 @attachedBoxShadow;
 
-/* Inverted */
+// Inverted
 @invertedBackground: @black;
 
-/* Floated */
+// Floated
 @floatedDistance: 1em;
 
-/* Basic */
+// Basic
 @basicBackground: none transparent;
 @basicBorder: none;
 @basicBoxShadow: none;
 @basicBorderRadius: 0px;
 
-/* Colors */
+// Colors
 @coloredBorderSize: 2px;
 
-/* Ordinality */
+// Ordinality
 @secondaryBackground: @darkWhite;
 @secondaryColor: @mutedTextColor;
 

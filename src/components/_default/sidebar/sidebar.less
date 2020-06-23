@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Sidebar
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Sidebar
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,11 +17,9 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Sidebar
-*******************************/
+// Sidebar
 
-/* Sidebar Menu */
+// Sidebar Menu
 .ui.sidebar {
   position: fixed;
   top: 0;
@@ -44,15 +40,12 @@
   z-index: @topLayer;
 }
 
-/* GPU Layers for Child Elements */
+// GPU Layers for Child Elements
 .ui.sidebar > * {
   backface-visibility: hidden;
 }
 
-/*--------------
-   Direction
----------------*/
-
+// Direction
 .ui.left.sidebar {
   right: auto;
   left: 0px;
@@ -83,22 +76,19 @@
   transform: translate3d(0, 100%, 0);
 }
 
-/*--------------
-     Pushable
----------------*/
-
+// Pushable
 .pushable {
   height: 100%;
   overflow-x: hidden;
   padding: 0em !important;
 }
 
-/* Whole Page */
+// Whole Page
 body.pushable {
   background: @canvasBackground !important;
 }
 
-/* Page Context */
+// Page Context
 .pushable:not(body) {
   transform: translate3d(0, 0, 0);
 }
@@ -109,10 +99,7 @@ body.pushable {
   position: absolute;
 }
 
-/*--------------
-     Fixed
----------------*/
-
+// Fixed
 .pushable > .fixed {
   position: fixed;
   backface-visibility: hidden;
@@ -122,10 +109,7 @@ body.pushable {
   z-index: @fixedLayer;
 }
 
-/*--------------
-     Page
----------------*/
-
+// Page
 .pushable > .pusher {
   position: relative;
   backface-visibility: hidden;
@@ -139,15 +123,12 @@ body.pushable > .pusher {
   background: @pageBackground;
 }
 
-/* Pusher should inherit background from context */
+// Pusher should inherit background from context
 .pushable > .pusher {
   background: inherit;
 }
 
-/*--------------
-     Dimmer
----------------*/
-
+// Dimmer
 .pushable > .pusher:after {
   position: fixed;
   top: 0px;
@@ -161,46 +142,32 @@ body.pushable > .pusher {
   z-index: @dimmerLayer;
 }
 
-/*--------------
-    Coupling
----------------*/
-
+// Coupling
 .ui.sidebar.menu .item {
   border-radius: 0em !important;
 }
 
-/*******************************
-            States
-*******************************/
+// States
 
-/*--------------
-     Dimmed
----------------*/
-
+// Dimmed
 .pushable > .pusher.dimmed:after {
   width: 100% !important;
   height: 100% !important;
   opacity: 1 !important;
 }
 
-/*--------------
-    Animating
----------------*/
-
+// Animating
 .ui.animating.sidebar {
   visibility: visible;
 }
 
-/*--------------
-     Visible
----------------*/
-
+// Visible
 .ui.visible.sidebar {
   visibility: visible;
   transform: translate3d(0, 0, 0);
 }
 
-/* Shadow Direction */
+// Shadow Direction
 .ui.left.visible.sidebar,
 .ui.right.visible.sidebar {
   box-shadow: @horizontalBoxShadow;
@@ -211,7 +178,7 @@ body.pushable > .pusher {
   box-shadow: @verticalBoxShadow;
 }
 
-/* Visible On Load */
+// Visible On Load
 .ui.visible.left.sidebar ~ .fixed,
 .ui.visible.left.sidebar ~ .pusher {
   transform: translate3d(@width, 0, 0);
@@ -232,7 +199,7 @@ body.pushable > .pusher {
   transform: translate3d(0, -@height, 0);
 }
 
-/* opposite sides visible forces content overlay */
+// opposite sides visible forces content overlay
 .ui.visible.left.sidebar ~ .ui.visible.right.sidebar ~ .fixed,
 .ui.visible.left.sidebar ~ .ui.visible.right.sidebar ~ .pusher,
 .ui.visible.right.sidebar ~ .ui.visible.left.sidebar ~ .fixed,
@@ -240,19 +207,11 @@ body.pushable > .pusher {
   transform: translate3d(0, 0, 0);
 }
 
-/*--------------
-       iOS
----------------*/
+// iOS
+// Variations
 
-/*******************************
-          Variations
-*******************************/
-
-/*--------------
-     Width
----------------*/
-
-/* Left / Right */
+// Width
+// Left / Right
 .ui.thin.left.sidebar,
 .ui.thin.right.sidebar {
   width: @thinWidth;
@@ -278,7 +237,7 @@ body.pushable > .pusher {
   width: @veryWideWidth;
 }
 
-/* Left Visible */
+// Left Visible
 .ui.visible.thin.left.sidebar ~ .fixed,
 .ui.visible.thin.left.sidebar ~ .pusher {
   transform: translate3d(@thinWidth, 0, 0);
@@ -299,7 +258,7 @@ body.pushable > .pusher {
   transform: translate3d(@veryWideWidth, 0, 0);
 }
 
-/* Right Visible */
+// Right Visible
 .ui.visible.thin.right.sidebar ~ .fixed,
 .ui.visible.thin.right.sidebar ~ .pusher {
   transform: translate3d(-@thinWidth, 0, 0);
@@ -320,20 +279,15 @@ body.pushable > .pusher {
   transform: translate3d(-@veryWideWidth, 0, 0);
 }
 
-/*******************************
-          Animations
-*******************************/
+// Animations
 
-/*--------------
-    Overlay
----------------*/
-
-/* Set-up */
+// Overlay
+// Set-up
 .ui.overlay.sidebar {
   z-index: @topLayer;
 }
 
-/* Initial */
+// Initial
 .ui.left.overlay.sidebar {
   transform: translate3d(-100%, 0%, 0);
 }
@@ -350,13 +304,13 @@ body.pushable > .pusher {
   transform: translate3d(0%, 100%, 0);
 }
 
-/* Animation */
+// Animation
 .animating.ui.overlay.sidebar,
 .ui.visible.overlay.sidebar {
   transition: transform @duration @easing;
 }
 
-/* End - Sidebar */
+// End - Sidebar
 .ui.visible.left.overlay.sidebar {
   transform: translate3d(0%, 0%, 0);
 }
@@ -373,23 +327,20 @@ body.pushable > .pusher {
   transform: translate3d(0%, 0%, 0);
 }
 
-/* End - Pusher */
+// End - Pusher
 .ui.visible.overlay.sidebar ~ .fixed,
 .ui.visible.overlay.sidebar ~ .pusher {
   transform: none !important;
 }
 
-/*--------------
-      Push
----------------*/
-
-/* Initial */
+// Push
+// Initial
 .ui.push.sidebar {
   transition: transform @duration @easing;
   z-index: @topLayer;
 }
 
-/* Sidebar - Initial */
+// Sidebar - Initial
 .ui.left.push.sidebar {
   transform: translate3d(-100%, 0, 0);
 }
@@ -406,37 +357,31 @@ body.pushable > .pusher {
   transform: translate3d(0%, 100%, 0);
 }
 
-/* End */
+// End
 .ui.visible.push.sidebar {
   transform: translate3d(0%, 0, 0);
 }
 
-/*--------------
-    Uncover
----------------*/
-
-/* Initial */
+// Uncover
+// Initial
 .ui.uncover.sidebar {
   transform: translate3d(0, 0, 0);
   z-index: @bottomLayer;
 }
 
-/* End */
+// End
 .ui.visible.uncover.sidebar {
   transform: translate3d(0, 0, 0);
   transition: transform @duration @easing;
 }
 
-/*--------------
-   Slide Along
----------------*/
-
-/* Initial */
+// Slide Along
+// Initial
 .ui.slide.along.sidebar {
   z-index: @bottomLayer;
 }
 
-/* Sidebar - Initial */
+// Sidebar - Initial
 .ui.left.slide.along.sidebar {
   transform: translate3d(-50%, 0, 0);
 }
@@ -453,26 +398,23 @@ body.pushable > .pusher {
   transform: translate3d(0%, 50%, 0);
 }
 
-/* Animation */
+// Animation
 .ui.animating.slide.along.sidebar {
   transition: transform @duration @easing;
 }
 
-/* End */
+// End
 .ui.visible.slide.along.sidebar {
   transform: translate3d(0%, 0, 0);
 }
 
-/*--------------
-   Slide Out
----------------*/
-
-/* Initial */
+// Slide Out
+// Initial
 .ui.slide.out.sidebar {
   z-index: @bottomLayer;
 }
 
-/* Sidebar - Initial */
+// Sidebar - Initial
 .ui.left.slide.out.sidebar {
   transform: translate3d(50%, 0, 0);
 }
@@ -489,27 +431,24 @@ body.pushable > .pusher {
   transform: translate3d(0%, -50%, 0);
 }
 
-/* Animation */
+// Animation
 .ui.animating.slide.out.sidebar {
   transition: transform @duration @easing;
 }
 
-/* End */
+// End
 .ui.visible.slide.out.sidebar {
   transform: translate3d(0%, 0, 0);
 }
 
-/*--------------
-   Scale Down
----------------*/
-
-/* Initial */
+// Scale Down
+// Initial
 .ui.scale.down.sidebar {
   transition: transform @duration @easing;
   z-index: @topLayer;
 }
 
-/* Sidebar - Initial  */
+// Sidebar - Initial
 .ui.left.scale.down.sidebar {
   transform: translate3d(-100%, 0, 0);
 }
@@ -526,7 +465,7 @@ body.pushable > .pusher {
   transform: translate3d(0%, 100%, 0);
 }
 
-/* Pusher - Initial */
+// Pusher - Initial
 .ui.scale.down.left.sidebar ~ .pusher {
   transform-origin: 75% 50%;
 }
@@ -543,7 +482,7 @@ body.pushable > .pusher {
   transform-origin: 50% 25%;
 }
 
-/* Animation */
+// Animation
 .ui.animating.scale.down > .visible.ui.sidebar {
   transition: transform @duration @easing;
 }
@@ -556,7 +495,7 @@ body.pushable > .pusher {
   overflow: hidden !important;
 }
 
-/* End */
+// End
 .ui.visible.scale.down.sidebar {
   transform: translate3d(0, 0, 0);
 }

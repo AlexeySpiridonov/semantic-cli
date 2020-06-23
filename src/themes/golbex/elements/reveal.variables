@@ -1,6 +1,4 @@
-/*******************************
-            Reveal
-*******************************/
+// Reveal
 
 @transitionDelay: 0.1s;
 @transitionDuration: 0.5s;
@@ -12,7 +10,7 @@
 @activeZIndex: 4;
 @overlayZIndex: 5;
 
-/* Types */
+// Types
 @rotateDegrees: 110deg;
 @moveTransition: transform @transitionDuration @transitionEasing @transitionDelay;
 @slideTransition: transform @transitionDuration @defaultEasing @transitionDelay;

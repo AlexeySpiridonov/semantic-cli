@@ -1,36 +1,30 @@
-/*******************************
-           Statistic
-*******************************/
+// Statistic
 
-/*-------------------
-         View
---------------------*/
+// View
 
 @margin: 1em 0em;
 @textAlign: center;
 @maxWidth: auto;
 
-/* Group */
+// Group
 @horizontalSpacing: 1.5em;
 @rowSpacing: 2em;
 @groupMargin: 1em -@horizontalSpacing -@rowSpacing;
 
-/* Group Element */
+// Group Element
 @elementMargin: 0em @horizontalSpacing @rowSpacing;
 @elementMaxWidth: @maxWidth;
 
-/*-------------------
-       Content
---------------------*/
+// Content
 
-/* Value */
+// Value
 @valueFont: @pageFont;
 @valueFontWeight: normal;
 @valueLineHeight: 1em;
 @valueColor: @black;
 @valueTextTransform: uppercase;
 
-/* Label */
+// Label
 @labelSize: @relativeMedium;
 @topLabelDistance: 0rem;
 @bottomLabelDistance: 0rem;
@@ -40,39 +34,35 @@
 @labelLineHeight: @relativeLarge;
 @labelTextTransform: uppercase;
 
-/* Text */
+// Text
 @textValueLineHeight: 1em;
 @textValueMinHeight: 2em;
 @textValueFontWeight: bold;
 
-/* Label Image */
+// Label Image
 @imageHeight: 3rem;
 @imageVerticalAlign: baseline;
 
-/*-------------------
-      Types
---------------------*/
+// Types
 
 @horizontalGroupElementMargin: 1em 0em;
 @horizontalLabelDistance: 0.75em;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Floated */
+// Floated
 @leftFloatedMargin: 0em 2em 1em 0em;
 @rightFloatedMargin: 0em 0em 1em 2em;
 
-/* Inverted */
+// Inverted
 @invertedValueColor: @white;
 @invertedLabelColor: @invertedTextColor;
 
-/* Item Width */
+// Item Width
 @itemGroupMargin: 0em 0em -@rowSpacing;
 @itemMargin: 0em 0em @rowSpacing;
 
-/* Size */
+// Size
 @miniTextValueSize: 1rem;
 @miniValueSize: 1.5rem;
 @miniHorizontalValueSize: 1.5rem;

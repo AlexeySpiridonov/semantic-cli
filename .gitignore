@@ -1,6 +1,7 @@
 *-lock.json
 /assets
 /tmp
+/dest
 
 # Logs
 logs

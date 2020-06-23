@@ -1,45 +1,39 @@
-/*******************************
-             Sidebar
-*******************************/
+// Sidebar
 
-/*-------------------
-       Content
---------------------*/
+// Content
 
-/* Animation */
+// Animation
 @perspective: 1500px;
 @duration: 500ms;
 @easing: @defaultEasing;
 
-/* Dimmer */
+// Dimmer
 @dimmerColor: rgba(0, 0, 0, 0.4);
 @dimmerTransition: opacity @duration;
 
-/* Color below page */
+// Color below page
 @canvasBackground: @lightBlack;
 
-/* Shadow */
+// Shadow
 @boxShadow: 0px 0px 20px @borderColor;
 @horizontalBoxShadow: @boxShadow;
 @verticalBoxShadow: @boxShadow;
 
-/* Layering */
+// Layering
 @bottomLayer: 1;
 @middleLayer: 2;
 @fixedLayer: 101;
 @topLayer: 102;
 @dimmerLayer: 1000;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Width */
+// Width
 @veryThinWidth: 60px;
 @thinWidth: 150px;
 @width: 260px;
 @wideWidth: 350px;
 @veryWideWidth: 475px;
 
-/* Height */
+// Height
 @height: 36px;

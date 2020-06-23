@@ -1,10 +1,6 @@
-/*******************************
-             Table
-*******************************/
+// Table
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
 @verticalMargin: 1em;
 @horizontalMargin: 0em;
@@ -21,21 +17,19 @@ color @defaultDuration @defaultEasing;
 @boxShadow: none;
 @textAlign: left;
 
-/*--------------
-     Parts
----------------*/
+// Parts
 
-/* Table Row */
+// Table Row
 @rowBorder: 1px solid @internalBorderColor;
 
-/* Table Cell */
+// Table Cell
 @cellVerticalPadding: @relativeMini;
 @cellHorizontalPadding: @relativeMini;
 @cellVerticalAlign: inherit;
 @cellTextAlign: inherit;
 @cellBorder: 1px solid @internalBorderColor;
 
-/* Table Header */
+// Table Header
 @headerBorder: 1px solid @internalBorderColor;
 @headerDivider: none;
 @headerBackground: @offWhite;
@@ -49,7 +43,7 @@ color @defaultDuration @defaultEasing;
 @headerTextTransform: none;
 @headerBoxShadow: none;
 
-/* Table Footer */
+// Table Footer
 @footerBoxShadow: none;
 @footerBorder: 1px solid @borderColor;
 @footerDivider: none;
@@ -63,7 +57,7 @@ color @defaultDuration @defaultEasing;
 @footerFontWeight: normal;
 @footerTextTransform: none;
 
-/* Responsive Size */
+// Responsive Size
 @responsiveHeaderDisplay: block;
 @responsiveFooterDisplay: block;
 @responsiveRowVerticalPadding: 1em;
@@ -72,11 +66,9 @@ color @defaultDuration @defaultEasing;
 @responsiveCellHorizontalPadding: 0.75em;
 @responsiveCellBoxShadow: none !important;
 
-/*-------------------
-       Types
---------------------*/
+// Types
 
-/* Definition */
+// Definition
 @definitionPageBackground: @white;
 
 @definitionHeaderBackground: transparent;
@@ -96,43 +88,39 @@ color @defaultDuration @defaultEasing;
 @definitionColumnTextAlign: '';
 @definitionColumnHorizontalPadding: '';
 
-/*--------------
-    Couplings
----------------*/
+// Couplings
 
 @iconVerticalAlign: baseline;
 
-/*--------------
-     States
----------------*/
+// States
 
 @stateMarkerWidth: 0px;
 
-/* Positive */
+// Positive
 @positiveColor: @positiveTextColor;
 @positiveBoxShadow: @stateMarkerWidth 0px 0px @positiveBorderColor inset;
 @positiveBackgroundHover: darken(@positiveBackgroundColor, 3);
 @positiveColorHover: darken(@positiveColor, 3);
 
-/* Negative */
+// Negative
 @negativeColor: @negativeTextColor;
 @negativeBoxShadow: @stateMarkerWidth 0px 0px @negativeBorderColor inset;
 @negativeBackgroundHover: darken(@negativeBackgroundColor, 3);
 @negativeColorHover: darken(@negativeColor, 3);
 
-/* Error */
+// Error
 @errorColor: @errorTextColor;
 @errorBoxShadow: @stateMarkerWidth 0px 0px @errorBorderColor inset;
 @errorBackgroundHover: darken(@errorBackgroundColor, 3);
 @errorColorHover: darken(@errorColor, 3);
 
-/* Warning */
+// Warning
 @warningColor: @warningTextColor;
 @warningBoxShadow: @stateMarkerWidth 0px 0px @warningBorderColor inset;
 @warningBackgroundHover: darken(@warningBackgroundColor, 3);
 @warningColorHover: darken(@warningColor, 3);
 
-/* Active */
+// Active
 @activeColor: @textColor;
 @activeBackgroundColor: #E0E0E0;
 @activeBoxShadow: @stateMarkerWidth 0px 0px @activeColor inset;
@@ -140,11 +128,9 @@ color @defaultDuration @defaultEasing;
 @activeBackgroundHover: #EFEFEF;
 @activeColorHover: @selectedTextColor;
 
-/*--------------
-     Types
----------------*/
+// Types
 
-/* Attached */
+// Attached
 @attachedTopOffset: 0px;
 @attachedBottomOffset: 0px;
 @attachedHorizontalOffset: -@borderWidth;
@@ -154,17 +140,17 @@ color @defaultDuration @defaultEasing;
 @attachedBottomBoxShadow: @boxShadow,
 @attachedBoxShadow;
 
-/* Striped */
+// Striped
 @stripedBackground: rgba(0, 0, 50, 0.02);
 @invertedStripedBackground: rgba(255, 255, 255, 0.05);
 
-/* Selectable */
+// Selectable
 @selectableBackground: @transparentBlack;
 @selectableTextColor: @selectedTextColor;
 @selectableInvertedBackground: @transparentWhite;
 @selectableInvertedTextColor: @invertedSelectedTextColor;
 
-/* Sortable */
+// Sortable
 @sortableBackground: '';
 @sortableColor: @textColor;
 
@@ -192,11 +178,11 @@ color @defaultDuration @defaultEasing;
 @sortableInvertedActiveBackground: @strongTransparentWhite @subtleGradient;
 @sortableInvertedActiveColor: @invertedSelectedTextColor;
 
-/* Colors */
+// Colors
 @coloredBorderSize: 0.2em;
 @coloredBorderRadius: 0em 0em @borderRadius @borderRadius;
 
-/* Inverted */
+// Inverted
 @invertedBackground: #333333;
 @invertedBorder: none;
 @invertedCellBorderColor: @whiteBorderColor;
@@ -210,7 +196,7 @@ color @defaultDuration @defaultEasing;
 @invertedDefinitionColumnColor: @invertedSelectedTextColor;
 @invertedDefinitionColumnFontWeight: bold;
 
-/* Basic */
+// Basic
 @basicTableBackground: transparent;
 @basicTableBorder: @borderWidth solid @borderColor;
 @basicBoxShadow: none;
@@ -222,19 +208,19 @@ color @defaultDuration @defaultEasing;
 @basicTableCellPadding: '';
 @basicTableStripedBackground: @transparentBlack;
 
-/* Padded */
+// Padded
 @paddedVerticalPadding: 1em;
 @paddedHorizontalPadding: 1em;
 @veryPaddedVerticalPadding: 1.5em;
 @veryPaddedHorizontalPadding: 1.5em;
 
-/* Compact */
+// Compact
 @compactVerticalPadding: 0.5em;
 @compactHorizontalPadding: 0.7em;
 @veryCompactVerticalPadding: 0.4em;
 @veryCompactHorizontalPadding: 0.6em;
 
-/* Sizes */
+// Sizes
 @small: 0.9em;
 @medium: 1em;
 @large: 1.1em;

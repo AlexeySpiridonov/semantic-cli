@@ -1,8 +1,6 @@
-/*******************************
-            Search
-*******************************/
+// Search
 
-/* Search Prompt */
+// Search Prompt
 @promptBackground: @inputBackground;
 @promptVerticalPadding: @inputVerticalPadding;
 @promptHorizontalPadding: @inputHorizontalPadding;
@@ -18,7 +16,7 @@ box-shadow @defaultDuration @defaultEasing,
 border-color @defaultDuration @defaultEasing;
 @promptBoxShadow: 0em 0em 0em 0em transparent inset;
 
-/* Result Box */
+// Result Box
 @resultsWidth: 18em;
 @resultsBackground: #FFFFFF;
 @resultsDistance: 0.5em;
@@ -26,7 +24,7 @@ border-color @defaultDuration @defaultEasing;
 @resultsBorder: 1px solid @solidBorderColor;
 @resultsBoxShadow: @floatingShadow;
 
-/* Result */
+// Result
 @resultFontSize: 1em;
 @resultVerticalPadding: @relativeTiny;
 @resultHorizontalPadding: @relativeLarge;
@@ -36,7 +34,7 @@ border-color @defaultDuration @defaultEasing;
 @resultDivider: 1px solid @internalBorderColor;
 @resultLastDivider: none;
 
-/* Result Image */
+// Result Image
 @resultImageFloat: right;
 @resultImageBackground: none;
 @resultImageWidth: 5em;
@@ -44,23 +42,23 @@ border-color @defaultDuration @defaultEasing;
 @resultImageBorderRadius: 0.25em;
 @resultImageMargin: 0em 6em 0em 0em;
 
-/* Result Content */
+// Result Content
 @resultTitleFont: @headerFont;
 @resultTitleMargin: -@headerLineHeightOffset 0em 0em;
 @resultTitleFontWeight: bold;
 @resultTitleFontSize: @relativeMedium;
 @resultTitleColor: @darkTextColor;
 
-/* Description */
+// Description
 @resultDescriptionFontSize: @relativeSmall;
 @resultDescriptionDistance: 0;
 @resultDescriptionColor: @lightTextColor;
 
-/* Price */
+// Price
 @resultPriceFloat: right;
 @resultPriceColor: @green;
 
-/* Special Message */
+// Special Message
 @messageVerticalPadding: 1em;
 @messageHorizontalPadding: 1em;
 @messageHeaderFontSize: @medium;
@@ -70,7 +68,7 @@ border-color @defaultDuration @defaultEasing;
 @messageDescriptionFontSize: 1em;
 @messageDescriptionColor: @textColor;
 
-/* All Results Link */
+// All Results Link
 @actionBorder: none;
 @actionBackground: @darkWhite;
 @actionPadding: @relativeSmall @relativeMedium;
@@ -78,27 +76,25 @@ border-color @defaultDuration @defaultEasing;
 @actionFontWeight: bold;
 @actionAlign: center;
 
-/*******************************
-            States
-*******************************/
+// States
 
-/* Focus */
+// Focus
 @promptFocusBackground: @promptBackground;
 @promptFocusBorderColor: @selectedBorderColor;
 @promptFocusColor: @selectedTextColor;
 
-/* Hover */
+// Hover
 @resultHoverBackground: @offWhite;
 @actionHoverBackground: #E0E0E0;
 
-/* Loading */
+// Loading
 @invertedLoaderFillColor: rgba(0, 0, 0, 0.15);
 
-/* Active Category */
+// Active Category
 @categoryActiveBackground: @darkWhite;
 @categoryNameActiveColor: @textColor;
 
-/* Active Result */
+// Active Result
 @resultActiveBorderLeft: @internalBorderColor;
 @resultActiveBackground: @darkWhite;
 @resultActiveBoxShadow: none;
@@ -106,11 +102,9 @@ border-color @defaultDuration @defaultEasing;
 @resultActiveDescriptionColor: @darkTextColor;
 @resultsZIndex: 998;
 
-/*******************************
-            Types
-*******************************/
+// Types
 
-/* Selection */
+// Selection
 @selectionPromptBorderRadius: @defaultBorderRadius;
 
 @selectionCloseTop: 0em;
@@ -124,7 +118,7 @@ opacity @defaultDuration @defaultEasing;
 
 @selectionCloseIconInputRight: 1.85714em;
 
-/* Category */
+// Category
 @categoryBackground: @darkWhite;
 @categoryBoxShadow: none;
 @categoryDivider: 1px solid @internalBorderColor;

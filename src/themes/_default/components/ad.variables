@@ -1,6 +1,4 @@
-/*******************************
-          Advertisement
-*******************************/
+// Advertisement
 
 @margin: 1em 0em;
 @overflow: hidden;

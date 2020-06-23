@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Header
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//  # Semantic UI - Header
+//  http://github.com/semantic-org/semantic-ui/
+//
+//
+//  Released under the MIT license
+//  http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'element';
 @modifier: '_default';
@@ -19,11 +17,9 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Header
-*******************************/
+// Header
 
-/* Standard */
+// Standard
 .ui.header {
   border: none;
   margin: @margin;
@@ -43,10 +39,7 @@
   margin-bottom: @lastMargin;
 }
 
-/*--------------
-   Sub Header
----------------*/
-
+// Sub Header
 .ui.header .sub.header {
   display: block;
   font-weight: normal;
@@ -57,10 +50,7 @@
   color: @subHeaderColor;
 }
 
-/*--------------
-      Icon
----------------*/
-
+// Icon
 .ui.header > .icon {
   display: table-cell;
   opacity: @iconOpacity;
@@ -69,17 +59,14 @@
   vertical-align: @iconAlignment;
 }
 
-/* With Text Node */
+// With Text Node
 .ui.header .icon:only-child {
   display: inline-block;
   padding: 0em;
   margin-right: @iconMargin;
 }
 
-/*-------------------
-        Image
---------------------*/
-
+// Image
 .ui.header > .image:not(.icon),
 .ui.header > img {
   display: inline-block;
@@ -94,52 +81,41 @@
   margin-right: @imageMargin;
 }
 
-/*--------------
-     Content
----------------*/
-
+// Content
 .ui.header .content {
   display: inline-block;
   vertical-align: @contentAlignment;
 }
 
-/* After Image */
+// After Image
 .ui.header > img + .content,
 .ui.header > .image + .content {
   padding-left: @imageMargin;
   vertical-align: @contentImageAlignment;
 }
 
-/* After Icon */
+// After Icon
 .ui.header > .icon + .content {
   padding-left: @iconMargin;
   display: table-cell;
   vertical-align: @contentIconAlignment;
 }
 
-/*--------------
- Loose Coupling
----------------*/
-
+// Loose Coupling
 .ui.header .ui.label {
   font-size: @labelSize;
   margin-left: @labelDistance;
   vertical-align: @labelVerticalAlign;
 }
 
-/* Positioning */
+// Positioning
 .ui.header + p {
   margin-top: @nextParagraphDistance;
 }
 
-/*******************************
-            Types
-*******************************/
+// Types
 
-/*--------------
-     Page
----------------*/
-
+// Page
 h1.ui.header {
   font-size: @h1;
 }
@@ -160,7 +136,7 @@ h5.ui.header {
   font-size: @h5;
 }
 
-/* Sub Header */
+// Sub Header
 h1.ui.header .sub.header {
   font-size: @h1SubHeaderFontSize;
 }
@@ -181,10 +157,7 @@ h5.ui.header .sub.header {
   font-size: @h5SubHeaderFontSize;
 }
 
-/*--------------
- Content Heading
----------------*/
-
+// Content Heading
 .ui.huge.header {
   min-height: 1em;
   font-size: @hugeFontSize;
@@ -206,7 +179,7 @@ h5.ui.header .sub.header {
   font-size: @tinyFontSize;
 }
 
-/* Sub Header */
+// Sub Header
 .ui.huge.header .sub.header {
   font-size: @hugeSubHeaderFontSize;
 }
@@ -227,10 +200,7 @@ h5.ui.header .sub.header {
   font-size: @tinySubHeaderFontSize;
 }
 
-/*--------------
-   Sub Heading
----------------*/
-
+// Sub Heading
 .ui.sub.header {
   padding: 0em;
   margin-bottom: @subHeadingDistance;
@@ -256,10 +226,7 @@ h5.ui.header .sub.header {
   font-size: @hugeSubHeadingSize;
 }
 
-/*-------------------
-        Icon
---------------------*/
-
+// Icon
 .ui.icon.header {
   display: inline-block;
   text-align: center;
@@ -313,22 +280,15 @@ h5.ui.header .sub.header {
   display: block;
 }
 
-/*******************************
-            States
-*******************************/
+// States
 
 .ui.disabled.header {
   opacity: @disabledOpacity;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*-------------------
-      Inverted
---------------------*/
-
+// Inverted
 .ui.inverted.header {
   color: @invertedColor;
 }
@@ -352,11 +312,8 @@ h5.ui.header .sub.header {
   border-bottom: none;
 }
 
-/*-------------------
-       Colors
---------------------*/
-
-/*--- Red ---*/
+// Colors
+//Red
 .ui.red.header {
   color: @red !important;
 }
@@ -369,7 +326,7 @@ a.ui.red.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @red;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.red.header {
   color: @lightRed !important;
 }
@@ -378,7 +335,7 @@ a.ui.inverted.red.header:hover {
   color: @lightRedHover !important;
 }
 
-/*--- Orange ---*/
+//Orange
 .ui.orange.header {
   color: @orange !important;
 }
@@ -391,7 +348,7 @@ a.ui.orange.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @orange;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.orange.header {
   color: @lightOrange !important;
 }
@@ -400,7 +357,7 @@ a.ui.inverted.orange.header:hover {
   color: @lightOrangeHover !important;
 }
 
-/*--- Olive ---*/
+//Olive
 .ui.olive.header {
   color: @olive !important;
 }
@@ -413,7 +370,7 @@ a.ui.olive.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @olive;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.olive.header {
   color: @lightOlive !important;
 }
@@ -422,7 +379,7 @@ a.ui.inverted.olive.header:hover {
   color: @lightOliveHover !important;
 }
 
-/*--- Yellow ---*/
+//Yellow
 .ui.yellow.header {
   color: @yellow !important;
 }
@@ -435,7 +392,7 @@ a.ui.yellow.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @yellow;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.yellow.header {
   color: @lightYellow !important;
 }
@@ -444,7 +401,7 @@ a.ui.inverted.yellow.header:hover {
   color: @lightYellowHover !important;
 }
 
-/*--- Green ---*/
+//Green
 .ui.green.header {
   color: @green !important;
 }
@@ -457,7 +414,7 @@ a.ui.green.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @green;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.green.header {
   color: @lightGreen !important;
 }
@@ -466,7 +423,7 @@ a.ui.inverted.green.header:hover {
   color: @lightGreenHover !important;
 }
 
-/*--- Teal ---*/
+//Teal
 .ui.teal.header {
   color: @teal !important;
 }
@@ -479,7 +436,7 @@ a.ui.teal.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @teal;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.teal.header {
   color: @lightTeal !important;
 }
@@ -488,7 +445,7 @@ a.ui.inverted.teal.header:hover {
   color: @lightTealHover !important;
 }
 
-/*--- Blue ---*/
+//Blue
 .ui.blue.header {
   color: @blue !important;
 }
@@ -501,7 +458,7 @@ a.ui.blue.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @blue;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.blue.header {
   color: @lightBlue !important;
 }
@@ -510,7 +467,7 @@ a.ui.inverted.blue.header:hover {
   color: @lightBlueHover !important;
 }
 
-/*--- Violet ---*/
+//Violet
 .ui.violet.header {
   color: @violet !important;
 }
@@ -523,7 +480,7 @@ a.ui.violet.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @violet;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.violet.header {
   color: @lightViolet !important;
 }
@@ -532,7 +489,7 @@ a.ui.inverted.violet.header:hover {
   color: @lightVioletHover !important;
 }
 
-/*--- Purple ---*/
+//Purple
 .ui.purple.header {
   color: @purple !important;
 }
@@ -545,7 +502,7 @@ a.ui.purple.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @purple;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.purple.header {
   color: @lightPurple !important;
 }
@@ -554,7 +511,7 @@ a.ui.inverted.purple.header:hover {
   color: @lightPurpleHover !important;
 }
 
-/*--- Pink ---*/
+//Pink
 .ui.pink.header {
   color: @pink !important;
 }
@@ -567,7 +524,7 @@ a.ui.pink.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @pink;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.pink.header {
   color: @lightPink !important;
 }
@@ -576,7 +533,7 @@ a.ui.inverted.pink.header:hover {
   color: @lightPinkHover !important;
 }
 
-/*--- Brown ---*/
+//Brown
 .ui.brown.header {
   color: @brown !important;
 }
@@ -589,7 +546,7 @@ a.ui.brown.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @brown;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.brown.header {
   color: @lightBrown !important;
 }
@@ -598,7 +555,7 @@ a.ui.inverted.brown.header:hover {
   color: @lightBrownHover !important;
 }
 
-/*--- Grey ---*/
+//Grey
 .ui.grey.header {
   color: @grey !important;
 }
@@ -611,7 +568,7 @@ a.ui.grey.header:hover {
   border-bottom: @dividedColoredBorderWidth solid @grey;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.grey.header {
   color: @lightGrey !important;
 }
@@ -620,10 +577,7 @@ a.ui.inverted.grey.header:hover {
   color: @lightGreyHover !important;
 }
 
-/*-------------------
-       Aligned
---------------------*/
-
+// Aligned
 .ui.left.aligned.header {
   text-align: left;
 }
@@ -647,10 +601,7 @@ a.ui.inverted.grey.header:hover {
   width: 100%;
 }
 
-/*-------------------
-       Floated
---------------------*/
-
+// Floated
 .ui.floated.header,
 .ui[class*="left floated"].header {
   float: left;
@@ -664,18 +615,12 @@ a.ui.inverted.grey.header:hover {
   margin-left: @floatedMargin;
 }
 
-/*-------------------
-       Fitted
---------------------*/
-
+// Fitted
 .ui.fitted.header {
   padding: 0em;
 }
 
-/*-------------------
-      Dividing
---------------------*/
-
+// Dividing
 .ui.dividing.header {
   padding-bottom: @dividedBorderPadding;
   border-bottom: @dividedBorder;
@@ -693,10 +638,7 @@ a.ui.inverted.grey.header:hover {
   border-bottom-color: @invertedDividedBorderColor;
 }
 
-/*-------------------
-        Block
---------------------*/
-
+// Block
 .ui.block.header {
   background: @blockBackground;
   padding: @blockVerticalPadding @blockHorizontalPadding;
@@ -725,10 +667,7 @@ a.ui.inverted.grey.header:hover {
   font-size: @hugeBlock;
 }
 
-/*-------------------
-       Attached
---------------------*/
-
+// Attached
 .ui.attached.header {
   background: @attachedBackground;
   padding: @attachedVerticalPadding @attachedHorizontalPadding;
@@ -760,7 +699,7 @@ a.ui.inverted.grey.header:hover {
   border-radius: 0em 0em @attachedBorderRadius @attachedBorderRadius;
 }
 
-/* Attached Sizes */
+// Attached Sizes
 .ui.tiny.attached.header {
   font-size: @tinyAttachedSize;
 }
@@ -781,10 +720,7 @@ a.ui.inverted.grey.header:hover {
   font-size: @hugeAttachedSize;
 }
 
-/*-------------------
-        Sizing
---------------------*/
-
+// Sizing
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: @mediumFontSize;
 }

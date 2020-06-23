@@ -1,6 +1,4 @@
-/*******************************
-             Rating
-*******************************/
+// Rating
 
 @margin: 0em @relativeMini;
 @whiteSpace: nowrap;
@@ -14,11 +12,9 @@ background @defaultDuration @defaultEasing,
 text-shadow @defaultDuration @defaultEasing,
 color @defaultDuration @defaultEasing;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Standard */
+// Standard
 @inactiveBackground: transparent;
 @inactiveColor: rgba(0, 0, 0, 0.15);
 
@@ -28,7 +24,7 @@ color @defaultDuration @defaultEasing;
 @activeBackground: @inactiveBackground;
 @activeColor: @darkTextColor;
 
-/* Star */
+// Star
 @starIconWidth: @iconWidth;
 @starIconHeight: @iconHeight;
 @starShadowWidth: 1px;
@@ -53,7 +49,7 @@ color @defaultDuration @defaultEasing;
 0px @starShadowWidth 0px @starSelectedShadowColor,
 @starShadowWidth 0px 0px @starSelectedShadowColor;
 
-/* Heart */
+// Heart
 @heartIconWidth: 1.4em;
 @heartIconHeight: @iconHeight;
 @heartShadowWidth: 1px;
@@ -78,15 +74,11 @@ color @defaultDuration @defaultEasing;
 0px @heartShadowWidth 0px @heartSelectedShadowColor,
 @heartShadowWidth 0px 0px @heartSelectedShadowColor;
 
-/*-------------------
-        States
---------------------*/
+// States
 
 @interactiveActiveIconOpacity: 1;
 @interactiveSelectedIconOpacity: 1;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
 @massive: 2rem;

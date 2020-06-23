@@ -1,6 +1,4 @@
-/*******************************
-         Theme Overrides
-*******************************/
+// Theme Overrides
 
 @font-face {
   font-family: 'Step';
@@ -12,5 +10,5 @@
 .ui.steps .step.completed > .icon:before,
 .ui.ordered.steps .step.completed:before {
   font-family: 'Step';
-  content: '\e800'; /* '' */
+  content: '\e800'; // ''
 }

@@ -1,6 +1,4 @@
-/*******************************
-         Theme Overrides
-*******************************/
+// Theme Overrides
 
 .ui.horizontal.divider:before,
 .ui.horizontal.divider:after {

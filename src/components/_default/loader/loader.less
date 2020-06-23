@@ -1,15 +1,13 @@
-/*!
- * # Semantic UI - Loader
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-/*******************************
-            Theme
-*******************************/
+//  !
+//   # Semantic UI - Loader
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+//  */
+// Theme
 
 @type: 'element';
 @modifier: '_default';
@@ -18,11 +16,9 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Loader
-*******************************/
+// Loader
 
-/* Standard Size */
+// Standard Size
 .ui.loader {
   display: none;
   position: absolute;
@@ -34,7 +30,7 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* Static Shape */
+// Static Shape
 .ui.loader:before {
   position: absolute;
   content: '';
@@ -47,7 +43,7 @@
   border: @loaderLineWidth solid @loaderFillColor;
 }
 
-/* Active Shape */
+// Active Shape
 .ui.loader:after {
   position: absolute;
   content: '';
@@ -68,7 +64,7 @@
   box-shadow: 0px 0px 0px 1px transparent;
 }
 
-/* Active Animation */
+// Active Animation
 @keyframes loader {
   from {
     transform: rotate(0deg);
@@ -78,7 +74,7 @@
   }
 }
 
-/* Sizes */
+// Sizes
 .ui.mini.loader:before,
 .ui.mini.loader:after {
   width: @mini;
@@ -135,16 +131,13 @@
   margin: @massiveOffset;
 }
 
-/*-------------------
-      Coupling
---------------------*/
-
-/* Show inside active dimmer */
+// Coupling
+// Show inside active dimmer
 .ui.dimmer .loader {
   display: block;
 }
 
-/* Black Dimmer */
+// Black Dimmer
 .ui.dimmer .ui.loader {
   color: @invertedLoaderTextColor;
 }
@@ -157,7 +150,7 @@
   border-color: @invertedShapeBorderColor;
 }
 
-/* White Dimmer (Inverted) */
+// White Dimmer (Inverted)
 .ui.inverted.dimmer .ui.loader {
   color: @loaderTextColor;
 }
@@ -170,14 +163,9 @@
   border-color: @shapeBorderColor;
 }
 
-/*******************************
-             Types
-*******************************/
+// Types
 
-/*-------------------
-        Text
---------------------*/
-
+// Text
 .ui.text.loader {
   width: auto !important;
   height: auto !important;
@@ -185,9 +173,7 @@
   font-style: normal;
 }
 
-/*******************************
-            States
-*******************************/
+// States
 
 .ui.indeterminate.loader:after {
   animation-direction: @indeterminateDirection;
@@ -204,15 +190,10 @@
   display: none;
 }
 
-/*******************************
-            Variations
-*******************************/
+// Variations
 
-/*-------------------
-        Sizes
---------------------*/
-
-/* Loader */
+// Sizes
+// Loader
 .ui.inverted.dimmer .ui.mini.loader,
 .ui.mini.loader {
   width: @mini;
@@ -269,7 +250,7 @@
   font-size: @massiveFontSize;
 }
 
-/* Text Loader */
+// Text Loader
 .ui.mini.text.loader {
   min-width: @mini;
   padding-top: (@mini + @textDistance);
@@ -310,10 +291,7 @@
   padding-top: (@massive + @textDistance);
 }
 
-/*-------------------
-       Inverted
---------------------*/
-
+// Inverted
 .ui.inverted.loader {
   color: @invertedLoaderTextColor
 }
@@ -326,10 +304,7 @@
   border-top-color: @invertedLoaderLineColor;
 }
 
-/*-------------------
-       Inline
---------------------*/
-
+// Inline
 .ui.inline.loader {
   position: relative;
   vertical-align: @inlineVerticalAlign;
@@ -344,7 +319,7 @@
   display: inline-block;
 }
 
-/* Centered Inline */
+// Centered Inline
 .ui.centered.inline.loader.active,
 .ui.centered.inline.loader.visible {
   display: block;

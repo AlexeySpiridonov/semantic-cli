@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Popup
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Popup
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Popup
-*******************************/
+// Popup
 
 .ui.popup {
   display: none;
@@ -29,7 +25,7 @@
   top: 0px;
   right: 0px;
 
-  /* Fixes content being squished when inline (moz only) */
+  // Fixes content being squished when inline (moz only)
   min-width: min-content;
   z-index: @zIndex;
 
@@ -73,20 +69,15 @@
   box-shadow: @arrowBoxShadow;
 }
 
-/*******************************
-            Types
-*******************************/
+// Types
 
-/*--------------
-    Tooltip
----------------*/
-
-/* Content */
+// Tooltip
+// Content
 [data-tooltip] {
   position: relative;
 }
 
-/* Arrow */
+// Arrow
 [data-tooltip]:before {
   pointer-events: none;
   position: absolute;
@@ -102,7 +93,7 @@
   box-shadow: @tooltipArrowBoxShadow;
 }
 
-/* Popup */
+// Popup
 [data-tooltip]:after {
   pointer-events: none;
   content: attr(data-tooltip);
@@ -128,7 +119,7 @@
   z-index: @tooltipZIndex;
 }
 
-/* Default Position (Top Center) */
+// Default Position (Top Center)
 [data-tooltip]:not([data-position]):before {
   top: auto;
   right: auto;
@@ -146,7 +137,7 @@
   margin-bottom: @tooltipDistanceAway;
 }
 
-/* Animation */
+// Animation//  /
 [data-tooltip]:before,
 [data-tooltip]:after {
   pointer-events: none;
@@ -177,7 +168,7 @@
   opacity: 1;
 }
 
-/* Animation Position */
+// Animation Position//  /
 [data-tooltip]:after,
 [data-tooltip][data-position="top center"]:after,
 [data-tooltip][data-position="bottom center"]:after {
@@ -213,21 +204,18 @@
   transform: scale(1) !important;
 }
 
-/*--------------
-    Inverted
----------------*/
-
-/* Arrow */
+// Inverted
+// Arrow//  /
 [data-tooltip][data-inverted]:before {
   box-shadow: none !important;
 }
 
-/* Arrow Position */
+// Arrow Position//  /
 [data-tooltip][data-inverted]:before {
   background: @invertedArrowBottomBackground;
 }
 
-/* Popup  */
+// Popup //  /
 [data-tooltip][data-inverted]:after {
   background: @tooltipInvertedBackground;
   color: @tooltipInvertedColor;
@@ -240,11 +228,8 @@
   color: @tooltipInvertedHeaderColor;
 }
 
-/*--------------
-    Position
----------------*/
-
-/* Top Center */
+// Position
+// Top Center//  /
 [data-position="top center"][data-tooltip]:after {
   top: auto;
   right: auto;
@@ -264,7 +249,7 @@
   margin-bottom: -@tooltipArrowVerticalOffset;
 }
 
-/* Top Left */
+// Top Left//  /
 [data-position="top left"][data-tooltip]:after {
   top: auto;
   right: auto;
@@ -282,7 +267,7 @@
   margin-bottom: -@tooltipArrowVerticalOffset;
 }
 
-/* Top Right */
+// Top Right//  /
 [data-position="top right"][data-tooltip]:after {
   top: auto;
   left: auto;
@@ -300,7 +285,7 @@
   margin-bottom: -@tooltipArrowVerticalOffset;
 }
 
-/* Bottom Center */
+// Bottom Center//  /
 [data-position="bottom center"][data-tooltip]:after {
   bottom: auto;
   right: auto;
@@ -319,7 +304,7 @@
   margin-top: -@tooltipArrowVerticalOffset;
 }
 
-/* Bottom Left */
+// Bottom Left//  /
 [data-position="bottom left"][data-tooltip]:after {
   left: 0;
   top: 100%;
@@ -335,7 +320,7 @@
   margin-top: -@tooltipArrowVerticalOffset;
 }
 
-/* Bottom Right */
+// Bottom Right//  /
 [data-position="bottom right"][data-tooltip]:after {
   right: 0;
   top: 100%;
@@ -351,7 +336,7 @@
   margin-top: -@tooltipArrowHorizontalOffset;
 }
 
-/* Left Center */
+// Left Center//  /
 [data-position="left center"][data-tooltip]:after {
   right: 100%;
   top: 50%;
@@ -366,7 +351,7 @@
   margin-right: @tooltipArrowHorizontalOffset;
 }
 
-/* Right Center */
+// Right Center//  /
 [data-position="right center"][data-tooltip]:after {
   left: 100%;
   top: 50%;
@@ -381,7 +366,7 @@
   margin-left: -@tooltipArrowVerticalOffset;
 }
 
-/* Arrow */
+// Arrow//  /
 [data-position~="bottom"][data-tooltip]:before {
   background: @arrowTopBackground;
   box-shadow: @bottomArrowBoxShadow;
@@ -401,7 +386,7 @@
   background: @arrowBottomBackground;
 }
 
-/* Inverted Arrow Color */
+// Inverted Arrow Color//  /
 [data-inverted][data-position~="bottom"][data-tooltip]:before {
   background: @invertedArrowTopBackground;
   box-shadow: @bottomArrowBoxShadow;
@@ -445,15 +430,12 @@
   transform-origin: left center;
 }
 
-/*--------------
-     Spacing
----------------*/
-
+// Spacing
 .ui.popup {
   margin: 0em;
 }
 
-/* Extending from Top */
+// Extending from Top//  /
 .ui.top.popup {
   margin: 0em 0em @popupDistanceAway;
 }
@@ -470,7 +452,7 @@
   transform-origin: right bottom;
 }
 
-/* Extending from Vertical Center */
+// Extending from Vertical Center//  /
 .ui.left.center.popup {
   margin: 0em @popupDistanceAway 0em 0em;
   transform-origin: right 50%;
@@ -481,7 +463,7 @@
   transform-origin: left 50%;
 }
 
-/* Extending from Bottom */
+// Extending from Bottom//  /
 .ui.bottom.popup {
   margin: @popupDistanceAway 0em 0em;
 }
@@ -498,11 +480,8 @@
   transform-origin: right top;
 }
 
-/*--------------
-     Pointer
----------------*/
-
-/*--- Below ---*/
+// Pointer
+// Below
 .ui.bottom.center.popup:before {
   margin-left: @arrowOffset;
   top: @arrowOffset;
@@ -516,7 +495,7 @@
   margin-left: @boxArrowOffset;
 }
 
-/*rtl:rename*/
+// rtl:rename
 .ui.bottom.left.popup:before {
   top: @arrowOffset;
   left: @arrowDistanceFromEdge;
@@ -530,7 +509,7 @@
   margin-right: @boxArrowOffset;
 }
 
-/*rtl:rename*/
+// rtl:rename
 .ui.bottom.right.popup:before {
   top: @arrowOffset;
   right: @arrowDistanceFromEdge;
@@ -540,7 +519,7 @@
   box-shadow: @bottomArrowBoxShadow;
 }
 
-/*--- Above ---*/
+//Above
 .ui.top.center.popup:before {
   top: auto;
   right: auto;
@@ -553,7 +532,7 @@
   margin-left: @boxArrowOffset;
 }
 
-/*rtl:rename*/
+// rtl:rename
 .ui.top.left.popup:before {
   bottom: @arrowOffset;
   left: @arrowDistanceFromEdge;
@@ -566,7 +545,7 @@
   margin-right: @boxArrowOffset;
 }
 
-/*rtl:rename*/
+// rtl:rename
 .ui.top.right.popup:before {
   bottom: @arrowOffset;
   right: @arrowDistanceFromEdge;
@@ -575,8 +554,8 @@
   margin-left: 0em;
 }
 
-/*--- Left Center ---*/
-/*rtl:rename*/
+//Left Center
+// rtl:rename
 .ui.left.center.popup:before {
   top: 50%;
   right: @arrowOffset;
@@ -586,8 +565,8 @@
   box-shadow: @leftArrowBoxShadow;
 }
 
-/*--- Right Center  ---*/
-/*rtl:rename*/
+//Right Center
+// rtl:rename
 .ui.right.center.popup:before {
   top: 50%;
   left: @arrowOffset;
@@ -597,7 +576,7 @@
   box-shadow: @rightArrowBoxShadow;
 }
 
-/* Arrow Color By Location */
+// Arrow Color By Location//  /
 .ui.bottom.popup:before {
   background: @arrowTopBackground;
 }
@@ -611,7 +590,7 @@
   background: @arrowBottomBackground;
 }
 
-/* Inverted Arrow Color */
+// Inverted Arrow Color//  /
 .ui.inverted.bottom.popup:before {
   background: @invertedArrowTopBackground;
 }
@@ -625,19 +604,15 @@
   background: @invertedArrowBottomBackground;
 }
 
-/*******************************
-            Coupling
-*******************************/
+// Coupling
 
-/* Immediate Nested Grid */
+// Immediate Nested Grid//  /
 .ui.popup > .ui.grid:not(.padded) {
   width: @nestedGridWidth;
   margin: @nestedGridMargin;
 }
 
-/*******************************
-            States
-*******************************/
+// States
 
 .ui.loading.popup {
   display: block;
@@ -655,22 +630,14 @@
   backface-visibility: hidden;
 }
 
-/*******************************
-            Variations
-*******************************/
+// Variations
 
-/*--------------
-     Basic
----------------*/
-
+// Basic
 .ui.basic.popup:before {
   display: none;
 }
 
-/*--------------
-     Wide
----------------*/
-
+// Wide
 .ui.wide.popup {
   max-width: @wideWidth;
 }
@@ -686,20 +653,14 @@
   }
 }
 
-/*--------------
-     Fluid
----------------*/
-
+// Fluid
 .ui.fluid.popup {
   width: 100%;
   max-width: none;
 }
 
-/*--------------
-     Colors
----------------*/
-
-/* Inverted colors  */
+// Colors
+// Inverted colors //  /
 .ui.inverted.popup {
   background: @invertedBackground;
   color: @invertedColor;
@@ -717,18 +678,12 @@
   box-shadow: none !important;
 }
 
-/*--------------
-     Flowing
----------------*/
-
+// Flowing
 .ui.flowing.popup {
   max-width: none;
 }
 
-/*--------------
-     Sizes
----------------*/
-
+// Sizes
 .ui.mini.popup {
   font-size: @mini;
 }

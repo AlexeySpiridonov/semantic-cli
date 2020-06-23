@@ -1,10 +1,6 @@
-/*******************************
-            Progress
-*******************************/
+// Progress
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
 @verticalSpacing: 1em;
 @margin: @verticalSpacing 0em (@labelHeight + @verticalSpacing);
@@ -17,7 +13,7 @@
 @padding: 0em;
 @borderRadius: @defaultBorderRadius;
 
-/* Bar */
+// Bar
 @barPosition: relative;
 @barHeight: 1.75em;
 @barBackground: #888888;
@@ -29,7 +25,7 @@ background-color @barTransitionDuration @barTransitionEasing;
 @barInitialWidth: 0%;
 @barMinWidth: 2em;
 
-/* Progress Bar Label */
+// Progress Bar Label
 @progressWidth: auto;
 @progressSize: @relativeSmall;
 @progressPosition: absolute;
@@ -43,7 +39,7 @@ background-color @barTransitionDuration @barTransitionEasing;
 @progressFontWeight: bold;
 @progressTextAlign: left;
 
-/* Label */
+// Label
 @labelWidth: 100%;
 @labelHeight: 1.5em;
 @labelSize: 1em;
@@ -59,9 +55,7 @@ background-color @barTransitionDuration @barTransitionEasing;
 @labelTextAlign: center;
 @labelTransition: color 0.4s @defaultEasing;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
 @indicatingFirstColor: #D95C5C;
 @indicatingSecondColor: #EFBC72;
@@ -77,33 +71,29 @@ background-color @barTransitionDuration @barTransitionEasing;
 @indicatingFifthLabelColor: @textColor;
 @indicatingSixthLabelColor: @textColor;
 
-/*-------------------
-        States
---------------------*/
+// States
 
-/* Active */
+// Active
 @activePulseColor: @white;
 @activePulseMaxOpacity: 0.3;
 @activePulseDuration: 2s;
 @activeMinWidth: @barMinWidth;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Attached */
+// Attached
 @attachedBackground: transparent;
 @attachedHeight: 0.2rem;
 @attachedBorderRadius: @borderRadius;
 
-/* Inverted */
+// Inverted
 @invertedBackground: @transparentWhite;
 @invertedBorder: none;
 @invertedBarBackground: @barBackground;
 @invertedProgressColor: @offWhite;
 @invertedLabelColor: @white;
 
-/* Sizing */
+// Sizing
 @tinyBarHeight: 0.5em;
 @smallBarHeight: 1em;
 @largeBarHeight: 2.5em;

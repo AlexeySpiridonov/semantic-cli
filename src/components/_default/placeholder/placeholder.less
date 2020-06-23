@@ -1,15 +1,13 @@
-/*!
- * # Semantic UI - Loader
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-/*******************************
-            Theme
-*******************************/
+//  !
+//   # Semantic UI - Loader
+//   http://github.com/semantic-org/semantic-ui/
+// *
+// *
+// * Released under the MIT license
+// * http://opensource.org/licenses/MIT
+// *
+// **/
+// Theme
 
 @type: 'element';
 @element: 'placeholder';
@@ -17,10 +15,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*-------------------
-      Content
---------------------*/
-
+// Content
 .ui.placeholder {
   position: static;
   overflow: hidden;
@@ -69,7 +64,7 @@
   background-color: @white;
 }
 
-/* Image */
+// Image
 .ui.placeholder .image:not(.header):not(.ui) {
   height: @placeholderImageHeight;
 }
@@ -77,19 +72,19 @@
 .ui.placeholder .square.image:not(.header) {
   height: 0px;
   overflow: hidden;
-  /* 1/1 aspect ratio */
+  // 1/1 aspect ratio
   padding-top: 100%;
 }
 
 .ui.placeholder .rectangular.image:not(.header) {
   height: 0px;
   overflow: hidden;
-  /* 4/3 aspect ratio */
+  // 4/3 aspect ratio
   padding-top: 75%;
 }
 
 
-/* Lines */
+// Lines
 .ui.placeholder .line {
   position: relative;
   height: @placeholderLineMargin;
@@ -111,7 +106,7 @@
   right: 0px;
 }
 
-/* Any Lines */
+// Any Lines
 .ui.placeholder .line {
   margin-bottom: @placeholderLineHeight;
 }
@@ -125,13 +120,13 @@
   margin-top: @placeholderLineHeight;
 }
 
-/* Header Image + 2 Lines */
+// Header Image + 2 Lines
 .ui.placeholder .header {
   position: relative;
   overflow: hidden;
 }
 
-/* Line Outdent */
+// Line Outdent
 .ui.placeholder .line:nth-child(1):after {
   width: @placeholderLineOneOutdent;
 }
@@ -152,7 +147,7 @@
   width: @placeholderLineFiveOutdent;
 }
 
-/* Header Line 1 & 2*/
+// Header Line 1 & 2*/
 .ui.placeholder .header .line {
   margin-bottom: @placeholderHeaderLineHeight;
 }
@@ -174,7 +169,7 @@
   width: @placeholderHeaderLineTwoOutdent;
 }
 
-/* Image Header */
+// Image Header
 .ui.placeholder .image.header .line {
   margin-left: @placeholderImageWidth;
 }
@@ -190,7 +185,7 @@
   margin-left: @placeholderImageWidth;
 }
 
-/* Spacing */
+// Spacing
 .ui.placeholder .image .line:first-child,
 .ui.placeholder .paragraph .line:first-child,
 .ui.placeholder .header .line:first-child {
@@ -205,7 +200,7 @@
   display: block;
 }
 
-/* Inverted Content Loader */
+// Inverted Content Loader
 .ui.inverted.placeholder {
   background-image: @placeholderInvertedLoadingGradient;
 }
@@ -218,15 +213,10 @@
   background-color: @black;
 }
 
-/*******************************
-            Variations
-*******************************/
+// Variations
 
 
-/*-------------------
-        Sizes
---------------------*/
-
+// Sizes
 .ui.placeholder .full.line.line.line:after {
   width: @placeholderFullLineOutdent;
 }
@@ -252,10 +242,7 @@
 }
 
 
-/*-------------------
-        Fluid
---------------------*/
-
+// Fluid
 .ui.fluid.placeholder {
   max-width: none;
 }

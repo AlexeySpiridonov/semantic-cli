@@ -1,10 +1,8 @@
-/*******************************
-             Shape
-*******************************/
+// Shape
 
 @display: inline-block;
 
-/* Animating */
+// Animating
 @perspective: 2000px;
 
 @duration: 0.6s;
@@ -20,14 +18,12 @@ height @duration @easing;
 @sideTransition: opacity @duration @easing;
 @backfaceVisibility: hidden;
 
-/* Side */
+// Side
 @sideMargin: 0em;
 
-/*--------------
-      Types
----------------*/
+// Types
 
-/* Cube */
+// Cube
 @cubeSize: 15em;
 @cubeBackground: #E6E6E6;
 @cubePadding: 2em;

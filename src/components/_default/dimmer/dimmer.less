@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Dimmer
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//  # Semantic UI - Dimmer
+//  http://github.com/semantic-org/semantic-ui/
+//
+//
+//  Released under the MIT license
+//  http://opensource.org/licenses/MIT
+//
+//  */
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Dimmer
-*******************************/
+// Dimmer
 
 .dimmable:not(body) {
   position: @dimmablePosition;
@@ -56,7 +52,7 @@
   z-index: 100000
 }
 
-/* Dimmer Content */
+// Dimmer Content//  /
 .ui.dimmer > .content {
   width: 100%;
   height: 100%;
@@ -70,12 +66,12 @@
   color: @textColor;
 }
 
-/* Loose Coupling */
+// Loose Coupling//  /
 .ui.segment > .ui.dimmer {
   border-radius: inherit !important;
 }
 
-/* Scrollbars */
+// Scrollbars//  /
 .addScrollbars() when (@useCustomScrollbars) {
   .ui.dimmer:not(.inverted)::-webkit-scrollbar-track {
     background: @trackInvertedBackground;
@@ -93,9 +89,7 @@
 
 .addScrollbars();
 
-/*******************************
-            States
-*******************************/
+// States
 
 .animating.dimmable:not(body),
 .dimmed.dimmable:not(body) {
@@ -114,14 +108,9 @@
   height: 0 !important;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-      Page
----------------*/
-
+// Page
 .ui.page.dimmer {
   position: @pageDimmerPosition;
   transform-style: @transformStyle;
@@ -138,10 +127,7 @@ body.dimmable > .dimmer {
   position: fixed;
 }
 
-/*--------------
-    Blurring
----------------*/
-
+// Blurring
 .blurring.dimmable > :not(.dimmer) {
   filter: @blurredStartFilter;
   transition: @blurredTransition;
@@ -151,7 +137,7 @@ body.dimmable > .dimmer {
   filter: @blurredEndFilter;
 }
 
-/* Dimmer Color */
+// Dimmer Color//  /
 .blurring.dimmable > .dimmer {
   background-color: @blurredBackgroundColor;
 }
@@ -160,10 +146,7 @@ body.dimmable > .dimmer {
   background-color: @blurredInvertedBackgroundColor;
 }
 
-/*--------------
-    Aligned
----------------*/
-
+// Aligned
 .ui.dimmer > .top.aligned.content > * {
   vertical-align: top;
 }
@@ -172,10 +155,7 @@ body.dimmable > .dimmer {
   vertical-align: bottom;
 }
 
-/*--------------
-    Inverted
----------------*/
-
+// Inverted
 .ui.inverted.dimmer {
   background-color: @invertedBackgroundColor;
 }
@@ -184,11 +164,8 @@ body.dimmable > .dimmer {
   color: @textColor;
 }
 
-/*--------------
-     Simple
----------------*/
-
-/* Displays without javascript */
+// Simple
+// Displays without javascript */
 .ui.simple.dimmer {
   display: block;
   overflow: hidden;

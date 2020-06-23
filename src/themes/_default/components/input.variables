@@ -1,10 +1,6 @@
-/*******************************
-            Input
-*******************************/
+// Input
 
-/*-------------------
-      Element
---------------------*/
+// Element
 
 @inputFont: @pageFont;
 @verticalPadding: @inputVerticalPadding;
@@ -25,11 +21,9 @@
 @transition: box-shadow @defaultDuration @defaultEasing,
 border-color @defaultDuration @defaultEasing;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Icon Input */
+// Icon Input
 @iconWidth: @glyphWidth;
 @iconOpacity: 1;
 @iconFocusOpacity: 1;
@@ -42,11 +36,11 @@ border-color @defaultDuration @defaultEasing;
 @transparentIconWidth: @glyphWidth;
 @transparentIconMargin: 2em;
 
-/* Circular Icon Input */
+// Circular Icon Input
 @circularIconVerticalOffset: 0.35em;
 @circularIconHorizontalOffset: 0.5em;
 
-/* Labeled Input */
+// Labeled Input
 @labelCornerTop: @borderWidth;
 @labelCornerRight: @borderWidth;
 @labelCornerSize: @relative9px;
@@ -57,27 +51,25 @@ border-color @defaultDuration @defaultEasing;
 @labeledIconInputMargin: 3.25em;
 @labeledIconMargin: 1.25em;
 
-/*-------------------
-        States
---------------------*/
+// States
 
-/* Placeholder */
+// Placeholder
 @placeholderColor: @inputPlaceholderColor;
 @placeholderFocusColor: @inputPlaceholderFocusColor;
 
-/* Down */
+// Down
 @downBorderColor: rgba(0, 0, 0, 0.3);
 @downBackground: #FAFAFA;
 @downColor: @textColor;
 @downBoxShadow: none;
 
-/* Focus */
+// Focus
 @focusBorderColor: @focusedFormBorderColor;
 @focusBackground: @background;
 @focusColor: @hoveredTextColor;
 @focusBoxShadow: none;
 
-/* Error */
+// Error
 @errorBackground: @negativeBackgroundColor;
 @errorColor: @negativeTextColor;
 @errorBorder: @negativeBorderColor;
@@ -86,14 +78,12 @@ border-color @defaultDuration @defaultEasing;
 @placeholderErrorColor: lighten(@errorColor, 40);
 @placeholderErrorFocusColor: lighten(@errorColor, 30);
 
-/* Loader */
+// Loader
 @invertedLoaderFillColor: rgba(0, 0, 0, 0.15);
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Inverted */
+// Inverted
 @transparentInvertedPlaceholderColor: @invertedUnselectedTextColor;
 @transparentInvertedColor: @white;
 

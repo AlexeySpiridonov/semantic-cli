@@ -1,8 +1,6 @@
-/*******************************
-             Loader
-*******************************/
+// Loader
 
-/* Some global loader styles defined in site.variables */
+// Some global loader styles defined in site.variables
 // @loaderSpeed
 // @loaderLineWidth
 // @loaderFillColor
@@ -10,9 +8,7 @@
 // @invertedLoaderFillColor
 // @invertedLoaderLineColor
 
-/*-------------------
-      Standard
---------------------*/
+// Standard
 
 @loaderTopOffset: 50%;
 @loaderLeftOffset: 50%;
@@ -20,30 +16,24 @@
 @shapeBorderColor: @loaderLineColor transparent transparent;
 @invertedShapeBorderColor: @invertedLoaderLineColor transparent transparent;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Text */
+// Text
 @textDistance: @relativeMini;
 @loaderTextColor: @textColor;
 @invertedLoaderTextColor: @invertedTextColor;
 
-/*-------------------
-        States
---------------------*/
+// States
 
 @indeterminateDirection: reverse;
-@indeterminateSpeed: (2 * @loaderSpeed);
+@indeterminateSpeed: (2/   @loaderSpeed);
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
 @inlineVerticalAlign: middle;
 @inlineMargin: 0em;
 
-/* Exact Sizes (Avoids Rounding Errors) */
+// Exact Sizes (Avoids Rounding Errors)
 @mini: @14px;
 @tiny: @16px;
 @small: @24px;

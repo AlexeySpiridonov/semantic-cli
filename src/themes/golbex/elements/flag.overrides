@@ -1,8 +1,6 @@
-/* Flag Sprite Based On http://www.famfamfam.com/lab/icons/flags/ */
+// Flag Sprite Based On http://www.famfamfam.com/lab/icons/flags/
 
-/*******************************
-         Theme Overrides
-*******************************/
+// Theme Overrides
 
 i.flag.ad:before,
 i.flag.andorra:before {

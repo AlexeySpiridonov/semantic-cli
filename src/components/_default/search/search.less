@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Search
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Search
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+//  */
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-             Search
-*******************************/
+// Search
 
 .ui.search {
   position: relative;
@@ -52,18 +48,12 @@
   border-radius: @promptBorderRadius;
 }
 
-/*--------------
-     Icon
----------------*/
-
+// Icon
 .ui.search .prompt ~ .search.icon {
   cursor: pointer;
 }
 
-/*--------------
-    Results
----------------*/
-
+// Results
 .ui.search > .results {
   display: none;
 
@@ -92,10 +82,7 @@
   border-radius: 0em 0em @resultsBorderRadius @resultsBorderRadius;
 }
 
-/*--------------
-    Result
----------------*/
-
+// Result
 .ui.search > .results .result {
   cursor: pointer;
   display: block;
@@ -111,7 +98,7 @@
   border-bottom: @resultLastDivider !important;
 }
 
-/* Image */
+// Image
 .ui.search > .results .result .image {
   float: @resultImageFloat;
   overflow: hidden;
@@ -127,10 +114,7 @@
   height: 100%;
 }
 
-/*--------------
-      Info
----------------*/
-
+// Info
 .ui.search > .results .result .image + .content {
   margin: @resultImageMargin;
 }
@@ -154,10 +138,7 @@
   color: @resultPriceColor;
 }
 
-/*--------------
-    Message
----------------*/
-
+// Message
 .ui.search > .results > .message {
   padding: @messageVerticalPadding @messageHorizontalPadding;
 }
@@ -175,7 +156,7 @@
   color: @messageDescriptionColor;
 }
 
-/* View All Results */
+// View All Results
 .ui.search > .results > .action {
   display: block;
   border-top: @actionBorder;
@@ -186,24 +167,16 @@
   text-align: @actionAlign;
 }
 
-/*******************************
-            States
-*******************************/
+// States
 
-/*--------------------
-       Focus
----------------------*/
-
+// Focus
 .ui.search > .prompt:focus {
   border-color: @promptFocusBorderColor;
   background: @promptFocusBackground;
   color: @promptFocusColor;
 }
 
-/*--------------------
-       Loading
----------------------*/
-
+// Loading
 .ui.loading.search .input > i.icon:before {
   position: absolute;
   content: '';
@@ -240,10 +213,7 @@
   box-shadow: 0px 0px 0px 1px transparent;
 }
 
-/*--------------
-      Hover
----------------*/
-
+// Hover
 .ui.search > .results .result:hover,
 .ui.category.search > .results .category .result:hover {
   background: @resultHoverBackground;
@@ -253,10 +223,7 @@
   background: @actionHoverBackground;
 }
 
-/*--------------
-      Active
----------------*/
-
+// Active
 .ui.category.search > .results .category.active {
   background: @categoryActiveBackground;
 }
@@ -281,19 +248,14 @@
   color: @resultActiveDescriptionColor;
 }
 
-/*******************************
-           Types
-*******************************/
+// Types
 
-/*--------------
-    Selection
----------------*/
-
+// Selection
 .ui.search.selection .prompt {
   border-radius: @selectionPromptBorderRadius;
 }
 
-/* Remove input */
+// Remove input
 .ui.search.selection > .icon.input > .remove.icon {
   pointer-events: none;
   position: absolute;
@@ -320,15 +282,12 @@
   color: @selectionCloseIconHoverColor;
 }
 
-/*--------------
-    Category
----------------*/
-
+// Category
 .ui.category.search .results {
   width: @categoryResultsWidth;
 }
 
-/* Category */
+// Category
 .ui.category.search > .results .category {
   background: @categoryBackground;
   box-shadow: @categoryBoxShadow;
@@ -336,12 +295,12 @@
   transition: @categoryTransition;
 }
 
-/* Last Category */
+// Last Category
 .ui.category.search > .results .category:last-child {
   border-bottom: none;
 }
 
-/* First / Last */
+// First / Last
 .ui.category.search > .results .category:first-child .name + .result {
   border-radius: 0em @resultsBorderRadius 0em 0em;
 }
@@ -350,7 +309,7 @@
   border-radius: 0em 0em @resultsBorderRadius 0em;
 }
 
-/* Category Result */
+// Category Result
 .ui.category.search > .results .category .result {
   background: @categoryResultBackground;
   margin-left: @categoryNameWidth;
@@ -364,7 +323,7 @@
   border-bottom: @categoryResultLastDivider;
 }
 
-/* Category Result Name */
+// Category Result Name
 .ui.category.search > .results .category > .name {
   width: @categoryNameWidth;
   background: @categoryNameBackground;
@@ -377,14 +336,9 @@
   color: @categoryNameColor;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*-------------------
-     Left / Right
---------------------*/
-
+// Left / Right
 .ui[class*="left aligned"].search > .results {
   right: auto;
   left: 0%;
@@ -395,18 +349,12 @@
   left: auto;
 }
 
-/*--------------
-    Fluid
----------------*/
-
+// Fluid
 .ui.fluid.search .results {
   width: 100%;
 }
 
-/*--------------
-      Sizes
----------------*/
-
+// Sizes
 .ui.mini.search {
   font-size: @relativeMini;
 }

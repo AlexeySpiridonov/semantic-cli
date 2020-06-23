@@ -1,21 +1,16 @@
-/*!
- * # Semantic UI - Step
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//  # Semantic UI - Step
+//  http://github.com/semantic-org/semantic-ui/
+//
+//
+//  Released under the MIT license
+//  http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-             Step
-*******************************/
+// Step
 
-/*--------------
-   Load Theme
----------------*/
-
+// Load Theme
 @type: 'element';
 @modifier: '_default';
 @component: 'step';
@@ -23,9 +18,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Plural
-*******************************/
+// Plural
 
 @font-face {
   font-family: 'Step';
@@ -46,19 +39,17 @@
   border: @stepsBorder;
 }
 
-/* First Steps */
+// First Steps
 .ui.steps:first-child {
   margin-top: 0em;
 }
 
-/* Last Steps */
+// Last Steps
 .ui.steps:last-child {
   margin-bottom: 0em;
 }
 
-/*******************************
-           Singular
-*******************************/
+// Singular
 
 .ui.steps .step {
   position: relative;
@@ -84,10 +75,10 @@
 .ui.steps .step.completed > .icon:before,
 .ui.ordered.steps .step.completed:before {
   font-family: 'Step';
-  content: '\e800'; /* '' */
+  content: '\e800'; // ''
 }
 
-/* Arrow */
+// Arrow
 .ui.steps .step:after {
   display: none;
   position: absolute;
@@ -108,13 +99,13 @@
   transform: translateY(-50%) translateX(50%) rotate(-45deg);
 }
 
-/* First Step */
+// First Step
 .ui.steps .step:first-child {
   padding-left: @horizontalPadding;
   border-radius: @stepsBorderRadius 0em 0em @stepsBorderRadius;
 }
 
-/* Last Step */
+// Last Step
 .ui.steps .step:last-child {
   border-radius: 0em @stepsBorderRadius @stepsBorderRadius 0em;
 }
@@ -124,16 +115,14 @@
   margin-right: 0em;
 }
 
-/* Only Step */
+// Only Step
 .ui.steps .step:only-child {
   border-radius: @stepsBorderRadius;
 }
 
-/*******************************
-            Content
-*******************************/
+// Content
 
-/* Title */
+// Title
 .ui.steps .step .title {
   font-family: @titleFontFamily;
   font-size: @titleFontSize;
@@ -144,7 +133,7 @@
   width: 100%;
 }
 
-/* Description */
+// Description
 .ui.steps .step .description {
   font-weight: @descriptionFontWeight;
   font-size: @descriptionFontSize;
@@ -159,7 +148,7 @@
   margin-top: @descriptionDistance;
 }
 
-/* Icon */
+// Icon
 .ui.steps .step > .icon {
   line-height: 1;
   font-size: @iconSize;
@@ -177,25 +166,20 @@
   flex-grow: 1 0 auto;
 }
 
-/* Horizontal Icon */
+// Horizontal Icon
 .ui.steps:not(.vertical) .step > .icon {
   width: auto;
 }
 
-/* Link */
+// Link
 .ui.steps .link.step,
 .ui.steps a.step {
   cursor: pointer;
 }
 
-/*******************************
-            Types
-*******************************/
+// Types
 
-/*--------------
-     Ordered
----------------*/
-
+// Ordered
 .ui.ordered.steps {
   counter-reset: ordered;
 }
@@ -218,10 +202,7 @@
   align-self: @iconAlign;
 }
 
-/*--------------
-    Vertical
----------------*/
-
+// Vertical
 .ui.vertical.steps {
   display: inline-flex;
   flex-direction: column;
@@ -250,7 +231,7 @@
   border-radius: @stepsBorderRadius;
 }
 
-/* Arrow */
+// Arrow
 .ui.vertical.steps .step:after {
   display: none;
 }
@@ -277,11 +258,8 @@
   display: @verticalActiveLastArrowDisplay;
 }
 
-/*---------------
-    Responsive
-----------------*/
-
-/* Mobile (Default) */
+// Responsive
+// Mobile (Default)
 @media only screen and (max-width: (@largestMobileScreen)) {
 
   .ui.steps:not(.unstackable) {
@@ -306,17 +284,17 @@
     border-radius: 0em 0em @stepsBorderRadius @stepsBorderRadius;
   }
 
-  /* Arrow */
+  // Arrow
   .ui.steps:not(.unstackable) .step:after {
     display: none !important;
   }
 
-  /* Content */
+  // Content
   .ui.steps:not(.unstackable) .step .content {
     text-align: center;
   }
 
-  /* Icon */
+  // Icon
   .ui.steps:not(.unstackable) .step > .icon,
   .ui.ordered.steps:not(.unstackable) .step:before {
     margin: 0em 0em @mobileIconDistance 0em;
@@ -324,11 +302,9 @@
 
 }
 
-/*******************************
-             States
-*******************************/
+// States
 
-/* Link Hover */
+// Link Hover
 .ui.steps .link.step:hover::after,
 .ui.steps .link.step:hover,
 .ui.steps a.step:hover::after,
@@ -337,7 +313,7 @@
   color: @hoverColor;
 }
 
-/* Link Down */
+// Link Down
 .ui.steps .link.step:active::after,
 .ui.steps .link.step:active,
 .ui.steps a.step:active::after,
@@ -346,7 +322,7 @@
   color: @downColor;
 }
 
-/* Active */
+// Active
 .ui.steps .step.active {
   cursor: auto;
   background: @activeBackground;
@@ -365,7 +341,7 @@
   color: @activeIconColor;
 }
 
-/* Active Arrow */
+// Active Arrow
 .ui.steps .step:after {
   display: @arrowDisplay;
 }
@@ -382,7 +358,7 @@
   display: @activeLastArrowDisplay;
 }
 
-/* Active Hover */
+// Active Hover
 .ui.steps .link.active.step:hover::after,
 .ui.steps .link.active.step:hover,
 .ui.steps a.active.step:hover::after,
@@ -392,13 +368,13 @@
   color: @activeHoverColor;
 }
 
-/* Completed */
+// Completed
 .ui.steps .step.completed > .icon:before,
 .ui.ordered.steps .step.completed:before {
   color: @completedColor;
 }
 
-/* Disabled */
+// Disabled
 .ui.steps .disabled.step {
   cursor: auto;
   background: @disabledBackground;
@@ -415,15 +391,10 @@
   background: @disabledBackground;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-   Stackable
----------------*/
-
-/* Tablet Or Below */
+// Stackable
+// Tablet Or Below
 @media only screen and (max-width: @largestTabletScreen) {
 
   .ui[class*="tablet stackable"].steps {
@@ -432,7 +403,7 @@
     flex-direction: column;
   }
 
-  /* Steps */
+  // Steps
   .ui[class*="tablet stackable"].steps .step {
     flex-direction: column;
     border-radius: @borderRadius;
@@ -448,17 +419,17 @@
     border-radius: 0em 0em @stepsBorderRadius @stepsBorderRadius;
   }
 
-  /* Arrow */
+  // Arrow
   .ui[class*="tablet stackable"].steps .step:after {
     display: none !important;
   }
 
-  /* Content */
+  // Content
   .ui[class*="tablet stackable"].steps .step .content {
     text-align: center;
   }
 
-  /* Icon */
+  // Icon
   .ui[class*="tablet stackable"].steps .step > .icon,
   .ui[class*="tablet stackable"].ordered.steps .step:before {
     margin: 0em 0em @mobileIconDistance 0em;
@@ -466,21 +437,15 @@
 
 }
 
-/*--------------
-      Fluid
----------------*/
-
-/* Fluid */
+// Fluid
+// Fluid
 .ui.fluid.steps {
   display: flex;
   width: 100%;
 }
 
-/*--------------
-    Attached
----------------*/
-
-/* Top */
+// Attached
+// Top
 .ui.attached.steps {
   width: @attachedWidth !important;
   margin: 0em @attachedHorizontalOffset @attachedVerticalOffset;
@@ -496,7 +461,7 @@
   border-radius: 0em @stepsBorderRadius 0em 0em;
 }
 
-/* Bottom */
+// Bottom
 .ui.bottom.attached.steps {
   margin: @attachedVerticalOffset @attachedHorizontalOffset 0em;
   border-radius: 0em 0em @stepsBorderRadius @stepsBorderRadius;
@@ -510,10 +475,7 @@
   border-radius: 0em 0em @stepsBorderRadius 0em;
 }
 
-/*-------------------
-    Evenly Divided
---------------------*/
-
+// Evenly Divided
 .ui.one.steps,
 .ui.two.steps,
 .ui.three.steps,
@@ -568,10 +530,7 @@
   width: 12.500%;
 }
 
-/*-------------------
-       Sizes
---------------------*/
-
+// Sizes
 .ui.mini.steps .step,
 .ui.mini.step {
   font-size: @mini;

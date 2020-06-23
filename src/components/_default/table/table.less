@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Table
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Table
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'collection';
 @modifier: '_default';
@@ -19,11 +17,9 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-             Table
-*******************************/
+// Table
 
-/* Prototype */
+// Prototype
 .ui.table {
   width: 100%;
   background: @background;
@@ -45,17 +41,15 @@
   margin-bottom: 0em;
 }
 
-/*******************************
-             Parts
-*******************************/
+// Parts
 
-/* Table Content */
+// Table Content
 .ui.table th,
 .ui.table td {
   transition: @transition;
 }
 
-/* Headers */
+// Headers
 .ui.table thead {
   box-shadow: @headerBoxShadow;
 }
@@ -90,7 +84,7 @@
   border-radius: @borderRadius @borderRadius 0em 0em;
 }
 
-/* Footer */
+// Footer
 .ui.table tfoot {
   box-shadow: @footerBoxShadow;
 }
@@ -124,7 +118,7 @@
   border-radius: 0em 0em @borderRadius @borderRadius;
 }
 
-/* Table Row */
+// Table Row
 .ui.table tr td {
   border-top: @rowBorder;
 }
@@ -133,13 +127,13 @@
   border-top: none;
 }
 
-/* Table Cells */
+// Table Cells
 .ui.table td {
   padding: @cellVerticalPadding @cellHorizontalPadding;
   text-align: @cellTextAlign;
 }
 
-/* Icons */
+// Icons
 .ui.table > .icon {
   vertical-align: @iconVerticalAlign;
 }
@@ -148,7 +142,7 @@
   margin: 0em;
 }
 
-/* Table Segment */
+// Table Segment
 .ui.table.segment {
   padding: 0em;
 }
@@ -161,7 +155,7 @@
   display: block;
 }
 
-/* Responsive */
+// Responsive
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.table:not(.unstackable) {
     width: 100%;
@@ -207,17 +201,15 @@
     font-weight: bold;
   }
 
-  /* Definition Table */
+  // Definition Table
   .ui.definition.table:not(.unstackable) thead th:first-child {
     box-shadow: none !important;
   }
 }
 
-/*******************************
-            Coupling
-*******************************/
+// Coupling
 
-/* UI Image */
+// UI Image
 .ui.table th .image,
 .ui.table th .image img,
 .ui.table td .image,
@@ -225,14 +217,9 @@
   max-width: none;
 }
 
-/*******************************
-             Types
-*******************************/
+// Types
 
-/*--------------
-    Complex
----------------*/
-
+// Complex
 .ui.structured.table {
   border-collapse: collapse;
 }
@@ -258,10 +245,7 @@
   border-right: @cellBorder;
 }
 
-/*--------------
-   Definition
----------------*/
-
+// Definition
 .ui.definition.table thead:not(.full-width) th:first-child {
   pointer-events: none;
   background: @definitionHeaderBackground;
@@ -278,7 +262,7 @@
   box-shadow: @borderWidth @borderWidth 0px @borderWidth @definitionPageBackground;
 }
 
-/* Remove Border */
+// Remove Border
 .ui.celled.definition.table thead:not(.full-width) th:first-child {
   box-shadow: 0px -@borderWidth 0px @borderWidth @definitionPageBackground;
 }
@@ -287,7 +271,7 @@
   box-shadow: 0px @borderWidth 0px @borderWidth @definitionPageBackground;
 }
 
-/* Highlight Defining Column */
+// Highlight Defining Column
 .ui.definition.table tr td:first-child:not(.ignored),
 .ui.definition.table tr td.definition {
   background: @definitionColumnBackground;
@@ -301,7 +285,7 @@
   padding-right: @definitionColumnHorizontalPadding;
 }
 
-/* Fix 2nd Column */
+// Fix 2nd Column
 .ui.definition.table thead:not(.full-width) th:nth-child(2) {
   border-left: @borderWidth solid @borderColor;
 }
@@ -314,14 +298,9 @@
   border-left: @borderWidth solid @borderColor;
 }
 
-/*******************************
-             States
-*******************************/
+// States
 
-/*--------------
-    Positive
----------------*/
-
+// Positive
 .ui.table tr.positive,
 .ui.table td.positive {
   box-shadow: @positiveBoxShadow;
@@ -333,10 +312,7 @@
   color: @positiveColor !important;
 }
 
-/*--------------
-     Negative
----------------*/
-
+// Negative
 .ui.table tr.negative,
 .ui.table td.negative {
   box-shadow: @negativeBoxShadow;
@@ -348,10 +324,7 @@
   color: @negativeColor !important;
 }
 
-/*--------------
-      Error
----------------*/
-
+// Error
 .ui.table tr.error,
 .ui.table td.error {
   box-shadow: @errorBoxShadow;
@@ -363,10 +336,7 @@
   color: @errorColor !important;
 }
 
-/*--------------
-     Warning
----------------*/
-
+// Warning
 .ui.table tr.warning,
 .ui.table td.warning {
   box-shadow: @warningBoxShadow;
@@ -378,10 +348,7 @@
   color: @warningColor !important;
 }
 
-/*--------------
-     Active
----------------*/
-
+// Active
 .ui.table tr.active,
 .ui.table td.active {
   box-shadow: @activeBoxShadow;
@@ -393,10 +360,7 @@
   color: @activeColor !important;
 }
 
-/*--------------
-     Disabled
----------------*/
-
+// Disabled
 .ui.table tr.disabled td,
 .ui.table tr td.disabled,
 .ui.table tr.disabled:hover,
@@ -405,14 +369,9 @@
   color: @disabledTextColor;
 }
 
-/*******************************
-          Variations
-*******************************/
+// Variations
 
-/*--------------
-    Stackable
----------------*/
-
+// Stackable
 @media only screen and (max-width: @largestTabletScreen) {
 
   .ui[class*="tablet stackable"].table,
@@ -451,16 +410,13 @@
     box-shadow: @responsiveCellBoxShadow;
   }
 
-  /* Definition Table */
+  // Definition Table
   .ui.definition[class*="tablet stackable"].table thead th:first-child {
     box-shadow: none !important;
   }
 }
 
-/*--------------
- Text Alignment
----------------*/
-
+// Text Alignment
 .ui.table[class*="left aligned"],
 .ui.table [class*="left aligned"] {
   text-align: left;
@@ -476,10 +432,7 @@
   text-align: right;
 }
 
-/*------------------
- Vertical Alignment
-------------------*/
-
+// Vertical Alignment
 .ui.table[class*="top aligned"],
 .ui.table [class*="top aligned"] {
   vertical-align: top;
@@ -495,20 +448,14 @@
   vertical-align: bottom;
 }
 
-/*--------------
-    Collapsing
----------------*/
-
+// Collapsing
 .ui.table th.collapsing,
 .ui.table td.collapsing {
   width: 1px;
   white-space: nowrap;
 }
 
-/*--------------
-     Fixed
----------------*/
-
+// Fixed
 .ui.fixed.table {
   table-layout: fixed;
 }
@@ -519,10 +466,7 @@
   text-overflow: ellipsis;
 }
 
-/*--------------
-   Selectable
----------------*/
-
+// Selectable
 .ui.selectable.table tbody tr:hover,
 .ui.table tbody tr td.selectable:hover {
   background: @selectableBackground !important;
@@ -535,7 +479,7 @@
   color: @selectableInvertedTextColor !important;
 }
 
-/* Selectable Cell Link */
+// Selectable Cell Link
 .ui.table tbody tr td.selectable {
   padding: 0em;
 }
@@ -546,7 +490,7 @@
   padding: @cellVerticalPadding @cellHorizontalPadding;
 }
 
-/* Other States */
+// Other States
 .ui.selectable.table tr.error:hover,
 .ui.table tr td.selectable.error:hover,
 .ui.selectable.table tr:hover td.error {
@@ -582,11 +526,8 @@
   color: @negativeColorHover !important;
 }
 
-/*-------------------
-      Attached
---------------------*/
-
-/* Middle */
+// Attached
+// Middle
 .ui.attached.table {
   top: 0px;
   bottom: 0px;
@@ -602,7 +543,7 @@
   border-top: none;
 }
 
-/* Top */
+// Top
 .ui[class*="top attached"].table {
   bottom: 0px;
   margin-bottom: 0em;
@@ -615,7 +556,7 @@
   margin-top: 0em;
 }
 
-/* Bottom */
+// Bottom
 .ui[class*="bottom attached"].table {
   bottom: 0px;
   margin-top: 0em;
@@ -629,32 +570,26 @@
   margin-bottom: 0em;
 }
 
-/*--------------
-     Striped
----------------*/
-
-/* Table Striping */
+// Striped
+// Table Striping
 .ui.striped.table > tr:nth-child(2n),
 .ui.striped.table tbody tr:nth-child(2n) {
   background-color: @stripedBackground;
 }
 
-/* Stripes */
+// Stripes
 .ui.inverted.striped.table > tr:nth-child(2n),
 .ui.inverted.striped.table tbody tr:nth-child(2n) {
   background-color: @invertedStripedBackground;
 }
 
-/* Allow striped active hover */
+// Allow striped active hover
 .ui.striped.selectable.selectable.selectable.table tbody tr.active:hover {
   background: @activeBackgroundHover !important;
   color: @activeColorHover !important;
 }
 
-/*--------------
-   Single Line
----------------*/
-
+// Single Line
 .ui.table[class*="single line"],
 .ui.table [class*="single line"] {
   white-space: nowrap;
@@ -665,11 +600,8 @@
   white-space: nowrap;
 }
 
-/*-------------------
-       Colors
---------------------*/
-
-/* Red */
+// Colors
+// Red
 .ui.red.table {
   border-top: @coloredBorderSize solid @red;
 }
@@ -679,7 +611,7 @@
   color: @white !important;
 }
 
-/* Orange */
+// Orange
 .ui.orange.table {
   border-top: @coloredBorderSize solid @orange;
 }
@@ -689,7 +621,7 @@
   color: @white !important;
 }
 
-/* Yellow */
+// Yellow
 .ui.yellow.table {
   border-top: @coloredBorderSize solid @yellow;
 }
@@ -699,7 +631,7 @@
   color: @white !important;
 }
 
-/* Olive */
+// Olive
 .ui.olive.table {
   border-top: @coloredBorderSize solid @olive;
 }
@@ -709,7 +641,7 @@
   color: @white !important;
 }
 
-/* Green */
+// Green
 .ui.green.table {
   border-top: @coloredBorderSize solid @green;
 }
@@ -719,7 +651,7 @@
   color: @white !important;
 }
 
-/* Teal */
+// Teal
 .ui.teal.table {
   border-top: @coloredBorderSize solid @teal;
 }
@@ -729,7 +661,7 @@
   color: @white !important;
 }
 
-/* Blue */
+// Blue
 .ui.blue.table {
   border-top: @coloredBorderSize solid @blue;
 }
@@ -739,7 +671,7 @@
   color: @white !important;
 }
 
-/* Violet */
+// Violet
 .ui.violet.table {
   border-top: @coloredBorderSize solid @violet;
 }
@@ -749,7 +681,7 @@
   color: @white !important;
 }
 
-/* Purple */
+// Purple
 .ui.purple.table {
   border-top: @coloredBorderSize solid @purple;
 }
@@ -759,7 +691,7 @@
   color: @white !important;
 }
 
-/* Pink */
+// Pink
 .ui.pink.table {
   border-top: @coloredBorderSize solid @pink;
 }
@@ -769,7 +701,7 @@
   color: @white !important;
 }
 
-/* Brown */
+// Brown
 .ui.brown.table {
   border-top: @coloredBorderSize solid @brown;
 }
@@ -779,7 +711,7 @@
   color: @white !important;
 }
 
-/* Grey */
+// Grey
 .ui.grey.table {
   border-top: @coloredBorderSize solid @grey;
 }
@@ -789,7 +721,7 @@
   color: @white !important;
 }
 
-/* Black */
+// Black
 .ui.black.table {
   border-top: @coloredBorderSize solid @black;
 }
@@ -799,11 +731,8 @@
   color: @white !important;
 }
 
-/*--------------
-  Column Count
----------------*/
-
-/* Grid Based */
+// Column Count
+// Grid Based
 .ui.one.column.table td {
   width: @oneColumn;
 }
@@ -868,7 +797,7 @@
   width: @sixteenColumn;
 }
 
-/* Column Width */
+// Column Width
 .ui.table th.one.wide,
 .ui.table td.one.wide {
   width: @oneWide;
@@ -949,10 +878,7 @@
   width: @sixteenWide;
 }
 
-/*--------------
-    Sortable
----------------*/
-
+// Sortable
 .ui.sortable.table thead th {
   cursor: pointer;
   white-space: nowrap;
@@ -990,7 +916,7 @@
   content: @sortableIconDescending;
 }
 
-/* Hover */
+// Hover
 .ui.sortable.table th.disabled:hover {
   cursor: auto;
   color: @sortableDisabledColor;
@@ -1001,7 +927,7 @@
   color: @sortableHoverColor;
 }
 
-/* Sorted */
+// Sorted
 .ui.sortable.table thead th.sorted {
   background: @sortableActiveBackground;
   color: @sortableActiveColor;
@@ -1011,13 +937,13 @@
   display: inline-block;
 }
 
-/* Sorted Hover */
+// Sorted Hover
 .ui.sortable.table thead th.sorted:hover {
   background: @sortableActiveHoverBackground;
   color: @sortableActiveHoverColor;
 }
 
-/* Inverted */
+// Inverted
 .ui.inverted.sortable.table thead th.sorted {
   background: @sortableInvertedActiveBackground;
   color: @sortableInvertedActiveColor;
@@ -1033,11 +959,8 @@
   border-right-color: @sortableInvertedBorderColor;
 }
 
-/*--------------
-    Inverted
----------------*/
-
-/* Text Color */
+// Inverted
+// Text Color
 .ui.inverted.table {
   background: @invertedBackground;
   color: @invertedCellColor;
@@ -1062,7 +985,7 @@
   color: @invertedDisabledTextColor;
 }
 
-/* Definition */
+// Definition
 .ui.inverted.definition.table tfoot:not(.full-width) th:first-child,
 .ui.inverted.definition.table thead:not(.full-width) th:first-child {
   background: @definitionPageBackground;
@@ -1073,18 +996,12 @@
   color: @invertedDefinitionColumnColor;
 }
 
-/*--------------
-   Collapsing
----------------*/
-
+// Collapsing
 .ui.collapsing.table {
   width: auto;
 }
 
-/*--------------
-      Basic
----------------*/
-
+// Basic
 .ui.basic.table {
   background: @basicTableBackground;
   border: @basicTableBorder;
@@ -1113,7 +1030,7 @@
   background-color: @basicTableStripedBackground !important;
 }
 
-/* Very Basic */
+// Very Basic
 .ui[class*="very basic"].table {
   border: none;
 }
@@ -1137,10 +1054,7 @@
   padding-top: 0em;
 }
 
-/*--------------
-     Celled
----------------*/
-
+// Celled
 .ui.celled.table tr th,
 .ui.celled.table tr td {
   border-left: @cellBorder;
@@ -1151,10 +1065,7 @@
   border-left: none;
 }
 
-/*--------------
-     Padded
----------------*/
-
+// Padded
 .ui.padded.table th {
   padding-left: @paddedHorizontalPadding;
   padding-right: @paddedHorizontalPadding;
@@ -1165,7 +1076,7 @@
   padding: @paddedVerticalPadding @paddedHorizontalPadding;
 }
 
-/* Very */
+// Very
 .ui[class*="very padded"].table th {
   padding-left: @veryPaddedHorizontalPadding;
   padding-right: @veryPaddedHorizontalPadding;
@@ -1175,10 +1086,7 @@
   padding: @veryPaddedVerticalPadding @veryPaddedHorizontalPadding;
 }
 
-/*--------------
-     Compact
----------------*/
-
+// Compact
 .ui.compact.table th {
   padding-left: @compactHorizontalPadding;
   padding-right: @compactHorizontalPadding;
@@ -1188,7 +1096,7 @@
   padding: @compactVerticalPadding @compactHorizontalPadding;
 }
 
-/* Very */
+// Very
 .ui[class*="very compact"].table th {
   padding-left: @veryCompactHorizontalPadding;
   padding-right: @veryCompactHorizontalPadding;
@@ -1198,21 +1106,18 @@
   padding: @veryCompactVerticalPadding @veryCompactHorizontalPadding;
 }
 
-/*--------------
-      Sizes
----------------*/
-
-/* Small */
+// Sizes
+// Small
 .ui.small.table {
   font-size: @small;
 }
 
-/* Standard */
+// Standard//  /
 .ui.table {
   font-size: @medium;
 }
 
-/* Large */
+// Large//  /
 .ui.large.table {
   font-size: @large;
 }

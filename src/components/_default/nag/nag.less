@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Nag
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Nag
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+////  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-             Nag
-*******************************/
+// Nag
 
 .ui.nag {
   display: none;
@@ -74,11 +70,9 @@ a.ui.nag {
   transition: @closeTransition;
 }
 
-/*******************************
-             States
-*******************************/
+// States
 
-/* Hover */
+// Hover
 .ui.nag:hover {
   background: @nagHoverBackground;
   opacity: @nagHoverOpacity;
@@ -88,31 +82,20 @@ a.ui.nag {
   opacity: @closeHoverOpacity;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-     Static
----------------*/
-
+// Static
 .ui.overlay.nag {
   position: absolute;
   display: block;
 }
 
-/*--------------
-     Fixed
----------------*/
-
+// Fixed
 .ui.fixed.nag {
   position: fixed;
 }
 
-/*--------------
-     Bottom
----------------*/
-
+// Bottom
 .ui.bottom.nags,
 .ui.bottom.nag {
   border-radius: @bottomBorderRadius;
@@ -120,10 +103,7 @@ a.ui.nag {
   bottom: @bottom;
 }
 
-/*--------------
-     White
----------------*/
-
+// White
 .ui.inverted.nags .nag,
 .ui.inverted.nag {
   background-color: @invertedBackground;
@@ -137,9 +117,7 @@ a.ui.nag {
   color: @lightTextColor;
 }
 
-/*******************************
-           Groups
-*******************************/
+// Groups
 
 .ui.nags .nag {
   border-radius: @groupedBorderRadius !important;

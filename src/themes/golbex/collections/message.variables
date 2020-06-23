@@ -1,12 +1,8 @@
-/*******************************
-            Message
-*******************************/
+// Message
 
 // @textColor
 
-/*-------------------
-       Elements
---------------------*/
+// Elements
 
 @verticalMargin: 1em;
 @verticalPadding: 1em;
@@ -27,7 +23,7 @@ color @defaultDuration @defaultEasing,
 background @defaultDuration @defaultEasing,
 box-shadow @defaultDuration @defaultEasing;
 
-/* Header */
+// Header
 @headerFontSize: @medium;
 @headerFontWeight: normal;
 @headerDisplay: block;
@@ -35,48 +31,46 @@ box-shadow @defaultDuration @defaultEasing;
 @headerMargin: -@headerLineHeightOffset 0em @headerDistance 0em;
 @headerParagraphDistance: 0.25em;
 
-/* Paragraph */
+// Paragraph
 @messageTextOpacity: 0.85;
 @messageParagraphMargin: 0.75em;
 
-/* List */
+// List
 @listOpacity: 0.85;
 @listStylePosition: inside;
 @listMargin: 0.5em;
 @listItemIndent: 1em;
 @listItemMargin: 0.3em;
 
-/* Icon */
+// Icon
 @iconDistance: 0.6em;
 
-/* Close Icon */
+// Close Icon
 @closeTopDistance: @verticalPadding - @lineHeightOffset;
 @closeRightDistance: 0.5em;
 @closeOpacity: 0.7;
 @closeTransition: opacity @defaultDuration @defaultEasing;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Icon Message */
+// Icon Message
 @iconSize: 3em;
 @iconOpacity: 0.8;
 @iconContentDistance: 0rem;
 @iconVerticalAlign: middle;
 
-/* Attached */
+// Attached
 @attachedXOffset: -1px;
 @attachedYOffset: -1px;
 @attachedBoxShadow: 0em 0em 0em @borderWidth @borderColor inset;
 @attachedBottomBoxShadow: @attachedBoxShadow,
 @subtleShadow;
 
-/* Floating */
+// Floating
 @floatingBoxShadow: @borderShadow,
 @floatingShadow;
 
-/* Colors */
+// Colors
 @redBoxShadow: 0px 0px 0px @borderWidth @redBorderColor inset,
 @shadowShadow;
 @orangeBoxShadow: 0px 0px 0px @borderWidth @orangeBorderColor inset,
@@ -100,7 +94,7 @@ box-shadow @defaultDuration @defaultEasing;
 @brownBoxShadow: 0px 0px 0px @borderWidth @brownBorderColor inset,
 @shadowShadow;
 
-/* Warning / Positive / Negative / Info */
+// Warning / Positive / Negative / Info
 @positiveBoxShadow: 0px 0px 0px @borderWidth @positiveBorderColor inset,
 @shadowShadow;
 @negativeBoxShadow: 0px 0px 0px @borderWidth @negativeBorderColor inset,

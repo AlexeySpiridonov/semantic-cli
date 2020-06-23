@@ -1,10 +1,6 @@
-/*******************************
-             Label
-*******************************/
+// Label
 
-/*-------------------
-       Element
---------------------*/
+// Element
 
 @verticalAlign: baseline;
 @verticalMargin: 0em;
@@ -12,7 +8,7 @@
 @backgroundColor: #E8E8E8;
 @color: @mutedTextColor;
 @backgroundImage: none;
-@verticalPadding: 0.5833em; /* medium is not @emSize custom value required */
+@verticalPadding: 0.5833em; // medium is not @emSize custom value required
 @horizontalPadding: 0.833em;
 @borderRadius: @absoluteBorderRadius;
 @textTransform: none;
@@ -26,41 +22,37 @@
 @labelTransitionEasing: @defaultEasing;
 @transition: background @labelTransitionDuration @labelTransitionEasing;
 
-/* Group */
+// Group
 @groupVerticalMargin: 0.5em;
 @groupHorizontalMargin: 0.5em;
 
-/*-------------------
-        Parts
---------------------*/
+// Parts
 
-/* Link */
+// Link
 @linkOpacity: 0.5;
 @linkTransition: @labelTransitionDuration opacity @labelTransitionEasing;
 
-/* Icon */
+// Icon
 @iconDistance: 0.75em;
 
-/* Image */
+// Image
 @imageHeight: (1em + @verticalPadding * 2);
 
-/* Detail */
+// Detail
 @detailFontWeight: bold;
 @detailOpacity: 0.8;
 @detailIconDistance: 0.25em;
 @detailMargin: 1em;
 
-/* Delete */
+// Delete
 @deleteOpacity: @linkOpacity;
 @deleteSize: @relativeSmall;
 @deleteMargin: 0.5em;
 @deleteTransition: background @labelTransitionDuration @labelTransitionEasing;
 
-/*-------------------
-        Types
---------------------*/
+// Types
 
-/* Image Label */
+// Image Label
 @imageLabelBackground: @backgroundColor;
 @imageLabelVerticalPadding: @verticalPadding;
 @imageLabelHorizontalPadding: @horizontalPadding;
@@ -78,30 +70,26 @@
 @imageLabelDetailPadding: @imageLabelVerticalPadding @imageLabelHorizontalPadding;
 @imageLabelDetailMargin: -@imageLabelVerticalPadding -@imageLabelHorizontalPadding -@imageLabelVerticalPadding @imageLabelDetailDistance;
 
-/*-------------------
-        States
---------------------*/
+// States
 
-/* Hover */
+// Hover
 @labelHoverBackgroundColor: #E0E0E0;
 @labelHoverBackgroundImage: none;
 @labelHoverTextColor: @hoveredTextColor;
 
-/* Active */
+// Active
 @labelActiveBackgroundColor: #D0D0D0;
 @labelActiveBackgroundImage: none;
 @labelActiveTextColor: @selectedTextColor;
 
-/* Active Hover */
+// Active Hover
 @labelActiveHoverBackgroundColor: #C8C8C8;
 @labelActiveHoverBackgroundImage: none;
 @labelActiveHoverTextColor: @selectedTextColor;
 
-/*-------------------
-      Variations
---------------------*/
+// Variations
 
-/* Basic */
+// Basic
 @basicBackground: none @white;
 @basicBorderWidth: 1px;
 @basicBorder: @basicBorderWidth solid @borderColor;
@@ -113,7 +101,7 @@
 @basicHoverBorder: @basicBorder;
 @basicHoverBoxShadow: @basicBoxShadow;
 
-/* Tag */
+// Tag
 @tagCircleColor: @white;
 @tagCircleSize: 0.5em;
 @tagHorizontalPadding: 1.5em;
@@ -122,9 +110,9 @@
 @tagTriangleTopOffset: 50%;
 @tagTriangleSize: 1.56em;
 @tagTriangleBackgroundImage: none;
-@tagTransition: none; /* Avoids error with background: inherit; on animation */
+@tagTransition: none; // Avoids error with background: inherit; on animation
 
-/* Ribbon */
+// Ribbon
 @ribbonTriangleSize: 1.2em;
 @ribbonShadowColor: rgba(0, 0, 0, 0.15);
 
@@ -134,15 +122,15 @@
 @rightRibbonOffset: ~"calc(100% + " @ribbonMargin ~" + " @ribbonTriangleSize ~")";
 
 @ribbonImageTopDistance: 1rem;
-@ribbonImageMargin: -0.05rem; /* Rounding Offset on Triangle */
+@ribbonImageMargin: -0.05rem; // Rounding Offset on Triangle
 @ribbonImageOffset: ~"calc("-@ribbonImageMargin~" - " @ribbonTriangleSize ~")";
 @rightRibbonImageOffset: ~"calc(100% + " @ribbonImageMargin ~" + " @ribbonTriangleSize ~")";
 
-@ribbonTableMargin: @relativeMini; /* Rounding Offset on Triangle */
+@ribbonTableMargin: @relativeMini; // Rounding Offset on Triangle
 @ribbonTableOffset: ~"calc("-@ribbonTableMargin~" - " @ribbonTriangleSize ~")";
 @rightRibbonTableOffset: ~"calc(100% + " @ribbonTableMargin ~" + " @ribbonTriangleSize ~")";
 
-/* Colors */
+// Colors
 @redTextColor: @white;
 @orangeTextColor: @white;
 @yellowTextColor: @white;
@@ -185,7 +173,7 @@
 @greyRibbonShadow: darken(@grey, 10);
 @blackRibbonShadow: darken(@black, 10);
 
-/* Attached */
+// Attached
 @attachedSegmentPadding: 2rem;
 @attachedVerticalPadding: 0.75em;
 @attachedHorizontalPadding: 1em;
@@ -193,7 +181,7 @@
 @attachedCornerBorderRadius: @3px;
 @attachedBorderRadius: @borderRadius;
 
-/* Corner */
+// Corner
 @cornerSizeRatio: 1;
 @cornerTransition: color @labelTransitionDuration @labelTransitionEasing;
 @cornerTriangleSize: 4em;
@@ -204,22 +192,22 @@
 @cornerIconTopOffset: @relative9px;
 @cornerIconLeftOffset: @relative11px;
 
-/* Corner Text */
+// Corner Text
 @cornerTextWidth: 3em;
 @cornerTextWeight: bold;
 @cornerTextSize: 1em;
 
-/* Horizontal */
+// Horizontal
 @horizontalLabelMinWidth: 3em;
 @horizontalLabelMargin: 0.5em;
 @horizontalLabelVerticalPadding: 0.4em;
 
-/* Circular Padding */
+// Circular Padding
 @circularPadding: 0.5em;
 @circularMinSize: 2em;
 @emptyCircleSize: 0.5em;
 
-/* Pointing */
+// Pointing
 @pointingBorderColor: inherit;
 @pointingBorderWidth: @borderWidth;
 @pointingVerticalDistance: 1em;
@@ -229,19 +217,17 @@
 @pointingTriangleTransition: background @labelTransitionDuration @labelTransitionEasing;
 @pointingTriangleZIndex: 2;
 
-/* Basic Pointing */
+// Basic Pointing
 @basicPointingTriangleOffset: -@pointingBorderWidth;
 
-/* Floating */
+// Floating
 @floatingTopOffset: -1em;
 @floatingLeftOffset: -1.5em;
 @floatingZIndex: 100;
 
-/*-------------------
-        Group
---------------------*/
+// Group
 
-/* Sizing */
+// Sizing
 @mini: @9px;
 @tiny: @10px;
 @small: @11px;

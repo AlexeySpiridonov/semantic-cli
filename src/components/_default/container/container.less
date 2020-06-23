@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Container
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Container
+//   http://github.com/semantic-org/semantic-ui/
+//
+//
+//   Released under the MIT license
+//   http://opensource.org/licenses/MIT
+//
+// //  /
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'element';
 @modifier: '_default';
@@ -19,17 +17,15 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-            Container
-*******************************/
+// Container
 
-/* All Sizes */
+// All Sizes
 .ui.container {
   display: block;
   max-width: @maxWidth !important;
 }
 
-/* Mobile */
+// Mobile
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.container {
     width: @mobileWidth !important;
@@ -50,7 +46,7 @@
   }
 }
 
-/* Tablet */
+// Tablet
 @media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
   .ui.container {
     width: @tabletWidth;
@@ -71,7 +67,7 @@
   }
 }
 
-/* Small Monitor */
+// Small Monitor
 @media only screen and (min-width: @computerBreakpoint) and (max-width: @largestSmallMonitor) {
   .ui.container {
     width: @computerWidth;
@@ -92,7 +88,7 @@
   }
 }
 
-/* Large Monitor */
+// Large Monitor
 @media only screen and (min-width: @largeMonitorBreakpoint) {
   .ui.container {
     width: @largeMonitorWidth;
@@ -113,11 +109,9 @@
   }
 }
 
-/*******************************
-             Types
-*******************************/
+// Types
 
-/* Text Container */
+// Text Container
 .ui.text.container {
   font-family: @textFontFamily;
   max-width: @textWidth !important;
@@ -128,14 +122,12 @@
   font-size: @textSize;
 }
 
-/* Fluid */
+// Fluid
 .ui.fluid.container {
   width: 100%;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
 .ui[class*="left aligned"].container {
   text-align: left;

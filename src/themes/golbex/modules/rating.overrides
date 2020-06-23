@@ -1,6 +1,4 @@
-/*******************************
-         Theme Overrides
-*******************************/
+// Theme Overrides
 
 @font-face {
   font-family: 'Rating';
@@ -20,31 +18,29 @@
   text-align: center;
 }
 
-/* Empty Star */
+// Empty Star
 .ui.rating .icon:before {
   content: '\f005';
 }
 
-/* Active Star */
+// Active Star
 .ui.rating .active.icon:before {
   content: '\f005';
 }
 
-/*-------------------
-        Star
---------------------*/
+// Star
 
-/* Unfilled Star */
+// Unfilled Star
 .ui.star.rating .icon:before {
   content: '\f005';
 }
 
-/* Active Star */
+// Active Star
 .ui.star.rating .active.icon:before {
   content: '\f005';
 }
 
-/* Partial */
+// Partial
 .ui.star.rating .partial.icon:before {
   content: '\f006';
 }
@@ -53,20 +49,18 @@
   content: '\f005';
 }
 
-/*-------------------
-        Heart
---------------------*/
+// Heart
 
-/* Empty Heart
+// Empty Heart
 .ui.heart.rating .icon:before {
   content: '\f08a';
 }
-*/
+
 .ui.heart.rating .icon:before {
   content: '\f004';
 }
 
-/* Active */
+// Active
 .ui.heart.rating .active.icon:before {
   content: '\f004';
 }

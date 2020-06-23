@@ -1,16 +1,14 @@
-/*!
- * # Semantic UI - Modal
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
+//  !
+//   # Semantic UI - Modal
+//   http://github.com/semantic-org/semantic-ui/
+// *
+// *
+// * Released under the MIT license
+// * http://opensource.org/licenses/MIT
+// *
+// **/
 
-/*******************************
-            Theme
-*******************************/
+// Theme
 
 @type: 'module';
 @modifier: '_default';
@@ -19,9 +17,7 @@
 // Import Theme
 @import (multiple) "../../import.theme.less";
 
-/*******************************
-             Modal
-*******************************/
+// Modal
 
 .ui.modal {
   display: block;
@@ -53,14 +49,9 @@
   border-bottom-right-radius: @borderRadius;
 }
 
-/*******************************
-            Content
-*******************************/
+// Content
 
-/*--------------
-     Close
----------------*/
-
+// Close
 .ui.modal > .times.circle {
   cursor: pointer;
   position: absolute;
@@ -81,10 +72,7 @@
   opacity: 1;
 }
 
-/*--------------
-     Header
----------------*/
-
+// Header
 .ui.modal > .header {
   display: block;
   font-family: @headerFontFamily;
@@ -103,10 +91,7 @@
   font-weight: @headerFontWeight;
 }
 
-/*--------------
-     Content
----------------*/
-
+// Content
 .ui.modal > .content {
   display: block;
   width: 100%;
@@ -121,7 +106,7 @@
   flex-direction: row;
 }
 
-/* Image */
+// Image */
 .ui.modal > .content > .image {
   display: block;
   flex: 0 1 auto;
@@ -141,7 +126,7 @@
   align-self: stretch;
 }
 
-/* Description */
+// Description */
 .ui.modal > .content > .description {
   display: block;
   flex: 1 0 auto;
@@ -157,7 +142,7 @@
   padding-left: @descriptionDistance;
 }
 
-/*rtl:ignore*/
+// rtl:ignore
 .ui.modal > .content > .image > i.icon {
   margin: 0em;
   opacity: 1;
@@ -166,10 +151,7 @@
   font-size: @imageIconSize;
 }
 
-/*--------------
-     Actions
----------------*/
-
+// Actions
 .ui.modal > .actions {
   background: @actionBackground;
   padding: @actionPadding;
@@ -181,11 +163,8 @@
   margin-left: @buttonDistance;
 }
 
-/*-------------------
-       Responsive
---------------------*/
-
-/* Modal Width */
+// Responsive
+// Modal Width */
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.modal {
     width: @mobileWidth;
@@ -221,7 +200,7 @@
   }
 }
 
-/* Tablet and Mobile */
+// Tablet and Mobile */
 @media only screen and (max-width: @largestTabletScreen) {
   .ui.modal > .header {
     padding-right: @closeHitbox;
@@ -234,7 +213,7 @@
   }
 }
 
-/* Mobile */
+// Mobile */
 @media only screen and (max-width: @largestMobileScreen) {
 
   .ui.modal > .header {
@@ -252,7 +231,7 @@
     right: @mobileCloseRight !important;
   }
 
-  /*rtl:ignore*/
+  // rtl:ignore
   .ui.modal .image.content {
     flex-direction: column;
   }
@@ -270,7 +249,7 @@
     text-align: center;
   }
 
-  /*rtl:ignore*/
+  // rtl:ignore
   .ui.modal .content > .description {
     display: block;
     width: 100% !important;
@@ -279,7 +258,7 @@
     box-shadow: none;
   }
 
-  /* Let Buttons Stack */
+  // Let Buttons Stack */
   .ui.modal > .actions {
     padding: @mobileActionPadding !important;
   }
@@ -290,17 +269,12 @@
   }
 }
 
-/*--------------
-    Coupling
----------------*/
-
+// Coupling
 .ui.inverted.dimmer > .ui.modal {
   box-shadow: @invertedBoxShadow;
 }
 
-/*******************************
-             Types
-*******************************/
+// Types
 
 .ui.basic.modal {
   background-color: transparent;
@@ -333,16 +307,14 @@
   color: @basicInvertedModalHeaderColor;
 }
 
-/* Tablet and Mobile */
+// Tablet and Mobile */
 @media only screen and (max-width: @largestTabletScreen) {
   .ui.basic.modal > .close {
     color: @basicInnerCloseColor;
   }
 }
 
-/*******************************
-             States
-*******************************/
+// States
 
 .ui.loading.modal {
   display: block;
@@ -354,15 +326,10 @@
   display: block;
 }
 
-/*******************************
-           Variations
-*******************************/
+// Variations
 
-/*--------------
-    Scrolling
----------------*/
-
-/* A modal that cannot fit on the page */
+// Scrolling
+// A modal that cannot fit on the page */
 .scrolling.dimmable.dimmed {
   overflow: hidden;
 }
@@ -383,7 +350,7 @@
   margin: @scrollingMargin auto !important;
 }
 
-/* undetached scrolling */
+// undetached scrolling */
 .scrolling.undetached.dimmable.dimmed {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -399,7 +366,7 @@
   margin-top: @scrollingMargin !important;
 }
 
-/* Coupling with Sidebar */
+// Coupling with Sidebar */
 .undetached.dimmable.dimmed > .pusher {
   z-index: auto;
 }
@@ -411,17 +378,14 @@
   }
 }
 
-/* Scrolling Content */
+// Scrolling Content */
 
 .ui.modal .scrolling.content {
   max-height: @scrollingContentMaxHeight;
   overflow: auto;
 }
 
-/*--------------
-   Full Screen
----------------*/
-
+// Full Screen
 .ui.fullscreen.modal {
   width: @fullScreenWidth !important;
   left: @fullScreenOffset !important;
@@ -442,20 +406,17 @@
   color: @innerCloseColor;
 }
 
-/*--------------
-      Size
----------------*/
-
+// Size
 .ui.modal {
   font-size: @medium;
 }
 
-/* Mini */
+// Mini */
 .ui.mini.modal > .header:not(.ui) {
   font-size: @miniHeaderSize;
 }
 
-/* Mini Modal Width */
+// Mini Modal Width */
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.mini.modal {
     width: @miniMobileWidth;
@@ -491,12 +452,12 @@
   }
 }
 
-/* mini */
+// mini */
 .ui.small.modal > .header:not(.ui) {
   font-size: @miniHeaderSize;
 }
 
-/* Tiny Modal Width */
+// Tiny Modal Width */
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.tiny.modal {
     width: @tinyMobileWidth;
@@ -532,12 +493,12 @@
   }
 }
 
-/* Small */
+// Small */
 .ui.small.modal > .header:not(.ui) {
   font-size: @smallHeaderSize;
 }
 
-/* Small Modal Width */
+// Small Modal Width */
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.small.modal {
     width: @smallMobileWidth;
@@ -573,7 +534,7 @@
   }
 }
 
-/* Large Modal Width */
+// Large Modal Width */
 .ui.large.modal > .header {
   font-size: @largeHeaderSize;
 }

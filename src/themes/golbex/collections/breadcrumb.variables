@@ -1,10 +1,6 @@
-/*******************************
-          Breadcrumb
-*******************************/
+// Breadcrumb
 
-/*-------------------
-     Breadcrumb
---------------------*/
+// Breadcrumb
 
 @verticalMargin: 0em;
 @display: inline-block;
@@ -23,11 +19,9 @@
 @sectionMargin: 0em;
 @sectionPadding: 0em;
 
-/* Coupling */
+// Coupling
 @segmentPadding: @relativeMini @relativeMedium;
 
-/*-------------------
-       States
---------------------*/
+// States
 
 @activeFontWeight: bold;

@@ -1,6 +1,4 @@
-/*******************************
-            Sticky
-*******************************/
+// Sticky
 
 @transitionDuration: @defaultDuration;
 @transition: none;
