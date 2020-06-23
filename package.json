@@ -2,7 +2,7 @@
   "name": "semantic-cli",
   "version": "1.2.1",
   "description": "Custom сборка semantic-ui для интерфейса с темным дизайном golbex'a",
-  "main": "index",
+  "main": "index.js
   "bin": {
     "semantic-cli": "./bin/semantic-cli"
   },
@@ -33,5 +33,10 @@
   "optionalDependencies": {
     "graceful-fs": "^4.2.4",
     "mkdirp": "^1.0.4"
+  },
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 6.11.0",
+    "yarn": ">= 1.13.0"
   }
 }
