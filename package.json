@@ -1,16 +1,13 @@
 {
-  "name": "semantic-cli",
-  "version": "1.2.1",
+  "name": "@amadau/semantic-cli",
+  "version": "1.2.4",
   "description": "Custom сборка semantic-ui для интерфейса с темным дизайном golbex'a",
   "main": "index.js",
   "bin": {
     "semantic-cli": "./bin/semantic-cli"
   },
   "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gusleein/semantic-cli.git"
-  },
+  "repository": "git://github.com/amadau/semantic-cli.git",
   "keywords": [
     "golbex",
     "semantic",
@@ -18,14 +15,14 @@
     "frontend"
   ],
   "author": {
-    "name": "gusleein",
-    "email": "free_apples@ymail.com"
+    "name": "amadau",
+    "email": "for.amadau@gmail.com"
   },
   "license": "",
   "bugs": {
-    "url": "https://github.com/gusleein/semantic-cli/issues"
+    "url": "https://github.com/amadau/semantic-cli/issues"
   },
-  "homepage": "https://github.com/gusleein/semantic-cli#readme",
+  "homepage": "https://github.com/amadau/semantic-cli#readme",
   "dependencies": {
     "errno": "^0.1.1",
     "less": "2.7.3"
