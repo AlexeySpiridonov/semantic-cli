@@ -1,6 +1,6 @@
 {
   "name": "@amadau/semantic-cli",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Custom сборка semantic-ui для интерфейса с темным дизайном golbex'a",
   "main": "index.js",
   "bin": {

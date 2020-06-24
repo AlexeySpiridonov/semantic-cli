@@ -16,14 +16,6 @@
 @googleProtocol: 'https://';
 @googleFontRequest: '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
 
-@font-face {
-  font-family: 'Conv_golbex-crypto-Font';
-  src: url('/assets/fonts/golbex-crypto-Font.eot');
-  src: local('☺'), url('/assets/fonts/golbex-crypto-Font.woff') format('woff'), url('/assets/fonts/golbex-crypto-Font.ttf') format('truetype'), url('/assets/fonts/golbex-crypto-Font.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 // User Global Variables
 
 // Base Sizes
